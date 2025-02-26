@@ -318,4 +318,12 @@ typedef struct
 } _ism330dhcx_rm_sh__SLAVE3_CONFIG_s;
 
 
+/* Slave Data Write */
+
+
+/// @struct _ism330dhcx_rm_sh__DATAWRITE_SLV0_s
+/// @brief  ISM330DHCX Data to be written into the slave 0 device register [r/w] {0x00}
+typedef reg_u8_s _ism330dhcx_rm_sh__DATAWRITE_SLV0_s;
+
+
 #endif /* __ISM330DHCX_INTERNAL__RM_SH_STRUCTS_H__ */
