@@ -326,4 +326,32 @@ typedef struct
 typedef reg_u8_s _ism330dhcx_rm_sh__DATAWRITE_SLV0_s;
 
 
+/* Master Status */
+
+
+/// @struct _ism330dhcx_rm_sh__STATUS_MASTER_s
+/// @brief  ISM330DHCX Sensor hub source register [r]
+typedef struct
+{
+    adr_u8c_u ADR; // register address
+
+    /// @union <anonymous>
+    /// @brief Bit Field Union for register value
+    union {
+        u8_t full;                      // [7:0] Full value of the register {0x00}
+        struct {
+            u8_t SENS_HUB_ENDOP : 1;    // [0]   Sensor hub communication status                                         {0}
+            u8_t RESERVED_1     : 1;    // [1]   Reserved                                                                {0}
+            u8_t RESERVED_2     : 1;    // [2]   Reserved                                                                {0}
+            u8_t SLAVE0_NACK    : 1;    // [3]   This bit is set to 1 if Not acknowledge occurs on slave 0 communication {0}
+            u8_t SLAVE1_NACK    : 1;    // [4]   This bit is set to 1 if Not acknowledge occurs on slave 1 communication {0}
+            u8_t SLAVE2_NACK    : 1;    // [5]   This bit is set to 1 if Not acknowledge occurs on slave 2 communication {0}
+            u8_t SLAVE3_NACK    : 1;    // [6]   This bit is set to 1 if Not acknowledge occurs on slave 3 communication {0}
+            u8_t WR_ONCE_DONE   : 1;    // [7]   bit is set to 1 when the write operation on slave 0 has been performed  {0}
+        };
+    } bf;
+
+} _ism330dhcx_rm_sh__STATUS_MASTER_s;
+
+
 #endif /* __ISM330DHCX_INTERNAL__RM_SH_STRUCTS_H__ */
