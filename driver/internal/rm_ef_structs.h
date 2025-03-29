@@ -14,7 +14,7 @@
 
 
 /// @struct _ism330dhcx_rm_ef__PAGE_SEL_s
-/// @brief  ISM330DHCX Enable advanced features dedicated page [r/w]
+/// @brief  ISM330DHCX Enable advanced features dedicated page [r/w] {0x01}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -22,7 +22,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                    // [7:0] Full value of the register {0x01}
+        u8_t full;                    // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0   : 1;    // [0]   Reserved                                    {1}
             u8_t RESERVED_1   : 1;    // [1]   Reserved                                    {0}
@@ -36,7 +36,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_EN_A_s
-/// @brief  ISM330DHCX Embedded functions enable register (A) [r/w]
+/// @brief  ISM330DHCX Embedded functions enable register (A) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -44,7 +44,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                      // [7:0] Full value of the register {0x00}
+        u8_t full;                      // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0     : 1;    // [0]   Reserved                                     {0}
             u8_t RESERVED_1     : 1;    // [1]   Reserved                                     {0}
@@ -61,7 +61,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_EN_B_s
-/// @brief  ISM330DHCX Embedded functions enable register (B) [r/w]
+/// @brief  ISM330DHCX Embedded functions enable register (B) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -69,7 +69,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                     // [7:0] Full value of the register {0x00}
+        u8_t full;                     // [7:0] Full value of the register
         struct {
             u8_t FSM_EN        : 1;    // [0]   Enable Finite State Machine (FSM) feature {0}
             u8_t RESERVED_1    : 1;    // [1]   Reserved                                  {0}
@@ -86,7 +86,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_EN_s
-/// @brief  ISM330DHCX Embedded functions enable register (A|B) [r/w]
+/// @brief  ISM330DHCX Embedded functions enable register (A|B) [r/w] {0x00}
 typedef struct
 {
     adr_u16c_u ADR; // register address
@@ -94,7 +94,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u16_t full;                     // [15:0] Full value of the register {0x00}
+        u16_t full;                     // [15:0] Full value of the register
         struct {
             u16_t FSM_EN        : 1;    // [0]   Enable Finite State Machine (FSM) feature {0}
             u16_t RESERVED_1    : 1;    // [1]   Reserved                                  {0}
@@ -119,12 +119,12 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__PAGE_ADDRESS_s
-/// @brief  ISM330DHCX Page address register [r/w]
+/// @brief  ISM330DHCX Page address register [r/w] {0x00}
 typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_ADDRESS_s;
 
 
 /// @struct _ism330dhcx_rm_ef__PAGE_VALUE_s
-/// @brief  ISM330DHCX Page value register [r/w]
+/// @brief  ISM330DHCX Page value register [r/w] {0x00}
 typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_VALUE_s;
 
 
@@ -132,7 +132,7 @@ typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_VALUE_s;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INT1_s
-/// @brief  ISM330DHCX EMB FUNC INT1 pin control register [r/w]
+/// @brief  ISM330DHCX EMB FUNC INT1 pin control register [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -140,7 +140,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                          // [7:0] Full value of the register {0x00}
+        u8_t full;                          // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0         : 1;    // [0]   Reserved                                                    {0}
             u8_t RESERVED_1         : 1;    // [1]   Reserved                                                    {0}
@@ -157,7 +157,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT1_A_s
-/// @brief  ISM330DHCX FSM INT1 pin control register (A) [r/w]
+/// @brief  ISM330DHCX FSM INT1 pin control register (A) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -165,7 +165,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                 // [7:0] Full value of the register {0x00}
+        u8_t full;                 // [7:0] Full value of the register
         struct {
             u8_t INT1_FSM1 : 1;    // [0]   Routing of FSM1 interrupt event on INT1 {0}
             u8_t INT1_FSM2 : 1;    // [1]   Routing of FSM2 interrupt event on INT1 {0}
@@ -182,7 +182,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT1_B_s
-/// @brief  ISM330DHCX FSM INT1 pin control register (B) [r/w]
+/// @brief  ISM330DHCX FSM INT1 pin control register (B) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -190,7 +190,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x00}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t INT1_FSM9  : 1;    // [0]   Routing of FSM9  interrupt event on INT1 {0}
             u8_t INT1_FSM10 : 1;    // [1]   Routing of FSM10 interrupt event on INT1 {0}
@@ -207,7 +207,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT1_s
-/// @brief  ISM330DHCX FSM INT1 pin control register (A|B) [r/w]
+/// @brief  ISM330DHCX FSM INT1 pin control register (A|B) [r/w] {0x00}
 typedef struct
 {
     adr_u16c_u ADR; // register address
@@ -215,7 +215,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u16_t full;                  // [7:0]  Full value of the register {0x00}
+        u16_t full;                  // [7:0]  Full value of the register
         struct {
             u16_t INT1_FSM1  : 1;    // [0]    Routing of FSM1  interrupt event on INT1 {0}
             u16_t INT1_FSM2  : 1;    // [1]    Routing of FSM2  interrupt event on INT1 {0}
@@ -240,7 +240,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__MLC_INT1_s
-/// @brief  ISM330DHCX MLC INT1 pin control register [r/w]
+/// @brief  ISM330DHCX MLC INT1 pin control register [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -248,7 +248,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                 // [7:0] Full value of the register {0x00}
+        u8_t full;                 // [7:0] Full value of the register
         struct {
             u8_t INT1_MLC1 : 1;    // [0]   Routing of MLC1 interrupt event on INT1 {0}
             u8_t INT1_MLC2 : 1;    // [1]   Routing of MLC2 interrupt event on INT1 {0}
@@ -265,7 +265,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INT2_s
-/// @brief  ISM330DHCX EMB FUNC INT2 pin control register [r/w]
+/// @brief  ISM330DHCX EMB FUNC INT2 pin control register [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -273,7 +273,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                          // [7:0] Full value of the register {0x00}
+        u8_t full;                          // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0         : 1;    // [0]   Reserved                                                    {0}
             u8_t RESERVED_1         : 1;    // [1]   Reserved                                                    {0}
@@ -290,7 +290,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT2_A_s
-/// @brief  ISM330DHCX FSM INT2 pin control register (A) [r/w]
+/// @brief  ISM330DHCX FSM INT2 pin control register (A) [r/w] {0x6B}
 /// !FIX-REQUIRED! Datasheet defines '01101011' (0x6B) as default value but register description lists values as '00000000'
 typedef struct
 {
@@ -299,7 +299,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                 // [7:0] Full value of the register {0x00}
+        u8_t full;                 // [7:0] Full value of the register
         struct {
             u8_t INT2_FSM1 : 1;    // [0]   Routing of FSM1 interrupt event on INT2 {0}
             u8_t INT2_FSM2 : 1;    // [1]   Routing of FSM2 interrupt event on INT2 {0}
@@ -316,7 +316,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT2_B_s
-/// @brief  ISM330DHCX FSM INT2 pin control register (B) [r/w]
+/// @brief  ISM330DHCX FSM INT2 pin control register (B) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -324,7 +324,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x00}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t INT2_FSM9  : 1;    // [0]   Routing of FSM9  interrupt event on INT2 {0}
             u8_t INT2_FSM10 : 1;    // [1]   Routing of FSM10 interrupt event on INT2 {0}
@@ -341,7 +341,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT2_s
-/// @brief  ISM330DHCX FSM INT2 pin control register (A|B) [r/w]
+/// @brief  ISM330DHCX FSM INT2 pin control register (A|B) [r/w] {0x00}
 typedef struct
 {
     adr_u16c_u ADR; // register address
@@ -349,7 +349,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u16_t full;                  // [7:0]  Full value of the register {0x00}
+        u16_t full;                  // [7:0]  Full value of the register
         struct {
             u16_t INT2_FSM1  : 1;    // [0]    Routing of FSM1  interrupt event on INT2 {0}
             u16_t INT2_FSM2  : 1;    // [1]    Routing of FSM2  interrupt event on INT2 {0}
@@ -374,7 +374,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__MLC_INT2_s
-/// @brief  ISM330DHCX MLC INT2 pin control register [r/w]
+/// @brief  ISM330DHCX MLC INT2 pin control register [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -382,7 +382,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                 // [7:0] Full value of the register {0x00}
+        u8_t full;                 // [7:0] Full value of the register
         struct {
             u8_t INT2_MLC1 : 1;    // [0]   Routing of MLC1 interrupt event on INT2 {0}
             u8_t INT2_MLC2 : 1;    // [1]   Routing of MLC2 interrupt event on INT2 {0}
@@ -402,7 +402,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_STATUS_s
-/// @brief  ISM330DHCX Embedded function status register [r]
+/// @brief  ISM330DHCX Embedded function status register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -410,7 +410,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                    // [7:0] Full value of the register {output}
+        u8_t full;                    // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0   : 1;    // [0]   Reserved                                                          {0}
             u8_t RESERVED_1   : 1;    // [1]   Reserved                                                          {0}
@@ -427,7 +427,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_STATUS_A_s
-/// @brief  ISM330DHCX Finite State Machine status register (A) [r]
+/// @brief  ISM330DHCX Finite State Machine status register (A) [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -435,7 +435,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;               // [7:0] Full value of the register {output}
+        u8_t full;               // [7:0] Full value of the register
         struct {
             u8_t IS_FSM1 : 1;    // [0]   Interrupt status bit for FSM1 interrupt event {output}
             u8_t IS_FSM2 : 1;    // [1]   Interrupt status bit for FSM2 interrupt event {output}
@@ -452,7 +452,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_STATUS_B_s
-/// @brief  ISM330DHCX Finite State Machine status register (B) [r]
+/// @brief  ISM330DHCX Finite State Machine status register (B) [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -460,7 +460,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                // [7:0] Full value of the register {output}
+        u8_t full;                // [7:0] Full value of the register
         struct {
             u8_t IS_FSM9  : 1;    // [0]   Interrupt status bit for FSM9  interrupt event {output}
             u8_t IS_FSM10 : 1;    // [1]   Interrupt status bit for FSM10 interrupt event {output}
@@ -477,7 +477,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_STATUS_s
-/// @brief  ISM330DHCX Finite State Machine status register (A|B) [r]
+/// @brief  ISM330DHCX Finite State Machine status register (A|B) [r] {output}
 typedef struct
 {
     adr_u16c_u ADR; // register address
@@ -485,7 +485,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u16_t full;                // [7:0]  Full value of the register {output}
+        u16_t full;                // [7:0]  Full value of the register
         struct {
             u16_t IS_FSM1  : 1;    // [0]    Interrupt status bit for FSM1  interrupt event {output}
             u16_t IS_FSM2  : 1;    // [1]    Interrupt status bit for FSM2  interrupt event {output}
@@ -510,7 +510,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__MLC_STATUS_s
-/// @brief  ISM330DHCX Machine Learning Core status register [r]
+/// @brief  ISM330DHCX Machine Learning Core status register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -518,7 +518,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;               // [7:0] Full value of the register {output}
+        u8_t full;               // [7:0] Full value of the register
         struct {
             u8_t IS_MLC1 : 1;    // [0]   Interrupt status bit for MLC1 interrupt event {output}
             u8_t IS_MLC2 : 1;    // [1]   Interrupt status bit for MLC2 interrupt event {output}
@@ -538,7 +538,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__PAGE_RW_s
-/// @brief  ISM330DHCX Enable read and write mode of advanced features dedicated page [r/w]
+/// @brief  ISM330DHCX Enable read and write mode of advanced features dedicated page [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -546,7 +546,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                    // [7:0] Full value of the register {0x00}
+        u8_t full;                    // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0   : 1;    // [0]   Reserved                                                        {0}
             u8_t RESERVED_1   : 1;    // [1]   Reserved                                                        {0}
@@ -566,7 +566,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_FIFO_CFG_s
-/// @brief  ISM330DHCX Embedded functions batching configuration register [r/w]
+/// @brief  ISM330DHCX Embedded functions batching configuration register [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -574,7 +574,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                    // [7:0] Full value of the register {0x00}
+        u8_t full;                    // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0   : 1;    // [0]   Reserved                                    {0}
             u8_t RESERVED_1   : 1;    // [1]   Reserved                                    {0}
@@ -594,7 +594,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_ENABLE_A_s
-/// @brief  ISM330DHCX FSM enable register (A) [r/w]
+/// @brief  ISM330DHCX FSM enable register (A) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -602,7 +602,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                 // [7:0] Full value of the register {0x00}
+        u8_t full;                 // [7:0] Full value of the register
         struct {
             u8_t FSM1_EN   : 1;    // [0]   FSM1 enable {0}
             u8_t FSM2_EN   : 1;    // [1]   FSM2 enable {0}
@@ -619,7 +619,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_ENABLE_B_s
-/// @brief  ISM330DHCX FSM enable register (B) [r/w]
+/// @brief  ISM330DHCX FSM enable register (B) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -627,7 +627,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                // [7:0] Full value of the register {0x00}
+        u8_t full;                // [7:0] Full value of the register
         struct {
             u8_t FSM9_EN  : 1;    // [0]   FSM9  enable {0}
             u8_t FSM10_EN : 1;    // [1]   FSM10 enable {0}
@@ -644,7 +644,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_ENABLE_s
-/// @brief  ISM330DHCX FSM enable register (A|B) [r/w]
+/// @brief  ISM330DHCX FSM enable register (A|B) [r/w] {0x00}
 typedef struct
 {
     adr_u16c_u ADR; // register address
@@ -652,7 +652,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u16_t full;                // [7:0] Full value of the register {0x00}
+        u16_t full;                // [7:0] Full value of the register
         struct {
             u16_t FSM1_EN  : 1;    // [0]   FSM1  enable {0}
             u16_t FSM2_EN  : 1;    // [1]   FSM2  enable {0}
@@ -677,25 +677,25 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_L_s
-/// @brief  ISM330DHCX FSM long counter status register (LSB) [r/w]
+/// @brief  ISM330DHCX FSM long counter status register (LSB) [r/w] {0x00}
 /// @note   value can be reset using the LC_CLEAR bit in FSM_LONG_COUNTER_CLEAR register
 typedef reg_u8_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_L_s;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_H_s
-/// @brief  ISM330DHCX FSM long counter status register (MSB) [r/w]
+/// @brief  ISM330DHCX FSM long counter status register (MSB) [r/w] {0x00}
 /// @note   value can be reset using the LC_CLEAR bit in FSM_LONG_COUNTER_CLEAR register
 typedef reg_u8_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_H_s;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_s
-/// @brief  ISM330DHCX FSM long counter status register [r/w]
+/// @brief  ISM330DHCX FSM long counter status register [r/w] {0x00}
 /// @note   value can be reset using the LC_CLEAR bit in FSM_LONG_COUNTER_CLEAR register
 typedef reg_u16_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_s;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_CLEAR_s
-/// @brief  ISM330DHCX FSM long counter reset register [r/w]
+/// @brief  ISM330DHCX FSM long counter reset register [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -703,7 +703,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                      // [7:0] Full value of the register {0x00}
+        u8_t full;                      // [7:0] Full value of the register
         struct {
             u8_t FSM_LC_CLEAR   : 1;    // [0]   Clear FSM long counter value                                                {0}
             u8_t FSM_LC_CLEARED : 1;    // [1]   read-only bit is automatically set to 1 when the long counter reset is done {0}
@@ -720,7 +720,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS1_s
-/// @brief  ISM330DHCX FSM1 output register [r]
+/// @brief  ISM330DHCX FSM1 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -728,7 +728,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM1 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM1 output: positive event detected on the vector {output}
@@ -745,7 +745,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS2_s
-/// @brief  ISM330DHCX FSM2 output register [r]
+/// @brief  ISM330DHCX FSM2 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -753,7 +753,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM2 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM2 output: positive event detected on the vector {output}
@@ -770,7 +770,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS3_s
-/// @brief  ISM330DHCX FSM3 output register [r]
+/// @brief  ISM330DHCX FSM3 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -778,7 +778,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM3 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM3 output: positive event detected on the vector {output}
@@ -795,7 +795,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS4_s
-/// @brief  ISM330DHCX FSM4 output register [r]
+/// @brief  ISM330DHCX FSM4 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -803,7 +803,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM4 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM4 output: positive event detected on the vector {output}
@@ -820,7 +820,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS5_s
-/// @brief  ISM330DHCX FSM5 output register [r]
+/// @brief  ISM330DHCX FSM5 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -828,7 +828,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM5 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM5 output: positive event detected on the vector {output}
@@ -845,7 +845,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS6_s
-/// @brief  ISM330DHCX FSM6 output register [r]
+/// @brief  ISM330DHCX FSM6 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -853,7 +853,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM6 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM6 output: positive event detected on the vector {output}
@@ -870,7 +870,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS7_s
-/// @brief  ISM330DHCX FSM7 output register [r]
+/// @brief  ISM330DHCX FSM7 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -878,7 +878,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM7 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM7 output: positive event detected on the vector {output}
@@ -895,7 +895,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS8_s
-/// @brief  ISM330DHCX FSM8 output register [r]
+/// @brief  ISM330DHCX FSM8 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -903,7 +903,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM8 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM8 output: positive event detected on the vector {output}
@@ -920,7 +920,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS9_s
-/// @brief  ISM330DHCX FSM9 output register [r]
+/// @brief  ISM330DHCX FSM9 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -928,7 +928,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM9 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM9 output: positive event detected on the vector {output}
@@ -945,7 +945,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS10_s
-/// @brief  ISM330DHCX FSM10 output register [r]
+/// @brief  ISM330DHCX FSM10 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -953,7 +953,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM10 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM10 output: positive event detected on the vector {output}
@@ -970,7 +970,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS11_s
-/// @brief  ISM330DHCX FSM11 output register [r]
+/// @brief  ISM330DHCX FSM11 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -978,7 +978,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM11 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM11 output: positive event detected on the vector {output}
@@ -995,7 +995,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS12_s
-/// @brief  ISM330DHCX FSM12 output register [r]
+/// @brief  ISM330DHCX FSM12 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1003,7 +1003,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM12 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM12 output: positive event detected on the vector {output}
@@ -1020,7 +1020,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS13_s
-/// @brief  ISM330DHCX FSM13 output register [r]
+/// @brief  ISM330DHCX FSM13 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1028,7 +1028,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM13 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM13 output: positive event detected on the vector {output}
@@ -1045,7 +1045,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS14_s
-/// @brief  ISM330DHCX FSM14 output register [r]
+/// @brief  ISM330DHCX FSM14 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1053,7 +1053,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM14 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM14 output: positive event detected on the vector {output}
@@ -1070,7 +1070,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS15_s
-/// @brief  ISM330DHCX FSM15 output register [r]
+/// @brief  ISM330DHCX FSM15 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1078,7 +1078,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM15 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM15 output: positive event detected on the vector {output}
@@ -1095,7 +1095,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS16_s
-/// @brief  ISM330DHCX FSM16 output register [r]
+/// @brief  ISM330DHCX FSM16 output register [r] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1103,7 +1103,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;           // [7:0] Full value of the register {output}
+        u8_t full;           // [7:0] Full value of the register
         struct {
             u8_t N_V : 1;    // [0]   FSM16 output: negative event detected on the vector {output}
             u8_t P_V : 1;    // [1]   FSM16 output: positive event detected on the vector {output}
@@ -1123,7 +1123,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_B_s
-/// @brief  ISM330DHCX Finite State Machine output data rate configuration register [r/w]
+/// @brief  ISM330DHCX Finite State Machine output data rate configuration register [r/w] {0x4B}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1131,7 +1131,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x4B}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0 : 1;    // [0]   Reserved                               {1}
             u8_t RESERVED_1 : 1;    // [1]   Reserved                               {1}
@@ -1147,7 +1147,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_C_s
-/// @brief  ISM330DHCX Machine Learning Core output data rate configuration register [r/w]
+/// @brief  ISM330DHCX Machine Learning Core output data rate configuration register [r/w] {0x15}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1155,7 +1155,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x15}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0 : 1;    // [0]   Reserved                                {1}
             u8_t RESERVED_1 : 1;    // [1]   Reserved                                {0}
@@ -1174,22 +1174,22 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__STEP_COUNTER_L_s
-/// @brief  ISM330DHCX Step counter output register (LSB) [r]
+/// @brief  ISM330DHCX Step counter output register (LSB) [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__STEP_COUNTER_L_s;
 
 
 /// @struct _ism330dhcx_rm_ef__STEP_COUNTER_H_s
-/// @brief  ISM330DHCX Step counter output register (MSB) [r]
+/// @brief  ISM330DHCX Step counter output register (MSB) [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__STEP_COUNTER_H_s;
 
 
 /// @struct _ism330dhcx_rm_ef__STEP_COUNTER_s
-/// @brief  ISM330DHCX Step counter output register [r]
+/// @brief  ISM330DHCX Step counter output register [r] {output}
 typedef reg_u16_s _ism330dhcx_rm_ef__STEP_COUNTER_s;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_SRC_s
-/// @brief  ISM330DHCX Embedded function source register [r/w]
+/// @brief  ISM330DHCX Embedded function source register [r/w] {output}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1197,7 +1197,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                           // [7:0] Full value of the register {output}
+        u8_t full;                           // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0          : 1;    // [0]   Reserved                                                      {0}
             u8_t RESERVED_1          : 1;    // [1]   Reserved                                                      {0}
@@ -1217,7 +1217,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INIT_A_s
-/// @brief  ISM330DHCX Embedded functions initialization register (A) [r/w]
+/// @brief  ISM330DHCX Embedded functions initialization register (A) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1225,7 +1225,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                     // [7:0] Full value of the register {0x00}
+        u8_t full;                     // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0    : 1;    // [0]   Reserved                                                         {0}
             u8_t RESERVED_1    : 1;    // [1]   Reserved                                                         {0}
@@ -1242,7 +1242,7 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INIT_B_s
-/// @brief  ISM330DHCX Embedded functions initialization register (B) [r/w]
+/// @brief  ISM330DHCX Embedded functions initialization register (B) [r/w] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -1250,7 +1250,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                       // [7:0] Full value of the register {0x00}
+        u8_t full;                       // [7:0] Full value of the register
         struct {
             u8_t FSM_INIT        : 1;    // [0]   FSM initialization request                      {0}
             u8_t RESERVED_1      : 1;    // [1]   Reserved                                        {0}
@@ -1270,42 +1270,42 @@ typedef struct
 
 
 /// @struct _ism330dhcx_rm_ef__MLC0_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 0 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 0 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC0_SRC_s;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC1_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 1 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 1 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC1_SRC_s;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC2_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 2 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 2 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC2_SRC_s;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC3_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 3 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 3 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC3_SRC_s;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC4_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 4 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 4 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC4_SRC_s;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC5_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 5 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 5 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC5_SRC_s;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC6_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 6 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 6 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC6_SRC_s;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC7_SRC_s
-/// @brief  ISM330DHCX Machine Learning Core 7 source register [r]
+/// @brief  ISM330DHCX Machine Learning Core 7 source register [r] {output}
 typedef reg_u8_s _ism330dhcx_rm_ef__MLC7_SRC_s;
 
 
