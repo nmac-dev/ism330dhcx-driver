@@ -64,7 +64,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                      // [7:0] Full value of the register {0x00}
+        u8_t full;                      // [7:0] Full value of the register
         struct {
             u8_t RESERVED_0     : 1;    // [0]   Reserved                                                               {0}
             u8_t RESERVED_1     : 1;    // [1]   Reserved                                                               {0}
