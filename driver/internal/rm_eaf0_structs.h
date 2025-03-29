@@ -27,7 +27,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_s
-/// @brief  ISM330DHCX External magnetometer sensitivity [r/w] {0x16}
+/// @brief  ISM330DHCX External magnetometer sensitivity [r/w] {0x1624}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_s;
 
@@ -45,7 +45,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFX_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_OFFX_s
-/// @brief  ISM330DHCX Offset for X-axis hard-iron compensation [r/w] {0x00}
+/// @brief  ISM330DHCX Offset for X-axis hard-iron compensation [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFX_s;
 
@@ -63,7 +63,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFY_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_OFFY_s
-/// @brief  ISM330DHCX Offset for Y-axis hard-iron compensation [r/w] {0x00}
+/// @brief  ISM330DHCX Offset for Y-axis hard-iron compensation [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFY_s;
 
@@ -81,7 +81,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFZ_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_OFFZ_s
-/// @brief  ISM330DHCX Offset for Z-axis hard-iron compensation [r/w] {0x00}
+/// @brief  ISM330DHCX Offset for Z-axis hard-iron compensation [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFZ_s;
 
@@ -99,7 +99,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XX_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_XX_s
-/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C}
+/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XX_s;
 
@@ -117,7 +117,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_XY_s
-/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x00}
+/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XY_s;
 
@@ -135,7 +135,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_XZ_s
-/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x00}
+/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XZ_s;
 
@@ -153,7 +153,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YY_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_s
-/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C}
+/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_YY_s;
 
@@ -171,7 +171,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_s
-/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x00}
+/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_s;
 
@@ -189,7 +189,7 @@ typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_H_s;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_s
-/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C}
+/// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
 typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_s;
 
@@ -203,7 +203,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                    // [7:0] Full value of the register {0x05}
+        u8_t full;                    // [7:0] Full value of the register
         struct {
             u8_t MAG_Z_AXIS   : 3;    // [2:0] Magnetometer Z-axis coordinates rotation {101}
             u8_t RESERVED_3   : 1;    // [3]   Reserved                                 {0}
@@ -224,7 +224,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x02}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t MAG_X_AXIS : 3;    // [2:0] Magnetometer X-axis coordinates rotation {010}
             u8_t RESERVED_3 : 1;    // [3]   Reserved                                 {0}
