@@ -116,7 +116,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                         // [7:0] Full value of the register {0x00}
+        u8_t full;                         // [7:0] Full value of the register
         struct {
             u8_t AUX_SENS_ON       : 2;    // [0:1] Number of external sensors to be read by the sensor hub                 {00}
             u8_t MASTER_ON         : 1;    // [2]   Sensor hub I²C master enable                                            {0}
@@ -140,9 +140,9 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x00}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
-            u8_t rw_0       : 1;    // [0]   Read/write operation on Sensor 1                    {0}
+            u8_t rw_0       : 1;    // [0]   Read/write operation on Sensor 1                     {0}
             u8_t slave0_add : 7;    // [7:1] I²C slave address of Sensor 1 read by the sensor hub {0000000}
         };
     } bf;
@@ -164,7 +164,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                           // [7:0] Full value of the register {0x00}
+        u8_t full;                           // [7:0] Full value of the register
         struct {
             u8_t Slave0_numop        : 3;    // [2:0] Number of read operations on Sensor 1    {000}
             u8_t BATCH_EXT_SENS_0_EN : 1;    // [3]   Enable FIFO data batching of first slave {0}
@@ -186,7 +186,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x00}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t rw_1       : 1;    // [0]   Read/write operation on Sensor 2                     {0}
             u8_t slave1_add : 7;    // [7:1] I²C slave address of Sensor 2 read by the sensor hub {0000000}
@@ -210,7 +210,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                           // [7:0] Full value of the register {0x00}
+        u8_t full;                           // [7:0] Full value of the register
         struct {
             u8_t Slave1_numop        : 3;    // [2:0] Number of read operations on Sensor 2     {000}
             u8_t BATCH_EXT_SENS_1_EN : 1;    // [3]   Enable FIFO data batching of second slave {0}
@@ -233,7 +233,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x00}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t rw_2       : 1;    // [0]   Read/write operation on Sensor 3                     {0}
             u8_t slave2_add : 7;    // [7:1] I²C slave address of Sensor 3 read by the sensor hub {0000000}
@@ -257,7 +257,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                           // [7:0] Full value of the register {0x00}
+        u8_t full;                           // [7:0] Full value of the register
         struct {
             u8_t Slave2_numop        : 3;    // [2:0] Number of read operations on Sensor 3    {000}
             u8_t BATCH_EXT_SENS_2_EN : 1;    // [3]   Enable FIFO data batching of third slave {0}
@@ -280,7 +280,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                  // [7:0] Full value of the register {0x00}
+        u8_t full;                  // [7:0] Full value of the register
         struct {
             u8_t rw_3       : 1;    // [0]   Read/write operation on Sensor 4                     {0}
             u8_t slave3_add : 7;    // [7:1] I²C slave address of Sensor 4 read by the sensor hub {0000000}
@@ -304,7 +304,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                           // [7:0] Full value of the register {0x00}
+        u8_t full;                           // [7:0] Full value of the register
         struct {
             u8_t Slave3_numop        : 3;    // [2:0] Number of read operations on Sensor 4     {000}
             u8_t BATCH_EXT_SENS_3_EN : 1;    // [3]   Enable FIFO data batching of fourth slave {0}
@@ -330,7 +330,7 @@ typedef reg_u8_s _ism330dhcx_rm_sh__DATAWRITE_SLV0_s;
 
 
 /// @struct _ism330dhcx_rm_sh__STATUS_MASTER_s
-/// @brief  ISM330DHCX Sensor hub source register [r]
+/// @brief  ISM330DHCX Sensor hub source register [r] {0x00}
 typedef struct
 {
     adr_u8c_u ADR; // register address
@@ -338,7 +338,7 @@ typedef struct
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u8_t full;                      // [7:0] Full value of the register {0x00}
+        u8_t full;                      // [7:0] Full value of the register
         struct {
             u8_t SENS_HUB_ENDOP : 1;    // [0]   Sensor hub communication status                                         {0}
             u8_t RESERVED_1     : 1;    // [1]   Reserved                                                                {0}
