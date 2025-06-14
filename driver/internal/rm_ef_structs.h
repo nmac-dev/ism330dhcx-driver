@@ -15,7 +15,7 @@
 
 /// @struct _ism330dhcx_rm_ef__PAGE_SEL_s
 /// @brief  ISM330DHCX Enable advanced features dedicated page [r/w] {0x01}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__PAGE_SEL_s
 {
     adr_u8c_u ADR; // register address
 
@@ -32,12 +32,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__PAGE_SEL_s;
+} _ism330dhcx_rm_ef__PAGE_SEL_t;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_EN_A_s
 /// @brief  ISM330DHCX Embedded functions enable register (A) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_EN_A_s
 {
     adr_u8c_u ADR; // register address
 
@@ -57,12 +57,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_EN_A_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_EN_A_t;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_EN_B_s
 /// @brief  ISM330DHCX Embedded functions enable register (B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_EN_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -82,12 +82,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_EN_B_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_EN_B_t;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_EN_s
 /// @brief  ISM330DHCX Embedded functions enable register (A|B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_EN_s
 {
     adr_u16c_u ADR; // register address
 
@@ -115,17 +115,17 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_EN_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_EN_t;
 
 
-/// @struct _ism330dhcx_rm_ef__PAGE_ADDRESS_s
+/// @typedef _ism330dhcx_rm_ef__PAGE_ADDRESS_t
 /// @brief  ISM330DHCX Page address register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_ADDRESS_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_ADDRESS_t;
 
 
-/// @struct _ism330dhcx_rm_ef__PAGE_VALUE_s
+/// @typedef _ism330dhcx_rm_ef__PAGE_VALUE_t
 /// @brief  ISM330DHCX Page value register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_VALUE_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_VALUE_t;
 
 
 /* Interrupt Configuration Registers */
@@ -133,7 +133,7 @@ typedef reg_u8_s _ism330dhcx_rm_ef__PAGE_VALUE_s;
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INT1_s
 /// @brief  ISM330DHCX EMB FUNC INT1 pin control register [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_INT1_s
 {
     adr_u8c_u ADR; // register address
 
@@ -153,12 +153,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_INT1_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_INT1_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT1_A_s
 /// @brief  ISM330DHCX FSM INT1 pin control register (A) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_INT1_A_s
 {
     adr_u8c_u ADR; // register address
 
@@ -178,12 +178,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_INT1_A_s;
+} _ism330dhcx_rm_ef__FSM_INT1_A_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT1_B_s
 /// @brief  ISM330DHCX FSM INT1 pin control register (B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_INT1_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -203,12 +203,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_INT1_B_s;
+} _ism330dhcx_rm_ef__FSM_INT1_B_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT1_s
 /// @brief  ISM330DHCX FSM INT1 pin control register (A|B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_INT1_s
 {
     adr_u16c_u ADR; // register address
 
@@ -236,12 +236,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_INT1_s;
+} _ism330dhcx_rm_ef__FSM_INT1_t;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC_INT1_s
 /// @brief  ISM330DHCX MLC INT1 pin control register [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__MLC_INT1_s
 {
     adr_u8c_u ADR; // register address
 
@@ -261,12 +261,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__MLC_INT1_s;
+} _ism330dhcx_rm_ef__MLC_INT1_t;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INT2_s
 /// @brief  ISM330DHCX EMB FUNC INT2 pin control register [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_INT2_s
 {
     adr_u8c_u ADR; // register address
 
@@ -286,13 +286,13 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_INT2_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_INT2_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT2_A_s
 /// @brief  ISM330DHCX FSM INT2 pin control register (A) [r/w] {0x6B}
 /// !FIX-REQUIRED! Datasheet defines '01101011' (0x6B) as default value but register description lists values as '00000000'
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_INT2_A_s
 {
     adr_u8c_u ADR; // register address
 
@@ -312,12 +312,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_INT2_A_s;
+} _ism330dhcx_rm_ef__FSM_INT2_A_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT2_B_s
 /// @brief  ISM330DHCX FSM INT2 pin control register (B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_INT2_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -337,12 +337,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_INT2_B_s;
+} _ism330dhcx_rm_ef__FSM_INT2_B_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_INT2_s
 /// @brief  ISM330DHCX FSM INT2 pin control register (A|B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_INT2_s
 {
     adr_u16c_u ADR; // register address
 
@@ -370,12 +370,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_INT2_s;
+} _ism330dhcx_rm_ef__FSM_INT2_t;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC_INT2_s
 /// @brief  ISM330DHCX MLC INT2 pin control register [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__MLC_INT2_s
 {
     adr_u8c_u ADR; // register address
 
@@ -395,7 +395,7 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__MLC_INT2_s;
+} _ism330dhcx_rm_ef__MLC_INT2_t;
 
 
 /* Status Registers */
@@ -403,7 +403,7 @@ typedef struct
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_STATUS_s
 /// @brief  ISM330DHCX Embedded function status register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_STATUS_s
 {
     adr_u8c_u ADR; // register address
 
@@ -423,12 +423,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_STATUS_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_STATUS_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_STATUS_A_s
 /// @brief  ISM330DHCX Finite State Machine status register (A) [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_STATUS_A_s
 {
     adr_u8c_u ADR; // register address
 
@@ -448,12 +448,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_STATUS_A_s;
+} _ism330dhcx_rm_ef__FSM_STATUS_A_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_STATUS_B_s
 /// @brief  ISM330DHCX Finite State Machine status register (B) [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_STATUS_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -473,12 +473,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_STATUS_B_s;
+} _ism330dhcx_rm_ef__FSM_STATUS_B_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_STATUS_s
 /// @brief  ISM330DHCX Finite State Machine status register (A|B) [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_STATUS_s
 {
     adr_u16c_u ADR; // register address
 
@@ -506,12 +506,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_STATUS_s;
+} _ism330dhcx_rm_ef__FSM_STATUS_t;
 
 
 /// @struct _ism330dhcx_rm_ef__MLC_STATUS_s
 /// @brief  ISM330DHCX Machine Learning Core status register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__MLC_STATUS_s
 {
     adr_u8c_u ADR; // register address
 
@@ -531,7 +531,7 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__MLC_STATUS_s;
+} _ism330dhcx_rm_ef__MLC_STATUS_t;
 
 
 /* Page R/W Register */
@@ -539,7 +539,7 @@ typedef struct
 
 /// @struct _ism330dhcx_rm_ef__PAGE_RW_s
 /// @brief  ISM330DHCX Enable read and write mode of advanced features dedicated page [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__PAGE_RW_s
 {
     adr_u8c_u ADR; // register address
 
@@ -559,7 +559,7 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__PAGE_RW_s;
+} _ism330dhcx_rm_ef__PAGE_RW_t;
 
 
 /* Batching Configuration Register */
@@ -567,7 +567,7 @@ typedef struct
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_FIFO_CFG_s
 /// @brief  ISM330DHCX Embedded functions batching configuration register [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_FIFO_CFG_s
 {
     adr_u8c_u ADR; // register address
 
@@ -587,7 +587,7 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_FIFO_CFG_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_FIFO_CFG_t;
 
 
 /* Finite State Machine (FSM) Registers */
@@ -595,7 +595,7 @@ typedef struct
 
 /// @struct _ism330dhcx_rm_ef__FSM_ENABLE_A_s
 /// @brief  ISM330DHCX FSM enable register (A) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_ENABLE_A_s
 {
     adr_u8c_u ADR; // register address
 
@@ -615,12 +615,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_ENABLE_A_s;
+} _ism330dhcx_rm_ef__FSM_ENABLE_A_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_ENABLE_B_s
 /// @brief  ISM330DHCX FSM enable register (B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_ENABLE_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -640,12 +640,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_ENABLE_B_s;
+} _ism330dhcx_rm_ef__FSM_ENABLE_B_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_ENABLE_s
 /// @brief  ISM330DHCX FSM enable register (A|B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_ENABLE_s
 {
     adr_u16c_u ADR; // register address
 
@@ -673,30 +673,30 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_ENABLE_s;
+} _ism330dhcx_rm_ef__FSM_ENABLE_t;
 
 
-/// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_L_s
+/// @typedef _ism330dhcx_rm_ef__FSM_LONG_COUNTER_L_t
 /// @brief  ISM330DHCX FSM long counter status register (LSB) [r/w] {0x00}
 /// @note   value can be reset using the LC_CLEAR bit in FSM_LONG_COUNTER_CLEAR register
-typedef reg_u8_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_L_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_L_t;
 
 
-/// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_H_s
+/// @typedef _ism330dhcx_rm_ef__FSM_LONG_COUNTER_H_t
 /// @brief  ISM330DHCX FSM long counter status register (MSB) [r/w] {0x00}
 /// @note   value can be reset using the LC_CLEAR bit in FSM_LONG_COUNTER_CLEAR register
-typedef reg_u8_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_H_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_H_t;
 
 
-/// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_s
+/// @typedef _ism330dhcx_rm_ef__FSM_LONG_COUNTER_t
 /// @brief  ISM330DHCX FSM long counter status register [r/w] {0x00}
 /// @note   value can be reset using the LC_CLEAR bit in FSM_LONG_COUNTER_CLEAR register
-typedef reg_u16_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_s;
+typedef reg_u16_s _ism330dhcx_rm_ef__FSM_LONG_COUNTER_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_CLEAR_s
 /// @brief  ISM330DHCX FSM long counter reset register [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_LONG_COUNTER_CLEAR_s
 {
     adr_u8c_u ADR; // register address
 
@@ -716,12 +716,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_LONG_COUNTER_CLEAR_s;
+} _ism330dhcx_rm_ef__FSM_LONG_COUNTER_CLEAR_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS1_s
 /// @brief  ISM330DHCX FSM1 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS1_s
 {
     adr_u8c_u ADR; // register address
 
@@ -741,12 +741,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS1_s;
+} _ism330dhcx_rm_ef__FSM_OUTS1_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS2_s
 /// @brief  ISM330DHCX FSM2 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS2_s
 {
     adr_u8c_u ADR; // register address
 
@@ -766,12 +766,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS2_s;
+} _ism330dhcx_rm_ef__FSM_OUTS2_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS3_s
 /// @brief  ISM330DHCX FSM3 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS3_s
 {
     adr_u8c_u ADR; // register address
 
@@ -791,12 +791,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS3_s;
+} _ism330dhcx_rm_ef__FSM_OUTS3_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS4_s
 /// @brief  ISM330DHCX FSM4 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS4_s
 {
     adr_u8c_u ADR; // register address
 
@@ -816,12 +816,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS4_s;
+} _ism330dhcx_rm_ef__FSM_OUTS4_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS5_s
 /// @brief  ISM330DHCX FSM5 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS5_s
 {
     adr_u8c_u ADR; // register address
 
@@ -841,12 +841,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS5_s;
+} _ism330dhcx_rm_ef__FSM_OUTS5_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS6_s
 /// @brief  ISM330DHCX FSM6 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS6_s
 {
     adr_u8c_u ADR; // register address
 
@@ -866,12 +866,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS6_s;
+} _ism330dhcx_rm_ef__FSM_OUTS6_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS7_s
 /// @brief  ISM330DHCX FSM7 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS7_s
 {
     adr_u8c_u ADR; // register address
 
@@ -891,12 +891,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS7_s;
+} _ism330dhcx_rm_ef__FSM_OUTS7_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS8_s
 /// @brief  ISM330DHCX FSM8 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS8_s
 {
     adr_u8c_u ADR; // register address
 
@@ -916,12 +916,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS8_s;
+} _ism330dhcx_rm_ef__FSM_OUTS8_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS9_s
 /// @brief  ISM330DHCX FSM9 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS9_s
 {
     adr_u8c_u ADR; // register address
 
@@ -941,12 +941,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS9_s;
+} _ism330dhcx_rm_ef__FSM_OUTS9_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS10_s
 /// @brief  ISM330DHCX FSM10 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS10_s
 {
     adr_u8c_u ADR; // register address
 
@@ -966,12 +966,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS10_s;
+} _ism330dhcx_rm_ef__FSM_OUTS10_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS11_s
 /// @brief  ISM330DHCX FSM11 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS11_s
 {
     adr_u8c_u ADR; // register address
 
@@ -991,12 +991,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS11_s;
+} _ism330dhcx_rm_ef__FSM_OUTS11_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS12_s
 /// @brief  ISM330DHCX FSM12 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS12_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1016,12 +1016,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS12_s;
+} _ism330dhcx_rm_ef__FSM_OUTS12_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS13_s
 /// @brief  ISM330DHCX FSM13 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS13_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1041,12 +1041,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS13_s;
+} _ism330dhcx_rm_ef__FSM_OUTS13_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS14_s
 /// @brief  ISM330DHCX FSM14 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS14_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1066,12 +1066,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS14_s;
+} _ism330dhcx_rm_ef__FSM_OUTS14_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS15_s
 /// @brief  ISM330DHCX FSM15 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS15_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1091,12 +1091,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS15_s;
+} _ism330dhcx_rm_ef__FSM_OUTS15_t;
 
 
 /// @struct _ism330dhcx_rm_ef__FSM_OUTS16_s
 /// @brief  ISM330DHCX FSM16 output register [r] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__FSM_OUTS16_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1116,7 +1116,7 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__FSM_OUTS16_s;
+} _ism330dhcx_rm_ef__FSM_OUTS16_t;
 
 
 /* ODR Configuration Registers */
@@ -1124,7 +1124,7 @@ typedef struct
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_B_s
 /// @brief  ISM330DHCX Finite State Machine output data rate configuration register [r/w] {0x4B}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1143,12 +1143,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_B_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_B_t;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_C_s
 /// @brief  ISM330DHCX Machine Learning Core output data rate configuration register [r/w] {0x15}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_C_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1167,30 +1167,30 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_C_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_C_t;
 
 
 /* Step Counter Registers */
 
 
-/// @struct _ism330dhcx_rm_ef__STEP_COUNTER_L_s
+/// @typedef _ism330dhcx_rm_ef__STEP_COUNTER_L_t
 /// @brief  ISM330DHCX Step counter output register (LSB) [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__STEP_COUNTER_L_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__STEP_COUNTER_L_t;
 
 
-/// @struct _ism330dhcx_rm_ef__STEP_COUNTER_H_s
+/// @typedef _ism330dhcx_rm_ef__STEP_COUNTER_H_t
 /// @brief  ISM330DHCX Step counter output register (MSB) [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__STEP_COUNTER_H_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__STEP_COUNTER_H_t;
 
 
-/// @struct _ism330dhcx_rm_ef__STEP_COUNTER_s
+/// @typedef _ism330dhcx_rm_ef__STEP_COUNTER_t
 /// @brief  ISM330DHCX Step counter output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm_ef__STEP_COUNTER_s;
+typedef reg_u16_s _ism330dhcx_rm_ef__STEP_COUNTER_t;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_SRC_s
 /// @brief  ISM330DHCX Embedded function source register [r/w] {output}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_SRC_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1210,7 +1210,7 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_SRC_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_SRC_t;
 
 
 /* Initialization Registers */
@@ -1218,7 +1218,7 @@ typedef struct
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INIT_A_s
 /// @brief  ISM330DHCX Embedded functions initialization register (A) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_INIT_A_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1238,12 +1238,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_INIT_A_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_INIT_A_t;
 
 
 /// @struct _ism330dhcx_rm_ef__EMB_FUNC_INIT_B_s
 /// @brief  ISM330DHCX Embedded functions initialization register (B) [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_ef__EMB_FUNC_INIT_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -1263,50 +1263,50 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_ef__EMB_FUNC_INIT_B_s;
+} _ism330dhcx_rm_ef__EMB_FUNC_INIT_B_t;
 
 
 /* Machine Learning Core (MLC) Registers */
 
 
-/// @struct _ism330dhcx_rm_ef__MLC0_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC0_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 0 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC0_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC0_SRC_t;
 
 
-/// @struct _ism330dhcx_rm_ef__MLC1_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC1_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 1 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC1_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC1_SRC_t;
 
 
-/// @struct _ism330dhcx_rm_ef__MLC2_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC2_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 2 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC2_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC2_SRC_t;
 
 
-/// @struct _ism330dhcx_rm_ef__MLC3_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC3_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 3 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC3_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC3_SRC_t;
 
 
-/// @struct _ism330dhcx_rm_ef__MLC4_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC4_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 4 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC4_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC4_SRC_t;
 
 
-/// @struct _ism330dhcx_rm_ef__MLC5_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC5_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 5 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC5_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC5_SRC_t;
 
 
-/// @struct _ism330dhcx_rm_ef__MLC6_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC6_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 6 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC6_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC6_SRC_t;
 
 
-/// @struct _ism330dhcx_rm_ef__MLC7_SRC_s
+/// @typedef _ism330dhcx_rm_ef__MLC7_SRC_t
 /// @brief  ISM330DHCX Machine Learning Core 7 source register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_ef__MLC7_SRC_s;
+typedef reg_u8_s _ism330dhcx_rm_ef__MLC7_SRC_t;
 
 
 #endif /* __ISM330DHCX_INTERNAL__RM_EF_STRUCTS_H__ */

@@ -14,189 +14,189 @@
 /* Magnetometer Calibration Registers */
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_L_t
 /// @brief  ISM330DHCX External magnetometer sensitivity (LSB) [r/w] {0x24}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_H_t
 /// @brief  ISM330DHCX External magnetometer sensitivity (MSB) [r/w] {0x16}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_t
 /// @brief  ISM330DHCX External magnetometer sensitivity [r/w] {0x1624}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFX_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFX_L_t
 /// @brief  ISM330DHCX Offset for X-axis hard-iron compensation (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFX_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFX_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFX_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFX_H_t
 /// @brief  ISM330DHCX Offset for X-axis hard-iron compensation (MSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFX_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFX_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFX_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFX_t
 /// @brief  ISM330DHCX Offset for X-axis hard-iron compensation [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFX_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFX_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFY_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFY_L_t
 /// @brief  ISM330DHCX Offset for Y-axis hard-iron compensation (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFY_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFY_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFY_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFY_H_t
 /// @brief  ISM330DHCX Offset for Y-axis hard-iron compensation (MSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFY_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFY_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFY_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFY_t
 /// @brief  ISM330DHCX Offset for Y-axis hard-iron compensation [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFY_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFY_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFZ_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFZ_L_t
 /// @brief  ISM330DHCX Offset for Z-axis hard-iron compensation (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFZ_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFZ_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFZ_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFZ_H_t
 /// @brief  ISM330DHCX Offset for Z-axis hard-iron compensation (MSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFZ_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_OFFZ_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_OFFZ_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_OFFZ_t
 /// @brief  ISM330DHCX Offset for Z-axis hard-iron compensation [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFZ_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_OFFZ_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_XX_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_XX_L_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XX_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XX_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_XX_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_XX_H_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (MSB) [r/w] {0x3C}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XX_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XX_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_XX_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_XX_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XX_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XX_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_XY_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_XY_L_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_XY_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_XY_H_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (MSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_XY_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_XY_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XY_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XY_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_XZ_L_s
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_L_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_XZ_H_s
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (MSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_XY_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_XZ_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_XZ_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XZ_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_XZ_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_YY_L_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YY_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YY_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_YY_H_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (MSB) [r/w] {0x3C}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YY_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YY_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_YY_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_YY_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_YY_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_YZ_L_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_YZ_L_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf0__MAG_SI_YZ_H_s
+/// @typedef _ism330dhcx_rm_eaf0__MAG_SI_YZ_H_t
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (MSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_H_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_s
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x0000}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_YZ_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_YZ_L_s
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_L_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_YZ_H_s
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register (MSB) [r/w] {0x3C}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_H_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_SI_YY_s
 /// @brief  ISM330DHCX Soft-iron (3x3 symmetric) matrix correction register [r/w] {0x3C00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf0__MAG_SI_ZZ_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_CFG_A_s
 /// @brief  ISM330DHCX External magnetometer coordinates (Z and Y axes) rotation register (A) [r/w] {0x05}
-typedef struct
+typedef struct _ism330dhcx_rm_eaf0__MAG_CFG_A_s
 {
     adr_u8c_u ADR; // register address
 
@@ -212,12 +212,12 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_eaf0__MAG_CFG_A_s;
+} _ism330dhcx_rm_eaf0__MAG_CFG_A_t;
 
 
 /// @struct _ism330dhcx_rm_eaf0__MAG_CFG_B_s
 /// @brief  ISM330DHCX External magnetometer coordinates (X-axis) rotation register (B) [r/w] {0x02}
-typedef struct
+typedef struct _ism330dhcx_rm_eaf0__MAG_CFG_B_s
 {
     adr_u8c_u ADR; // register address
 
@@ -235,7 +235,7 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_eaf0__MAG_CFG_B_s;
+} _ism330dhcx_rm_eaf0__MAG_CFG_B_t;
 
 
 #endif /* __ISM330DHCX_INTERNAL__RM_EAF0_STRUCTS_H__ */

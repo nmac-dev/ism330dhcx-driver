@@ -14,42 +14,42 @@
 /* Finite State Machine (FSM) Configuration Registers */
 
 
-/// @struct _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_L_s
+/// @typedef _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_L_t
 /// @brief  ISM330DHCX FSM long counter timeout register (LSB) [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_H_s
+/// @typedef _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_H_t
 /// @brief  ISM330DHCX FSM long counter timeout register (MSB) [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_s
+/// @typedef _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_t
 /// @brief  ISM330DHCX FSM long counter timeout register [r/w] {0x0000}
-typedef reg_u16_s _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__FSM_PROGRAMS_s
+/// @typedef _ism330dhcx_rm_eaf1__FSM_PROGRAMS_t
 /// @brief  ISM330DHCX FSM number of programs register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_PROGRAMS_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_PROGRAMS_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__FSM_START_ADD_L_s
+/// @typedef _ism330dhcx_rm_eaf1__FSM_START_ADD_L_t
 /// @brief  ISM330DHCX FSM start address register (LSB) [r/w] {0x00}
 /// @note   First available address is 0x033C
-typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_START_ADD_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_START_ADD_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__FSM_START_ADD_H_s
+/// @typedef _ism330dhcx_rm_eaf1__FSM_START_ADD_H_t
 /// @brief  ISM330DHCX FSM start address register (MSB) [r/w] {0x00}
 /// @note   First available address is 0x033C
-typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_START_ADD_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__FSM_START_ADD_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__FSM_START_ADD_s
+/// @typedef _ism330dhcx_rm_eaf1__FSM_START_ADD_t
 /// @brief  ISM330DHCX FSM start address register [r/w] {0x0000}
 /// @note   First available address is 0x033C
-typedef reg_u16_s _ism330dhcx_rm_eaf1__FSM_START_ADD_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf1__FSM_START_ADD_t;
 
 
 /* Pedometer Configuration Registers */
@@ -57,7 +57,7 @@ typedef reg_u16_s _ism330dhcx_rm_eaf1__FSM_START_ADD_s;
 
 /// @struct _ism330dhcx_rm_eaf1__PEDO_CMD_REG_s
 /// @brief  ISM330DHCX Pedometer configuration register [r/w] {0x00}
-typedef struct
+typedef struct _ism330dhcx_rm_eaf1__PEDO_CMD_REG_s
 {
     adr_u8c_u ADR; // register address
 
@@ -77,48 +77,48 @@ typedef struct
         };
     } bf;
 
-} _ism330dhcx_rm_eaf1__PEDO_CMD_REG_s;
+} _ism330dhcx_rm_eaf1__PEDO_CMD_REG_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__PEDO_DEB_STEPS_CONF_s
+/// @typedef _ism330dhcx_rm_eaf1__PEDO_DEB_STEPS_CONF_t
 /// @brief  ISM330DHCX Pedometer debounce configuration register [r/w] {0x0A}
-typedef reg_u8_s _ism330dhcx_rm_eaf1__PEDO_DEB_STEPS_CONF_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__PEDO_DEB_STEPS_CONF_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_L_s
+/// @typedef _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_L_t
 /// @brief  ISM330DHCX Time period register for step detection on delta time (LSB) [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_H_s
+/// @typedef _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_H_t
 /// @brief  ISM330DHCX Time period register for step detection on delta time (MSB) [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_s
+/// @typedef _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_t
 /// @brief  ISM330DHCX Time period register for step detection on delta time [r/w] {0x0000}
-typedef reg_u16_s _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_t;
 
 
 /* Machine Learning Core (MLC) Configuration Registers */
 
 
-/// @struct _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_L_s
+/// @typedef _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_L_t
 /// @brief  ISM330DHCX External magnetometer sensitivity value register for the Machine Learning Core (LSB) [r/w] {0x00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_L_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_L_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_H_s
+/// @typedef _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_H_t
 /// @brief  ISM330DHCX External magnetometer sensitivity value register for the Machine Learning Core (MSB) [r/w] {0x3C}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u8_s _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_H_s;
+typedef reg_u8_s _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_H_t;
 
 
-/// @struct _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_s
+/// @typedef _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_t
 /// @brief  ISM330DHCX External magnetometer sensitivity value register for the Machine Learning Core [r/w] {0x3C00}
 /// @note   value is expressed as half-precision floating-point format <SEEEEEFFFFFFFFFF>
-typedef reg_u16_s _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_s;
+typedef reg_u16_s _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_t;
 
 
 #endif /* __ISM330DHCX_INTERNAL__RM_EAF1_STRUCTS_H__ */
