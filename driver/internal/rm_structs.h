@@ -35,7 +35,7 @@ typedef struct _ism330dhcx_rm__TEMPLATE_s
 } _ism330dhcx_rm__TEMPLATE_t;
 
 
-/* General Configuration Registers */
+/* Embedded Configuration & Pin Control Registers */
 
 
 /// @struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
@@ -63,9 +63,9 @@ typedef struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
 } _ism330dhcx_rm__FUNC_CFG_ACCESS_t;
 
 
-/// @struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
-/// @brief  ISM330DHCX embedded functions control register [r/w] {0x3F}
-typedef struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
+/// @struct _ism330dhcx_rm__PIN_CTRL_s
+/// @brief  ISM330DHCX pins pull-up enable/disable control register [r/w] {0x3F}
+typedef struct _ism330dhcx_rm__PIN_CTRL_s
 {
     adr_u8c_u ADR; // register address
 
@@ -80,12 +80,12 @@ typedef struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
             u8_t RESERVED_3 : 1;    // [3]   Reserved                                         {1}
             u8_t RESERVED_4 : 1;    // [4]   Reserved                                         {1}
             u8_t RESERVED_5 : 1;    // [5]   Reserved                                         {1}
-            u8_t OIS_PU_DIS : 1;    // [6]   Enable pull-up on SDO pin                        {0}
-            u8_t SDO_PU_EN  : 1;    // [7]   Disable pull-up on both OCS_Aux and SDO_Aux pins {0}
+            u8_t SDO_PU_EN  : 1;    // [6]   Disable pull-up on both OCS_Aux and SDO_Aux pins {0}
+            u8_t OIS_PU_DIS : 1;    // [7]   Enable pull-up on SDO pin                        {0}
         };
     } bf;
 
-} _ism330dhcx_rm__FUNC_CFG_ACCESS_t;
+} _ism330dhcx_rm__PIN_CTRL_t;
 
 
 /* FIFO Registers */
