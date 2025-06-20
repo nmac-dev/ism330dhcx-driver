@@ -12,139 +12,139 @@
 
 /* Embedded Configuration & Pin Control */
 
-#define ISM330DHCX_RM__FUNC_CFG_ACCESS    (0x01u)     // Embedded functions control                     [r/w]   {0x00}
-#define ISM330DHCX_RM__PIN_CTRL           (0x02u)     // Pins pull-up enable/disable control            [r/w]   {0x3F}
+#define ISM330DHCX_RM__FUNC_CFG_ACCESS     (0x01u)     // Embedded functions control                     [r/w]   {0x00}
+#define ISM330DHCX_RM__PIN_CTRL            (0x02u)     // Pins pull-up enable/disable control            [r/w]   {0x3F}
 
 /* FIFO Control */
 
-#define ISM330DHCX_RM__FIFO_CTRL1         (0x07u)     // FIFO control 1                                 [r/w]   {0x00}
-#define ISM330DHCX_RM__FIFO_CTRL2         (0x08u)     // FIFO control 2                                 [r/w]   {0x00}
-#define ISM330DHCX_RM__FIFO_CTRL3         (0x09u)     // FIFO control 3                                 [r/w]   {0x00}
-#define ISM330DHCX_RM__FIFO_CTRL4         (0x0Au)     // FIFO control 4                                 [r/w]   {0x00}
+#define ISM330DHCX_RM__FIFO_CTRL1          (0x07u)     // FIFO control 1                                 [r/w]   {0x00}
+#define ISM330DHCX_RM__FIFO_CTRL2          (0x08u)     // FIFO control 2                                 [r/w]   {0x00}
+#define ISM330DHCX_RM__FIFO_CTRL3          (0x09u)     // FIFO control 3                                 [r/w]   {0x00}
+#define ISM330DHCX_RM__FIFO_CTRL4          (0x0Au)     // FIFO control 4                                 [r/w]   {0x00}
 
 /* Counter Batch Data Rate */
 
-#define ISM330DHCX_RM__COUNTER_BDR_REG1   (0x0Bu)     // Counter batch data rate 1                      [r/w]   {0x00}
-#define ISM330DHCX_RM__COUNTER_BDR_REG2   (0x0Cu)     // Counter batch data rate 2                      [r/w]   {0x00}
+#define ISM330DHCX_RM__COUNTER_BDR_REG1    (0x0Bu)     // Counter batch data rate 1                      [r/w]   {0x00}
+#define ISM330DHCX_RM__COUNTER_BDR_REG2    (0x0Cu)     // Counter batch data rate 2                      [r/w]   {0x00}
 
 /* Interupt Control */
 
-#define ISM330DHCX_RM__INT1_CTRL          (0x0Du)     // INT1 control                                   [r/w]   {0x00}
-#define ISM330DHCX_RM__INT2_CTRL          (0x0Eu)     // INT2 control                                   [r/w]   {0x00}
+#define ISM330DHCX_RM__INT1_CTRL           (0x0Du)     // INT1 control                                   [r/w]   {0x00}
+#define ISM330DHCX_RM__INT2_CTRL           (0x0Eu)     // INT2 control                                   [r/w]   {0x00}
 
 /* Device Identification */
 
-#define ISM330DHCX_RM__WHO_AM_I           (0x0Fu)     // Who am I                                       [r]     {0x6B}
+#define ISM330DHCX_RM__WHO_AM_I            (0x0Fu)     // Who am I                                       [r]     {0x6B}
 
 /* Sensor Control - Accelerometer & Gyroscope */
 
-#define ISM330DHCX_RM__CTRL1_XL           (0x10u)     // Control 1 (accelerometer)                      [r/w]   {0x00}
-#define ISM330DHCX_RM__CTRL2_G            (0x11u)     // Control 2 (gyroscope)                          [r/w]   {0x00}
-#define ISM330DHCX_RM__CTRL3_C            (0x12u)     // Control 3                                      [r/w]   {0x04}
-#define ISM330DHCX_RM__CTRL4_C            (0x13u)     // Control 4                                      [r/w]   {0x00}
-#define ISM330DHCX_RM__CTRL5_C            (0x14u)     // Control 5                                      [r/w]   {0x00}
-#define ISM330DHCX_RM__CTRL6_C            (0x15u)     // Control 6                                      [r/w]   {0x00}
-#define ISM330DHCX_RM__CTRL7_G            (0x16u)     // Control 7 (gyroscope)                          [r/w]   {0x00}
-#define ISM330DHCX_RM__CTRL8_XL           (0x17u)     // Control 8 (accelerometer)                      [r/w]   {0x00}
-#define ISM330DHCX_RM__CTRL9_XL           (0x18u)     // Control 9 (accelerometer)                      [r/w]   {0xE0}
-#define ISM330DHCX_RM__CTRL10_C           (0x19u)     // Control 10                                     [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL1_XL            (0x10u)     // Control 1 (accelerometer)                      [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL2_G             (0x11u)     // Control 2 (gyroscope)                          [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL3_C             (0x12u)     // Control 3                                      [r/w]   {0x04}
+#define ISM330DHCX_RM__CTRL4_C             (0x13u)     // Control 4                                      [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL5_C             (0x14u)     // Control 5                                      [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL6_C             (0x15u)     // Control 6                                      [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL7_G             (0x16u)     // Control 7 (gyroscope)                          [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL8_XL            (0x17u)     // Control 8 (accelerometer)                      [r/w]   {0x00}
+#define ISM330DHCX_RM__CTRL9_XL            (0x18u)     // Control 9 (accelerometer)                      [r/w]   {0xE0}
+#define ISM330DHCX_RM__CTRL10_C            (0x19u)     // Control 10                                     [r/w]   {0x00}
 
 /* Interrupt Sources */
 
-#define ISM330DHCX_RM__ALL_INT_SRC        (0x1Au)     // All interrupts source                          [r]     {output}
-#define ISM330DHCX_RM__WAKE_UP_SRC        (0x1Bu)     // Wake-up interrupt source                       [r]     {output}
-#define ISM330DHCX_RM__TAP_SRC            (0x1Cu)     // Tap source                                     [r]     {output}
-#define ISM330DHCX_RM__D6D_SRC            (0x1Du)     // 6D orientation source                          [r]     {output}
-#define ISM330DHCX_RM__STATUS_REG         (0x1Eu)     // Status register                                [r]     {output}
+#define ISM330DHCX_RM__ALL_INT_SRC         (0x1Au)     // All interrupts source                          [r]     {output}
+#define ISM330DHCX_RM__WAKE_UP_SRC         (0x1Bu)     // Wake-up interrupt source                       [r]     {output}
+#define ISM330DHCX_RM__TAP_SRC             (0x1Cu)     // Tap source                                     [r]     {output}
+#define ISM330DHCX_RM__D6D_SRC             (0x1Du)     // 6D orientation source                          [r]     {output}
+#define ISM330DHCX_RM__STATUS_REG          (0x1Eu)     // Status register                                [r]     {output}
 
 /* Temperature Output */
 
-#define ISM330DHCX_RM__OUT_TEMP_L         (0x20u)     // Temperature output LSB                         [r]     {output}
-#define ISM330DHCX_RM__OUT_TEMP_H         (0x21u)     // Temperature output MSB                         [r]     {output}
+#define ISM330DHCX_RM__OUT_TEMP_L          (0x20u)     // Temperature output LSB                         [r]     {output}
+#define ISM330DHCX_RM__OUT_TEMP_H          (0x21u)     // Temperature output MSB                         [r]     {output}
 
 /* Gyroscope Output */
 
-#define ISM330DHCX_RM__OUTX_L_G           (0x22u)     // Angular rate sensor X-axis (pitch) output LSB  [r]     {output}
-#define ISM330DHCX_RM__OUTX_H_G           (0x23u)     // Angular rate sensor X-axis (pitch) output MSB  [r]     {output}
-#define ISM330DHCX_RM__OUTY_L_G           (0x24u)     // Angular rate sensor Y-axis (roll)  output LSB  [r]     {output}
-#define ISM330DHCX_RM__OUTY_H_G           (0x25u)     // Angular rate sensor Y-axis (roll)  output MSB  [r]     {output}
-#define ISM330DHCX_RM__OUTZ_L_G           (0x26u)     // Angular rate sensor Z-axis (yaw)   output LSB  [r]     {output}
-#define ISM330DHCX_RM__OUTZ_H_G           (0x27u)     // Angular rate sensor Z-axis (yaw)   output MSB  [r]     {output}
+#define ISM330DHCX_RM__OUTX_L_G            (0x22u)     // Angular rate sensor X-axis (pitch) output LSB  [r]     {output}
+#define ISM330DHCX_RM__OUTX_H_G            (0x23u)     // Angular rate sensor X-axis (pitch) output MSB  [r]     {output}
+#define ISM330DHCX_RM__OUTY_L_G            (0x24u)     // Angular rate sensor Y-axis (roll)  output LSB  [r]     {output}
+#define ISM330DHCX_RM__OUTY_H_G            (0x25u)     // Angular rate sensor Y-axis (roll)  output MSB  [r]     {output}
+#define ISM330DHCX_RM__OUTZ_L_G            (0x26u)     // Angular rate sensor Z-axis (yaw)   output LSB  [r]     {output}
+#define ISM330DHCX_RM__OUTZ_H_G            (0x27u)     // Angular rate sensor Z-axis (yaw)   output MSB  [r]     {output}
 
 /* Accelerometer Output */
 
-#define ISM330DHCX_RM__OUTX_L_A           (0x28u)     // Linear acceleration sensor X-axis output LSB   [r]     {output}
-#define ISM330DHCX_RM__OUTX_H_A           (0x29u)     // Linear acceleration sensor X-axis output MSB   [r]     {output}
-#define ISM330DHCX_RM__OUTY_L_A           (0x2Au)     // Linear acceleration sensor Y-axis output LSB   [r]     {output}
-#define ISM330DHCX_RM__OUTY_H_A           (0x2Bu)     // Linear acceleration sensor Y-axis output MSB   [r]     {output}
-#define ISM330DHCX_RM__OUTZ_L_A           (0x2Cu)     // Linear acceleration sensor Z-axis output LSB   [r]     {output}
-#define ISM330DHCX_RM__OUTZ_H_A           (0x2Du)     // Linear acceleration sensor Z-axis output MSB   [r]     {output}
+#define ISM330DHCX_RM__OUTX_L_A            (0x28u)     // Linear acceleration sensor X-axis output LSB   [r]     {output}
+#define ISM330DHCX_RM__OUTX_H_A            (0x29u)     // Linear acceleration sensor X-axis output MSB   [r]     {output}
+#define ISM330DHCX_RM__OUTY_L_A            (0x2Au)     // Linear acceleration sensor Y-axis output LSB   [r]     {output}
+#define ISM330DHCX_RM__OUTY_H_A            (0x2Bu)     // Linear acceleration sensor Y-axis output MSB   [r]     {output}
+#define ISM330DHCX_RM__OUTZ_L_A            (0x2Cu)     // Linear acceleration sensor Z-axis output LSB   [r]     {output}
+#define ISM330DHCX_RM__OUTZ_H_A            (0x2Du)     // Linear acceleration sensor Z-axis output MSB   [r]     {output}
 
 /* Status (Mainpage) */
 
-#define ISM330DHCX_RM__EMB_FUNC_STATUS    (0x35u)     // Embedded function status                       [r]     {output}
-#define ISM330DHCX_RM__FSM_STATUS_A       (0x36u)     // Finite state machine status A                  [r]     {output}
-#define ISM330DHCX_RM__FSM_STATUS_B       (0x37u)     // Finite state machine status B                  [r]     {output}
-#define ISM330DHCX_RM__MLC_STATUS         (0x38u)     // Machine learning core status                   [r]     {output}
-#define ISM330DHCX_RM__STATUS_MASTER      (0x39u)     // Sensor hub (master/slave) status               [r]     {output}
+#define ISM330DHCX_RM__EMB_FUNC_STATUS     (0x35u)     // Embedded function status                       [r]     {output}
+#define ISM330DHCX_RM__FSM_STATUS_A        (0x36u)     // Finite state machine status A                  [r]     {output}
+#define ISM330DHCX_RM__FSM_STATUS_B        (0x37u)     // Finite state machine status B                  [r]     {output}
+#define ISM330DHCX_RM__MLC_STATUS_MAINPAGE (0x38u)     // Machine learning core status                   [r]     {output}
+#define ISM330DHCX_RM__STATUS_MASTER       (0x39u)     // Sensor hub (master/slave) status               [r]     {output}
 
 /* FIFO Status */
 
-#define ISM330DHCX_RM__FIFO_STATUS1       (0x3Au)     // FIFO status 1                                  [r]     {output}
-#define ISM330DHCX_RM__FIFO_STATUS2       (0x3Bu)     // FIFO status 2                                  [r]     {output}
+#define ISM330DHCX_RM__FIFO_STATUS1        (0x3Au)     // FIFO status 1                                  [r]     {output}
+#define ISM330DHCX_RM__FIFO_STATUS2        (0x3Bu)     // FIFO status 2                                  [r]     {output}
 
 /* Timestamp Output */
 
-#define ISM330DHCX_RM__TIMESTAMP0         (0x40u)     // Timestamp output 0 LSB <0:7>                   [r]     {output}
-#define ISM330DHCX_RM__TIMESTAMP1         (0x41u)     // Timestamp output 1     <8:15>                  [r]     {output}
-#define ISM330DHCX_RM__TIMESTAMP2         (0x42u)     // Timestamp output 2     <16:23>                 [r]     {output}
-#define ISM330DHCX_RM__TIMESTAMP3         (0x43u)     // Timestamp output 3 MSB <24:31>                 [r]     {output}
+#define ISM330DHCX_RM__TIMESTAMP0          (0x40u)     // Timestamp output 0 LSB <0:7>                   [r]     {output}
+#define ISM330DHCX_RM__TIMESTAMP1          (0x41u)     // Timestamp output 1     <8:15>                  [r]     {output}
+#define ISM330DHCX_RM__TIMESTAMP2          (0x42u)     // Timestamp output 2     <16:23>                 [r]     {output}
+#define ISM330DHCX_RM__TIMESTAMP3          (0x43u)     // Timestamp output 3 MSB <24:31>                 [r]     {output}
 
 /* Tap Detection */
 
-#define ISM330DHCX_RM__TAP_CFG0           (0x56u)     // Tap configuration 0                            [r/w]   {0x00}
-#define ISM330DHCX_RM__TAP_CFG1           (0x57u)     // Tap configuration 1                            [r/w]   {0x00}
-#define ISM330DHCX_RM__TAP_CFG2           (0x58u)     // Tap configuration 2                            [r/w]   {0x00}
-#define ISM330DHCX_RM__TAP_THS_6D         (0x59u)     // Tap threshold (6D orientation)                 [r/w]   {0x00}
+#define ISM330DHCX_RM__TAP_CFG0            (0x56u)     // Tap configuration 0                            [r/w]   {0x00}
+#define ISM330DHCX_RM__TAP_CFG1            (0x57u)     // Tap configuration 1                            [r/w]   {0x00}
+#define ISM330DHCX_RM__TAP_CFG2            (0x58u)     // Tap configuration 2                            [r/w]   {0x00}
+#define ISM330DHCX_RM__TAP_THS_6D          (0x59u)     // Tap threshold (6D orientation)                 [r/w]   {0x00}
 
 /* Wake-up & Free-fall */
 
-#define ISM330DHCX_RM__INT_DUR2           (0x5Au)     // Interrupt duration 2 (tap recognition setting) [r/w]   {0x00}
-#define ISM330DHCX_RM__WAKE_UP_THS        (0x5Bu)     // Wake-up threshold configuration                [r/w]   {0x00}
-#define ISM330DHCX_RM__WAKE_UP_DUR        (0x5Cu)     // Wake-up duration setting                       [r/w]   {0x00}
-#define ISM330DHCX_RM__FREE_FALL          (0x5Du)     // Free-fall event setting                        [r/w]   {0x00}
+#define ISM330DHCX_RM__INT_DUR2            (0x5Au)     // Interrupt duration 2 (tap recognition setting) [r/w]   {0x00}
+#define ISM330DHCX_RM__WAKE_UP_THS         (0x5Bu)     // Wake-up threshold configuration                [r/w]   {0x00}
+#define ISM330DHCX_RM__WAKE_UP_DUR         (0x5Cu)     // Wake-up duration setting                       [r/w]   {0x00}
+#define ISM330DHCX_RM__FREE_FALL           (0x5Du)     // Free-fall event setting                        [r/w]   {0x00}
 
 /* Mode Detection Configuration */
 
-#define ISM330DHCX_RM__MD1_CFG            (0x5Eu)     // MD1 configuration (INT1 functions routing)     [r/w]   {0x00}
-#define ISM330DHCX_RM__MD2_CFG            (0x5Fu)     // MD2 configuration (INT2 functions routing)     [r/w]   {0x00}
+#define ISM330DHCX_RM__MD1_CFG             (0x5Eu)     // MD1 configuration (INT1 functions routing)     [r/w]   {0x00}
+#define ISM330DHCX_RM__MD2_CFG             (0x5Fu)     // MD2 configuration (INT2 functions routing)     [r/w]   {0x00}
 
 /* Fine Tuning */
 
-#define ISM330DHCX_RM__INTERNAL_FREQ_FINE (0x63u)     // Internal frequency fine adjustment             [r]     {output}
+#define ISM330DHCX_RM__INTERNAL_FREQ_FINE  (0x63u)     // Internal frequency fine adjustment             [r]     {output}
 
 /* OIS Control */
 
-#define ISM330DHCX_RM__INT_OIS            (0x6Fu)     // OIS interrupt configuration                    [r:r/w] {0x00}
-#define ISM330DHCX_RM__CTRL1_OIS          (0x70u)     // OIS control 1 configuration                    [r:r/w] {0x00}
-#define ISM330DHCX_RM__CTRL2_OIS          (0x71u)     // OIS control 2 configuration                    [r:r/w] {0x00}
-#define ISM330DHCX_RM__CTRL3_OIS          (0x72u)     // OIS control 3 configuration                    [r:r/w] {0x00}
+#define ISM330DHCX_RM__INT_OIS             (0x6Fu)     // OIS interrupt configuration                    [r:r/w] {0x00}
+#define ISM330DHCX_RM__CTRL1_OIS           (0x70u)     // OIS control 1 configuration                    [r:r/w] {0x00}
+#define ISM330DHCX_RM__CTRL2_OIS           (0x71u)     // OIS control 2 configuration                    [r:r/w] {0x00}
+#define ISM330DHCX_RM__CTRL3_OIS           (0x72u)     // OIS control 3 configuration                    [r:r/w] {0x00}
 
 /* User Offset */
 
-#define ISM330DHCX_RM__X_OFS_USR          (0x73u)     // Accelerometer X-axis user offset correction    [r/w]   {0x00}
-#define ISM330DHCX_RM__Y_OFS_USR          (0x74u)     // Accelerometer Y-axis user offset correction    [r/w]   {0x00}
-#define ISM330DHCX_RM__Z_OFS_USR          (0x75u)     // Accelerometer Z-axis user offset correction    [r/w]   {0x00}
+#define ISM330DHCX_RM__X_OFS_USR           (0x73u)     // Accelerometer X-axis user offset correction    [r/w]   {0x00}
+#define ISM330DHCX_RM__Y_OFS_USR           (0x74u)     // Accelerometer Y-axis user offset correction    [r/w]   {0x00}
+#define ISM330DHCX_RM__Z_OFS_USR           (0x75u)     // Accelerometer Z-axis user offset correction    [r/w]   {0x00}
 
 /* FIFO Data Output */
 
-#define ISM330DHCX_RM__FIFO_DATA_OUT_TAG  (0x78u)     // FIFO output tag                                [r]     {output}
-#define ISM330DHCX_RM__FIFO_DATA_OUT_X_L  (0x79u)     // FIFO output X-axis LSB                         [r]     {output}
-#define ISM330DHCX_RM__FIFO_DATA_OUT_X_H  (0x7Au)     // FIFO output X-axis MSB                         [r]     {output}
-#define ISM330DHCX_RM__FIFO_DATA_OUT_Y_L  (0x7Bu)     // FIFO output Y-axis LSB                         [r]     {output}
-#define ISM330DHCX_RM__FIFO_DATA_OUT_Y_H  (0x7Cu)     // FIFO output Y-axis MSB                         [r]     {output}
-#define ISM330DHCX_RM__FIFO_DATA_OUT_Z_L  (0x7Du)     // FIFO output Z-axis LSB                         [r]     {output}
-#define ISM330DHCX_RM__FIFO_DATA_OUT_Z_H  (0x7Eu)     // FIFO output Z-axis MSB                         [r]     {output}
+#define ISM330DHCX_RM__FIFO_DATA_OUT_TAG   (0x78u)     // FIFO output tag                                [r]     {output}
+#define ISM330DHCX_RM__FIFO_DATA_OUT_X_L   (0x79u)     // FIFO output X-axis LSB                         [r]     {output}
+#define ISM330DHCX_RM__FIFO_DATA_OUT_X_H   (0x7Au)     // FIFO output X-axis MSB                         [r]     {output}
+#define ISM330DHCX_RM__FIFO_DATA_OUT_Y_L   (0x7Bu)     // FIFO output Y-axis LSB                         [r]     {output}
+#define ISM330DHCX_RM__FIFO_DATA_OUT_Y_H   (0x7Cu)     // FIFO output Y-axis MSB                         [r]     {output}
+#define ISM330DHCX_RM__FIFO_DATA_OUT_Z_L   (0x7Du)     // FIFO output Z-axis LSB                         [r]     {output}
+#define ISM330DHCX_RM__FIFO_DATA_OUT_Z_H   (0x7Eu)     // FIFO output Z-axis MSB                         [r]     {output}
 
 
 /**
