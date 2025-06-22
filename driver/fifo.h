@@ -42,6 +42,6 @@ typedef struct ism330dhcx_fifo_s
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx FIFO struct
 /// @return default ism330dhcx FIFO struct
-ism330dhcx_fifo_s ism330dhcx_fifo__get_default_s();
+ism330dhcx_fifo_t ism330dhcx_fifo__get_default_s();
 
 #endif /* __ISM330DHCX_FIFO_H__ */

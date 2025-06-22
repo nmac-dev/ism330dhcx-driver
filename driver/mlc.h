@@ -43,6 +43,6 @@ typedef struct ism330dhcx_mlc_s
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx MLC struct
 /// @return default ism330dhcx MLC struct
-ism330dhcx_mlc_s ism330dhcx_mlc__get_default_s();
+ism330dhcx_mlc_t ism330dhcx_mlc__get_default_s();
 
 #endif /* __ISM330DHCX_MLC_H__ */

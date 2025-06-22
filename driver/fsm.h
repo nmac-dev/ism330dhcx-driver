@@ -64,6 +64,6 @@ typedef struct ism330dhcx_fsm_s
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx FSM struct
 /// @return default ism330dhcx FSM struct
-ism330dhcx_fsm_s ism330dhcx_fsm__get_default_s();
+ism330dhcx_fsm_t ism330dhcx_fsm__get_default_s();
 
 #endif /* __ISM330DHCX_FSM_H__ */
