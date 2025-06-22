@@ -18,23 +18,23 @@ typedef struct ism330dhcx_mlc_s
     /* Specs */
     /* Control Registers */
 
-    _ism330dhcx_rm__MLC_STATUS_MAINPAGE_t mlc_status_mainpage;
+    _ism330dhcx_rm__MLC_STATUS_MAINPAGE_t status_mainpage;
 
-    _ism330dhcx_rm_ef__MLC_INT1_t mlc_int1;
-    _ism330dhcx_rm_ef__MLC_INT2_t mlc_int2;
+    _ism330dhcx_rm_ef__MLC_INT1_t int1;
+    _ism330dhcx_rm_ef__MLC_INT2_t int2;
 
-    _ism330dhcx_rm_ef__MLC_STATUS_t ef__mlc_status;
+    _ism330dhcx_rm_ef__MLC_STATUS_t ef__status;
 
-    _ism330dhcx_rm_ef__MLC0_SRC_t ef__mlc0_src;
-    _ism330dhcx_rm_ef__MLC1_SRC_t ef__mlc1_src;
-    _ism330dhcx_rm_ef__MLC2_SRC_t ef__mlc2_src;
-    _ism330dhcx_rm_ef__MLC3_SRC_t ef__mlc3_src;
-    _ism330dhcx_rm_ef__MLC4_SRC_t ef__mlc4_src;
-    _ism330dhcx_rm_ef__MLC5_SRC_t ef__mlc5_src;
-    _ism330dhcx_rm_ef__MLC6_SRC_t ef__mlc6_src;
-    _ism330dhcx_rm_ef__MLC7_SRC_t ef__mlc7_src;
+    _ism330dhcx_rm_ef__MLC0_SRC_t ef__0_src;
+    _ism330dhcx_rm_ef__MLC1_SRC_t ef__1_src;
+    _ism330dhcx_rm_ef__MLC2_SRC_t ef__2_src;
+    _ism330dhcx_rm_ef__MLC3_SRC_t ef__3_src;
+    _ism330dhcx_rm_ef__MLC4_SRC_t ef__4_src;
+    _ism330dhcx_rm_ef__MLC5_SRC_t ef__5_src;
+    _ism330dhcx_rm_ef__MLC6_SRC_t ef__6_src;
+    _ism330dhcx_rm_ef__MLC7_SRC_t ef__7_src;
 
-    _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_t eaf1__mlc_mag_sensitivity;
+    _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_t eaf1__mag_sensitivity;
 
     /* Configuration */
 
