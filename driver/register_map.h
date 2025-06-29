@@ -82,11 +82,11 @@
 
 /* Status (Mainpage) */
 
-#define ISM330DHCX_RM__EMB_FUNC_STATUS     (0x35u)     // Embedded function status                       [r]     {output}
-#define ISM330DHCX_RM__FSM_STATUS_A        (0x36u)     // Finite state machine status A                  [r]     {output}
-#define ISM330DHCX_RM__FSM_STATUS_B        (0x37u)     // Finite state machine status B                  [r]     {output}
-#define ISM330DHCX_RM__MLC_STATUS_MAINPAGE (0x38u)     // Machine learning core status                   [r]     {output}
-#define ISM330DHCX_RM__STATUS_MASTER       (0x39u)     // Sensor hub (master/slave) status               [r]     {output}
+#define ISM330DHCX_RM__EMB_FUNC_STATUS_MAINPAGE (0x35u)     // Embedded function status                       [r]     {output}
+#define ISM330DHCX_RM__FSM_STATUS_A_MAINPAGE    (0x36u)     // Finite state machine status A                  [r]     {output}
+#define ISM330DHCX_RM__FSM_STATUS_B_MAINPAGE    (0x37u)     // Finite state machine status B                  [r]     {output}
+#define ISM330DHCX_RM__MLC_STATUS_MAINPAGE      (0x38u)     // Machine learning core status                   [r]     {output}
+#define ISM330DHCX_RM__STATUS_MASTER_MAINPAGE   (0x39u)     // Sensor hub (master/slave) status               [r]     {output}
 
 /* FIFO Status */
 
