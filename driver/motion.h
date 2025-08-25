@@ -1,0 +1,46 @@
+/// ISM330DHCX Motion Driver
+
+#ifndef __ISM330DHCX_MOTION_H__
+#define __ISM330DHCX_MOTION_H__
+
+
+#include "c-nstd/types.h"
+#include "ism330dhcx/register_map.h"
+#include "ism330dhcx/internal/rm_structs.h"
+
+
+/// @struct ism330dhcx_motion_s
+/// @brief  ISM330DHCX Motion Struct
+typedef struct ism330dhcx_motion_s
+{
+    /* Specs */
+    /* Control Registers */
+
+    _ism330dhcx_rm__ALL_INT_SRC_t all_int_src;
+    _ism330dhcx_rm__WAKE_UP_SRC_t wake_up_src;
+    _ism330dhcx_rm__TAP_SRC_t     tap_src;
+    _ism330dhcx_rm__D6D_SRC_t     d6d_src;
+
+    _ism330dhcx_rm__TAP_CFG0_t   tap_cfg0;
+    _ism330dhcx_rm__TAP_CFG1_t   tap_cfg1;
+    _ism330dhcx_rm__TAP_CFG2_t   tap_cfg2;
+    _ism330dhcx_rm__TAP_THS_6D_t tap_ths_6d;
+    _ism330dhcx_rm__INT_DUR2_t   int_dur2;
+
+    _ism330dhcx_rm__WAKE_UP_THS_t wake_up_ths;
+    _ism330dhcx_rm__WAKE_UP_DUR_t wake_up_dur;
+    _ism330dhcx_rm__FREE_FALL_t   free_fall;
+
+    _ism330dhcx_rm__MD1_CFG_t md1_cfg;
+    _ism330dhcx_rm__MD2_CFG_t md2_cfg;
+
+    /* Configuration */
+
+} ism330dhcx_motion_t;
+
+
+/// @brief  Fetches the default struct configuration for the ism330dhcx Motion struct
+/// @return default ism330dhcx Motion struct
+ism330dhcx_motion_t ism330dhcx_motion__get_default_s();
+
+#endif /* __ISM330DHCX_MOTION_H__ */
