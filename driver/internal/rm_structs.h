@@ -984,7 +984,7 @@ typedef struct _ism330dhcx_rm__TAP_CFG2_s
 
 /// @struct _ism330dhcx_rm__TAP_THS_6D_s
 /// @brief  ISM330DHCX Portrait/landscape position and tap function threshold register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__TAP_CFG_6D_s
+typedef struct _ism330dhcx_rm__TAP_THS_6D_s
 {
     adr_u8c_u ADR; // register address
 
@@ -999,7 +999,7 @@ typedef struct _ism330dhcx_rm__TAP_CFG_6D_s
         };
     } bf;
 
-} _ism330dhcx_rm__TAP_CFG_6D_t;
+} _ism330dhcx_rm__TAP_THS_6D_t;
 
 
 /// @struct _ism330dhcx_rm__INT_DUR2_s
