@@ -7,6 +7,7 @@
 #include "c-nstd/types.h"
 #include "ism330dhcx/register_map.h"
 #include "ism330dhcx/internal/rm_structs.h"
+#include "ism330dhcx/internal/rm_ef_structs.h"
 
 
 /// @struct ism330dhcx_motion_s
@@ -21,6 +22,8 @@ typedef struct ism330dhcx_motion_s
     _ism330dhcx_rm__TAP_SRC_t     tap_src;
     _ism330dhcx_rm__D6D_SRC_t     d6d_src;
 
+    _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE_t emb_func_status_mainpage;
+
     _ism330dhcx_rm__TAP_CFG0_t   tap_cfg0;
     _ism330dhcx_rm__TAP_CFG1_t   tap_cfg1;
     _ism330dhcx_rm__TAP_CFG2_t   tap_cfg2;
@@ -33,6 +36,21 @@ typedef struct ism330dhcx_motion_s
 
     _ism330dhcx_rm__MD1_CFG_t md1_cfg;
     _ism330dhcx_rm__MD2_CFG_t md2_cfg;
+
+    _ism330dhcx_rm_ef__EMB_FUNC_EN_A_t   ef__emb_func_en_a;
+    _ism330dhcx_rm_ef__EMB_FUNC_INT1_t   ef__emb_func_int1;
+    _ism330dhcx_rm_ef__EMB_FUNC_INT2_t   ef__emb_func_int2;
+    _ism330dhcx_rm_ef__EMB_FUNC_STATUS_t ef__emb_func_status;
+
+    _ism330dhcx_rm_ef__EMB_FUNC_FIFO_CFG_t      ef__emb_func_fifo_cfg;
+    _ism330dhcx_rm_ef__FSM_LONG_COUNTER_t       ef__long_counter;
+    _ism330dhcx_rm_ef__FSM_LONG_COUNTER_CLEAR_t ef__long_counter_clear;
+    _ism330dhcx_rm_ef__STEP_COUNTER_t           ef__step_counter;
+    _ism330dhcx_rm_ef__EMB_FUNC_SRC_t           ef__emb_func_src;
+
+    _ism330dhcx_rm_ef__EMB_FUNC_INIT_A_t ef__emb_func_init_a;
+
+    /// TODO: EAF registers (if any)
 
     /* Configuration */
 

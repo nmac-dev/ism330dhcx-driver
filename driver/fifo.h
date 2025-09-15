@@ -33,8 +33,6 @@ typedef struct ism330dhcx_fifo_s
     _ism330dhcx_rm__FIFO_DATA_OUT_Y_t   data_out_y;
     _ism330dhcx_rm__FIFO_DATA_OUT_Z_t   data_out_z;
 
-    _ism330dhcx_rm_ef__EMB_FUNC_FIFO_CFG_t ef__emb_func_fifo_cfg;
-
     /* Configuration */
 
 } ism330dhcx_fifo_t;

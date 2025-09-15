@@ -33,9 +33,6 @@ typedef struct ism330dhcx_fsm_s
     _ism330dhcx_rm_ef__FSM_ENABLE_A_t ef__enable_a;
     _ism330dhcx_rm_ef__FSM_ENABLE_B_t ef__enable_b;
 
-    _ism330dhcx_rm_ef__FSM_LONG_COUNTER_t       ef__long_counter;
-    _ism330dhcx_rm_ef__FSM_LONG_COUNTER_CLEAR_t ef__long_counter_clear;
-
     _ism330dhcx_rm_ef__FSM_OUTS1_t  ef__outs1;
     _ism330dhcx_rm_ef__FSM_OUTS2_t  ef__outs2;
     _ism330dhcx_rm_ef__FSM_OUTS3_t  ef__outs3;
