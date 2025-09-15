@@ -303,23 +303,23 @@
 
 /* Finite State Machine Settings */
 
-#define ISM330DHCX_RM_EAF0__FSM_LC_TIMEOUT_L      (0x7Au)     // Finite State Machine long counter timeout LSB  [r/w]   {0x00}
-#define ISM330DHCX_RM_EAF0__FSM_LC_TIMEOUT_H      (0x7Bu)     // Finite State Machine long counter timeout MSB  [r/w]   {0x00}
-#define ISM330DHCX_RM_EAF0__FSM_PROGRAMS          (0x7Cu)     // Finite State Machine number of programs        [r/w]   {0x00}
-#define ISM330DHCX_RM_EAF0__FSM_START_ADD_L       (0x7Eu)     // Finite State Machine start address LSB         [r/w]   {0x00}
-#define ISM330DHCX_RM_EAF0__FSM_START_ADD_H       (0x7Fu)     // Finite State Machine start address MSB         [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__FSM_LC_TIMEOUT_L      (0x7Au)     // Finite State Machine long counter timeout LSB  [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__FSM_LC_TIMEOUT_H      (0x7Bu)     // Finite State Machine long counter timeout MSB  [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__FSM_PROGRAMS          (0x7Cu)     // Finite State Machine number of programs        [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__FSM_START_ADD_L       (0x7Eu)     // Finite State Machine start address LSB         [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__FSM_START_ADD_H       (0x7Fu)     // Finite State Machine start address MSB         [r/w]   {0x00}
 
 /* Pedometer */
 
-#define ISM330DHCX_RM_EAF0__PEDO_CMD_REG          (0x83u)     // Pedometer configuration (command)              [r/w]   {0x00}
-#define ISM330DHCX_RM_EAF0__PEDO_DEB_STEPS_CONF   (0x84u)     // Pedometer debounce step configuration          [r/w]   {0x0A}
-#define ISM330DHCX_RM_EAF0__PEDO_SC_DELTAT_L      (0xD0u)     // Pedometer step counter delta time LSB          [r/w]   {0x00}
-#define ISM330DHCX_RM_EAF0__PEDO_SC_DELTAT_H      (0xD1u)     // Pedometer step counter delta time MSB          [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__PEDO_CMD_REG          (0x83u)     // Pedometer configuration (command)              [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__PEDO_DEB_STEPS_CONF   (0x84u)     // Pedometer debounce step configuration          [r/w]   {0x0A}
+#define ISM330DHCX_RM_EAF1__PEDO_SC_DELTAT_L      (0xD0u)     // Pedometer step counter delta time LSB          [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__PEDO_SC_DELTAT_H      (0xD1u)     // Pedometer step counter delta time MSB          [r/w]   {0x00}
 
 /* Machine Learning Core External Magnetometer Sensitivity */
 
-#define ISM330DHCX_RM_EAF0__MLC_MAG_SENSITIVITY_L (0xE8u)     // External magnetometer sensitivity (MLC) LSB    [r/w]   {0x00}
-#define ISM330DHCX_RM_EAF0__MLC_MAG_SENSITIVITY_H (0xE9u)     // External magnetometer sensitivity (MLC) MSB    [r/w]   {0x3C}
+#define ISM330DHCX_RM_EAF1__MLC_MAG_SENSITIVITY_L (0xE8u)     // External magnetometer sensitivity (MLC) LSB    [r/w]   {0x00}
+#define ISM330DHCX_RM_EAF1__MLC_MAG_SENSITIVITY_H (0xE9u)     // External magnetometer sensitivity (MLC) MSB    [r/w]   {0x3C}
 
 
 /**
