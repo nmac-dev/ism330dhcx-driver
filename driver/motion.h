@@ -8,6 +8,7 @@
 #include "ism330dhcx/register_map.h"
 #include "ism330dhcx/internal/rm_structs.h"
 #include "ism330dhcx/internal/rm_ef_structs.h"
+#include "ism330dhcx/internal/rm_eaf1_structs.h"
 
 
 /// @struct ism330dhcx_motion_s
@@ -50,7 +51,10 @@ typedef struct ism330dhcx_motion_s
 
     _ism330dhcx_rm_ef__EMB_FUNC_INIT_A_t ef__emb_func_init_a;
 
-    /// TODO: EAF registers (if any)
+    _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_t      eaf1__fsm_lc_timeout;
+    _ism330dhcx_rm_eaf1__PEDO_CMD_REG_t        eaf1__pedo_cmd_reg;
+    _ism330dhcx_rm_eaf1__PEDO_DEB_STEPS_CONF_t eaf1__pedo_deb_steps_conf;
+    _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_t      eaf1__pedo_sc_deltat;
 
     /* Configuration */
 
