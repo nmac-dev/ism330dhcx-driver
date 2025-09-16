@@ -50,7 +50,6 @@ typedef struct ism330dhcx_fsm_s
     _ism330dhcx_rm_ef__FSM_OUTS15_t ef__outs15;
     _ism330dhcx_rm_ef__FSM_OUTS16_t ef__outs16;
 
-    _ism330dhcx_rm_eaf1__FSM_LC_TIMEOUT_t eaf1__lc_timeout;
     _ism330dhcx_rm_eaf1__FSM_PROGRAMS_t   eaf1__programs;
     _ism330dhcx_rm_eaf1__FSM_START_ADD_t  eaf1__start_add;
 
