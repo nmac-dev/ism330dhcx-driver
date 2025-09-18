@@ -116,8 +116,8 @@
 ✅️ [fsm] RM_EF__FSM_OUTS14
 ✅️ [fsm] RM_EF__FSM_OUTS15
 ✅️ [fsm] RM_EF__FSM_OUTS16
-⬜ RM_EF__EMB_FUNC_ODR_CFG_B
-⬜ RM_EF__EMB_FUNC_ODR_CFG_C
+✅️ [fsm] RM_EF__EMB_FUNC_ODR_CFG_B
+✅️ [mlc] RM_EF__EMB_FUNC_ODR_CFG_C
 ✅️ [motion] RM_EF__STEP_COUNTER_L
 ✅️ [motion] RM_EF__STEP_COUNTER_H
 ✅️ [motion] RM_EF__EMB_FUNC_SRC
