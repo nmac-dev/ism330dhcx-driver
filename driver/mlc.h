@@ -25,6 +25,8 @@ typedef struct ism330dhcx_mlc_s
 
     _ism330dhcx_rm_ef__MLC_STATUS_t ef__status;
 
+    _ism330dhcx_rm_ef__EMB_FUNC_ODR_CFG_C_t ef__emb_func_odr_cfg_c;
+
     _ism330dhcx_rm_ef__MLC0_SRC_t ef__0_src;
     _ism330dhcx_rm_ef__MLC1_SRC_t ef__1_src;
     _ism330dhcx_rm_ef__MLC2_SRC_t ef__2_src;
