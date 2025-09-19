@@ -26,12 +26,12 @@
 ⬜ RM__STATUS_REG
 ⬜ RM__OUT_TEMP_L
 ⬜ RM__OUT_TEMP_H
-⬜ RM__OUTX_L_G
-⬜ RM__OUTX_H_G
-⬜ RM__OUTY_L_G
-⬜ RM__OUTY_H_G
-⬜ RM__OUTZ_L_G
-⬜ RM__OUTZ_H_G
+✅️ [gyro] RM__OUTX_L_G
+✅️ [gyro] RM__OUTX_H_G
+✅️ [gyro] RM__OUTY_L_G
+✅️ [gyro] RM__OUTY_H_G
+✅️ [gyro] RM__OUTZ_L_G
+✅️ [gyro] RM__OUTZ_H_G
 ✅️ [acc] RM__OUTX_L_A
 ✅️ [acc] RM__OUTX_H_A
 ✅️ [acc] RM__OUTY_L_A
