@@ -1,31 +1,31 @@
-⬜ RM__FUNC_CFG_ACCESS
-⬜ RM__PIN_CTRL
+✅️ [core] RM__FUNC_CFG_ACCESS
+✅️ [core] RM__PIN_CTRL
 ✅️ [fifo] RM__FIFO_CTRL1
 ✅️ [fifo] RM__FIFO_CTRL2
 ✅️ [fifo] RM__FIFO_CTRL3
 ✅️ [fifo] RM__FIFO_CTRL4
 ✅️ [fifo] RM__COUNTER_BDR_REG1
 ✅️ [fifo] RM__COUNTER_BDR_REG2
-⬜ RM__INT1_CTRL
-⬜ RM__INT2_CTRL
-⬜ RM__WHO_AM_I
-⬜ RM__CTRL1_XL
-⬜ RM__CTRL2_G
-⬜ RM__CTRL3_C
-⬜ RM__CTRL4_C
-⬜ RM__CTRL5_C
-⬜ RM__CTRL6_C
-⬜ RM__CTRL7_G
-⬜ RM__CTRL8_XL
-⬜ RM__CTRL9_XL
-⬜ RM__CTRL10_C
+✅️ [core] RM__INT1_CTRL
+✅️ [core] RM__INT2_CTRL
+✅️ [core] RM__WHO_AM_I
+✅️ [core] RM__CTRL1_XL
+✅️ [core] RM__CTRL2_G
+✅️ [core] RM__CTRL3_C
+✅️ [core] RM__CTRL4_C
+✅️ [core] RM__CTRL5_C
+✅️ [core] RM__CTRL6_C
+✅️ [core] RM__CTRL7_G
+✅️ [core] RM__CTRL8_XL
+✅️ [core] RM__CTRL9_XL
+✅️ [core] RM__CTRL10_C
 ✅️ [motion] RM__ALL_INT_SRC
 ✅️ [motion] RM__WAKE_UP_SRC
 ✅️ [motion] RM__TAP_SRC
 ✅️ [motion] RM__D6D_SRC
-⬜ RM__STATUS_REG
-⬜ RM__OUT_TEMP_L
-⬜ RM__OUT_TEMP_H
+✅️ [core] RM__STATUS_REG
+✅️ [core] RM__OUT_TEMP_L
+✅️ [core] RM__OUT_TEMP_H
 ✅️ [gyro] RM__OUTX_L_G
 ✅️ [gyro] RM__OUTX_H_G
 ✅️ [gyro] RM__OUTY_L_G
@@ -45,10 +45,10 @@
 ✅️ [sensor_hub] RM__STATUS_MASTER_MAINPAGE
 ✅️ [fifo] RM__FIFO_STATUS1
 ✅️ [fifo] RM__FIFO_STATUS2
-⬜ RM__TIMESTAMP0
-⬜ RM__TIMESTAMP1
-⬜ RM__TIMESTAMP2
-⬜ RM__TIMESTAMP3
+✅️ [core] RM__TIMESTAMP0
+✅️ [core] RM__TIMESTAMP1
+✅️ [core] RM__TIMESTAMP2
+✅️ [core] RM__TIMESTAMP3
 ✅️ [motion] RM__TAP_CFG0
 ✅️ [motion] RM__TAP_CFG1
 ✅️ [motion] RM__TAP_CFG2
@@ -59,7 +59,7 @@
 ✅️ [motion] RM__FREE_FALL
 ✅️ [motion] RM__MD1_CFG
 ✅️ [motion] RM__MD2_CFG
-⬜ RM__INTERNAL_FREQ_FINE
+✅️ [core] RM__INTERNAL_FREQ_FINE
 ✅️ RM__INT_OIS
 ✅️ RM__CTRL1_OIS
 ✅️ RM__CTRL2_OIS
@@ -76,11 +76,11 @@
 ✅️ [fifo] RM__FIFO_DATA_OUT_Z_H
 
 
-⬜ RM_EF__PAGE_SEL
+✅️ [core] RM_EF__PAGE_SEL
 ✅️ [motion] RM_EF__EMB_FUNC_EN_A
-⬜ RM_EF__EMB_FUNC_EN_B
-⬜ RM_EF__PAGE_ADDRESS
-⬜ RM_EF__PAGE_VALUE
+✅️ [core] RM_EF__EMB_FUNC_EN_B
+✅️ [core] RM_EF__PAGE_ADDRESS
+✅️ [core] RM_EF__PAGE_VALUE
 ✅️ [motion] RM_EF__EMB_FUNC_INT1
 ✅️ [fsm] RM_EF__FSM_INT1_A
 ✅️ [fsm] RM_EF__FSM_INT1_B
@@ -93,7 +93,7 @@
 ✅️ [fsm] RM_EF__FSM_STATUS_A
 ✅️ [fsm] RM_EF__FSM_STATUS_B
 ✅️ [mlc] RM_EF__MLC_STATUS
-⬜ RM_EF__PAGE_RW
+✅️ [core] RM_EF__PAGE_RW
 ✅️ [motion] RM_EF__EMB_FUNC_FIFO_CFG
 ✅️ [fsm] RM_EF__FSM_ENABLE_A
 ✅️ [fsm] RM_EF__FSM_ENABLE_B
@@ -122,7 +122,7 @@
 ✅️ [motion] RM_EF__STEP_COUNTER_H
 ✅️ [motion] RM_EF__EMB_FUNC_SRC
 ✅️ [motion] RM_EF__EMB_FUNC_INIT_A
-⬜ RM_EF__EMB_FUNC_INIT_B
+✅️ [core] RM_EF__EMB_FUNC_INIT_B
 ✅️ [mlc] RM_EF__MLC0_SRC
 ✅️ [mlc] RM_EF__MLC1_SRC
 ✅️ [mlc] RM_EF__MLC2_SRC
