@@ -32,12 +32,12 @@
 ⬜ RM__OUTY_H_G
 ⬜ RM__OUTZ_L_G
 ⬜ RM__OUTZ_H_G
-⬜ RM__OUTX_L_A
-⬜ RM__OUTX_H_A
-⬜ RM__OUTY_L_A
-⬜ RM__OUTY_H_A
-⬜ RM__OUTZ_L_A
-⬜ RM__OUTZ_H_A
+✅️ [acc] RM__OUTX_L_A
+✅️ [acc] RM__OUTX_H_A
+✅️ [acc] RM__OUTY_L_A
+✅️ [acc] RM__OUTY_H_A
+✅️ [acc] RM__OUTZ_L_A
+✅️ [acc] RM__OUTZ_H_A
 ✅️ [motion] RM__EMB_FUNC_STATUS_MAINPAGE
 ✅️ [fsm] RM__FSM_STATUS_A_MAINPAGE
 ✅️ [fsm] RM__FSM_STATUS_B_MAINPAGE
@@ -64,9 +64,9 @@
 ✅️ RM__CTRL1_OIS
 ✅️ RM__CTRL2_OIS
 ✅️ RM__CTRL3_OIS
-⬜ RM__X_OFS_USR
-⬜ RM__Y_OFS_USR
-⬜ RM__Z_OFS_USR
+✅️ [acc] RM__X_OFS_USR
+✅️ [acc] RM__Y_OFS_USR
+✅️ [acc] RM__Z_OFS_USR
 ✅️ [fifo] RM__FIFO_DATA_OUT_TAG
 ✅️ [fifo] RM__FIFO_DATA_OUT_X_L
 ✅️ [fifo] RM__FIFO_DATA_OUT_X_H
