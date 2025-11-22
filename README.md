@@ -7,7 +7,7 @@ ISM330DHCX Driver
 
 ### Structure Representation
 
- * Core (main ism330dhcx device)
+ * Core (device controls)
  * Register Mapping
  * Accelerometer
  * Gyroscope
@@ -18,3 +18,7 @@ ISM330DHCX Driver
  * Optical Image Stabalisation (OIS)
  * Motion Detection
  * Sensor Hub
+
+
+#### Diagram
+![diagram__struct_representation_relationship](.readme/struct_rep.png)
