@@ -15,8 +15,7 @@
 /// @brief  ISM330DHCX Sensor Hub Struct
 typedef struct ism330dhcx_sh_s
 {
-    /* Specs */
-    /* Control Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__STATUS_MASTER_MAINPAGE_t status_master_mainpage;
 
@@ -41,27 +40,25 @@ typedef struct ism330dhcx_sh_s
 
     _ism330dhcx_rm_sh__MASTER_CONFIG_t sh__master_config;
 
-    _ism330dhcx_rm_sh__SLV0_ADD_s      sh__slv0_add;
+    _ism330dhcx_rm_sh__SLV0_ADD_t      sh__slv0_add;
     _ism330dhcx_rm_sh__SLV0_SUBADD_t   sh__slv0_subadd;
     _ism330dhcx_rm_sh__SLAVE0_CONFIG_t sh__slave0_config;
 
-    _ism330dhcx_rm_sh__SLV1_ADD_s      sh__slv1_add;
+    _ism330dhcx_rm_sh__SLV1_ADD_t      sh__slv1_add;
     _ism330dhcx_rm_sh__SLV1_SUBADD_t   sh__slv1_subadd;
     _ism330dhcx_rm_sh__SLAVE1_CONFIG_t sh__slave1_config;
 
-    _ism330dhcx_rm_sh__SLV2_ADD_s      sh__slv2_add;
+    _ism330dhcx_rm_sh__SLV2_ADD_t      sh__slv2_add;
     _ism330dhcx_rm_sh__SLV2_SUBADD_t   sh__slv2_subadd;
     _ism330dhcx_rm_sh__SLAVE2_CONFIG_t sh__slave2_config;
 
-    _ism330dhcx_rm_sh__SLV3_ADD_s      sh__slv3_add;
+    _ism330dhcx_rm_sh__SLV3_ADD_t      sh__slv3_add;
     _ism330dhcx_rm_sh__SLV3_SUBADD_t   sh__slv3_subadd;
     _ism330dhcx_rm_sh__SLAVE3_CONFIG_t sh__slave3_config;
 
     _ism330dhcx_rm_sh__DATAWRITE_SLV0_t sh__datatwrite_slv0;
 
     _ism330dhcx_rm_sh__STATUS_MASTER_t  sh__status_master;
-
-    /* Configuration */
 
 } ism330dhcx_sh_t;
 

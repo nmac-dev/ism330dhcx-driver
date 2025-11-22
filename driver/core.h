@@ -55,7 +55,7 @@ typedef struct ism330dhcx_core_s
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx Core struct
 /// @return default ism330dhcx Core struct
-ism330dhcx_core_s ism330dhcx_core__get_default_s();
+ism330dhcx_core_t ism330dhcx_core__get_default_s();
 
 
 #endif /* __ISM330DHCX_CORE_H__ */

@@ -95,24 +95,24 @@ typedef struct _ism330dhcx_rm_ef__EMB_FUNC_EN_s
     /// @union <anonymous>
     /// @brief Bit Field Union for register value
     union {
-        u16_t full;                     // [15:0] Full value of the register
+        u16_t full;                      // [15:0] Full value of the register
         struct {
-            u16_t FSM_EN        : 1;    // [0]   Enable Finite State Machine (FSM) feature {0}
-            u16_t RESERVED_1    : 1;    // [1]   Reserved                                  {0}
-            u16_t RESERVED_2    : 1;    // [2]   Reserved                                  {0}
-            u16_t FIFO_COMPR_EN : 1;    // [1]   Enable FIFO compression feature           {0}
-            u16_t MLC_EN        : 1;    // [2]   Enable Machine Learning Core feature      {0}
-            u16_t RESERVED_5    : 1;    // [5]   Reserved                                  {0}
-            u16_t RESERVED_6    : 1;    // [6]   Reserved                                  {0}
-            u16_t RESERVED_7    : 1;    // [7]   Reserved                                  {0}
-            u16_t FSM_EN        : 1;    // [8]   Enable Finite State Machine (FSM) feature {0}
-            u16_t RESERVED_9    : 1;    // [9]   Reserved                                  {0}
-            u16_t RESERVED_10   : 1;    // [10]  Reserved                                  {0}
-            u16_t FIFO_COMPR_EN : 1;    // [11]  Enable FIFO compression feature           {0}
-            u16_t MLC_EN        : 1;    // [12]  Enable Machine Learning Core feature      {0}
-            u16_t RESERVED_13   : 1;    // [13]  Reserved                                  {0}
-            u16_t RESERVED_14   : 1;    // [14]  Reserved                                  {0}
-            u16_t RESERVED_15   : 1;    // [15]  Reserved                                  {0}
+            u16_t RESERVED_0     : 1;    // [0]    Reserved                                     {0}
+            u16_t RESERVED_1     : 1;    // [1]    Reserved                                     {0}
+            u16_t RESERVED_2     : 1;    // [2]    Reserved                                     {0}
+            u16_t PEDO_EN        : 1;    // [3]    Enable pedometer algorithm                   {0}
+            u16_t TILT_EN        : 1;    // [4]    Enable tilt calculation                      {0}
+            u16_t SIGN_MOTION_EN : 1;    // [5]    Enable significant motion detection function {0}
+            u16_t RESERVED_6     : 1;    // [6]    Reserved                                     {0}
+            u16_t RESERVED_7     : 1;    // [7]    Reserved                                     {0}
+            u16_t FSM_EN         : 1;    // [8]    Enable Finite State Machine (FSM) feature    {0}
+            u16_t RESERVED_9     : 1;    // [9]    Reserved                                     {0}
+            u16_t RESERVED_10    : 1;    // [10]   Reserved                                     {0}
+            u16_t FIFO_COMPR_EN  : 1;    // [11]   Enable FIFO compression feature              {0}
+            u16_t MLC_EN         : 1;    // [12]   Enable Machine Learning Core feature         {0}
+            u16_t RESERVED_13    : 1;    // [13]   Reserved                                     {0}
+            u16_t RESERVED_14    : 1;    // [14]   Reserved                                     {0}
+            u16_t RESERVED_15    : 1;    // [15]   Reserved                                     {0}
         };
     } bf;
 

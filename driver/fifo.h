@@ -25,14 +25,13 @@ typedef struct ism330dhcx_fifo_s
     _ism330dhcx_rm__COUNTER_BDR_REG1_t counter_bdr_reg1;
     _ism330dhcx_rm__COUNTER_BDR_REG2_t counter_bdr_reg2;
 
-    _ism330dhcx_rm__FIFO_STATUS1_s status1;
-    _ism330dhcx_rm__FIFO_STATUS2_s status2;
+    _ism330dhcx_rm__FIFO_STATUS1_t status1;
+    _ism330dhcx_rm__FIFO_STATUS2_t status2;
 
     _ism330dhcx_rm__FIFO_DATA_OUT_TAG_t data_out_tag;
     _ism330dhcx_rm__FIFO_DATA_OUT_X_t   data_out_x;
     _ism330dhcx_rm__FIFO_DATA_OUT_Y_t   data_out_y;
     _ism330dhcx_rm__FIFO_DATA_OUT_Z_t   data_out_z;
-
 
 } ism330dhcx_fifo_t;
 
