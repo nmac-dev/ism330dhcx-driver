@@ -1,4 +1,5 @@
-/// ISM330DHCX Core Driver
+/// @file  core.h
+/// @brief ISM330DHCX Core Driver
 
 #ifndef __ISM330DHCX_CORE_H__
 #define __ISM330DHCX_CORE_H__
@@ -14,8 +15,7 @@
 /// @brief  ISM330DHCX Core Struct
 typedef struct ism330dhcx_core_s
 {
-    /* Specs */
-    /* Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__FUNC_CFG_ACCESS_t func_cfg_access;
     _ism330dhcx_rm__PIN_CTRL_t        pin_ctrl;
@@ -49,8 +49,6 @@ typedef struct ism330dhcx_core_s
 
     _ism330dhcx_rm_ef__EMB_FUNC_EN_B_t   ef__emb_func_en_b;
     _ism330dhcx_rm_ef__EMB_FUNC_INIT_B_t ef__emb_func_init_b;
-
-    /* Configuration */
 
 } ism330dhcx_core_t;
 

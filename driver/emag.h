@@ -1,4 +1,5 @@
-/// ISM330DHCX External Magnetometer Driver
+/// @file  emag.h
+/// @brief ISM330DHCX External Magnetometer Driver
 
 #ifndef __ISM330DHCX_EMAG_H__
 #define __ISM330DHCX_EMAG_H__
@@ -13,8 +14,7 @@
 /// @note   All External Magnetometer registers are EAF0
 typedef struct ism330dhcx_emag_s
 {
-    /* Specs */
-    /* Control Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm_eaf0__MAG_SENSITIVITY_t sensitivity;
 
@@ -32,13 +32,12 @@ typedef struct ism330dhcx_emag_s
     _ism330dhcx_rm_eaf0__MAG_CFG_A_t cfg_a;
     _ism330dhcx_rm_eaf0__MAG_CFG_B_t cfg_b;
 
-    /* Configuration */
-
 } ism330dhcx_emag_t;
 
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx External Magnetometer struct
 /// @return default ism330dhcx External Magnetometer struct
 ism330dhcx_emag_t ism330dhcx_emag__get_default_s();
+
 
 #endif /* __ISM330DHCX_EMAG_H__ */

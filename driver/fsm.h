@@ -1,4 +1,5 @@
-/// ISM330DHCX FSM Driver
+/// @file  fsm.h
+/// @brief ISM330DHCX FSM Driver
 
 #ifndef __ISM330DHCX_FSM_H__
 #define __ISM330DHCX_FSM_H__
@@ -15,8 +16,7 @@
 /// @brief  ISM330DHCX FSM Struct
 typedef struct ism330dhcx_fsm_s
 {
-    /* Specs */
-    /* Control Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE_t status_a_mainpage;
     _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE_t status_b_mainpage;
@@ -55,13 +55,12 @@ typedef struct ism330dhcx_fsm_s
     _ism330dhcx_rm_eaf1__FSM_PROGRAMS_t   eaf1__programs;
     _ism330dhcx_rm_eaf1__FSM_START_ADD_t  eaf1__start_add;
 
-    /* Configuration */
-
 } ism330dhcx_fsm_t;
 
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx FSM struct
 /// @return default ism330dhcx FSM struct
 ism330dhcx_fsm_t ism330dhcx_fsm__get_default_s();
+
 
 #endif /* __ISM330DHCX_FSM_H__ */

@@ -1,11 +1,14 @@
-/// ISM330DHCX Accelerometer Driver
+/// @file  accelerometer.h
+/// @brief ISM330DHCX Accelerometer Driver
 
 #ifndef __ISM330DHCX_ACC_H__
 #define __ISM330DHCX_ACC_H__
 
+
 #include "c-nstd/types.h"
 #include "ism330dhcx/register_map.h"
 #include "ism330dhcx/internal/rm_structs.h"
+
 
 /**
 Axis
@@ -19,12 +22,12 @@ Axis
 
 **/
 
+
 /// @struct ism330dhcx_acc_s
-/// @brief ISM330DHCX Accelerometer Struct
+/// @brief  ISM330DHCX Accelerometer Struct
 typedef struct
 {
-    /* Specs */
-    /* Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__OUTX_A_t outx;
     _ism330dhcx_rm__OUTY_A_t outy;
@@ -33,8 +36,6 @@ typedef struct
     _ism330dhcx_rm__X_OFS_USR_t x_ofs_usr;
     _ism330dhcx_rm__Y_OFS_USR_t y_ofs_usr;
     _ism330dhcx_rm__Z_OFS_USR_t z_ofs_usr;
-
-    /* Configuration  */
 
 } ism330dhcx_acc_s;
 

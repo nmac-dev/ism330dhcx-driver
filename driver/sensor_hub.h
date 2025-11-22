@@ -1,4 +1,5 @@
-/// ISM330DHCX Sensor Hub Driver
+/// @file  sensor_hub.h
+/// @brief ISM330DHCX Sensor Hub Driver
 
 #ifndef __ISM330DHCX_SENSOR_HUB_H__
 #define __ISM330DHCX_SENSOR_HUB_H__
@@ -68,5 +69,6 @@ typedef struct ism330dhcx_sh_s
 /// @brief  Fetches the default struct configuration for the ism330dhcx Sensor Hub struct
 /// @return default ism330dhcx Sensor Hub struct
 ism330dhcx_sh_t ism330dhcx_sh__get_default_s();
+
 
 #endif /* __ISM330DHCX_SENSOR_HUB_H__ */

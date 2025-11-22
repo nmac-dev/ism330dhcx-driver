@@ -4,6 +4,7 @@
 #ifndef __ISM330DHCX_INTERNAL__RM_STRUCTS_H__
 #define __ISM330DHCX_INTERNAL__RM_STRUCTS_H__
 
+
 #include "c-nstd/types.h"
 
 

@@ -1,4 +1,5 @@
-/// ISM330DHCX Motion Driver
+/// @file  motion.h
+/// @brief ISM330DHCX Motion Driver
 
 #ifndef __ISM330DHCX_MOTION_H__
 #define __ISM330DHCX_MOTION_H__
@@ -15,8 +16,7 @@
 /// @brief  ISM330DHCX Motion Struct
 typedef struct ism330dhcx_motion_s
 {
-    /* Specs */
-    /* Control Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__ALL_INT_SRC_t all_int_src;
     _ism330dhcx_rm__WAKE_UP_SRC_t wake_up_src;
@@ -56,13 +56,12 @@ typedef struct ism330dhcx_motion_s
     _ism330dhcx_rm_eaf1__PEDO_DEB_STEPS_CONF_t eaf1__pedo_deb_steps_conf;
     _ism330dhcx_rm_eaf1__PEDO_SC_DELTAT_t      eaf1__pedo_sc_deltat;
 
-    /* Configuration */
-
 } ism330dhcx_motion_t;
 
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx Motion struct
 /// @return default ism330dhcx Motion struct
 ism330dhcx_motion_t ism330dhcx_motion__get_default_s();
+
 
 #endif /* __ISM330DHCX_MOTION_H__ */

@@ -1,4 +1,5 @@
-/// ISM330DHCX Optical Image Stabalisation Driver
+/// @file  ois.h
+/// @brief ISM330DHCX Optical Image Stabalisation Driver
 
 #ifndef __ISM330DHCX_OIS_H__
 #define __ISM330DHCX_OIS_H__
@@ -13,15 +14,12 @@
 /// @brief  ISM330DHCX Optical Image Stabilisation Struct
 typedef struct ism330dhcx_ois_s
 {
-    /* Specs */
-    /* Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__INT_OIS_t   int_st;
     _ism330dhcx_rm__CTRL1_OIS_t ctrl1;
     _ism330dhcx_rm__CTRL2_OIS_t ctrl2;
     _ism330dhcx_rm__CTRL3_OIS_t ctrl3;
-
-    /* Configuration */
 
 } ism330dhcx_ois_t;
 
@@ -29,5 +27,6 @@ typedef struct ism330dhcx_ois_s
 /// @brief  Fetches the default struct configuration for the ism330dhcx OIS struct
 /// @return default ism330dhcx OIS struct
 ism330dhcx_ois_t ism330dhcx_ois__get_default_s();
+
 
 #endif /* __ISM330DHCX_OIS_H__ */

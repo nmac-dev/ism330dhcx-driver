@@ -1,4 +1,5 @@
-/// ISM330DHCX FIFO Driver
+/// @file  fifo.h
+/// @brief ISM330DHCX FIFO Driver
 
 #ifndef __ISM330DHCX_FIFO_H__
 #define __ISM330DHCX_FIFO_H__
@@ -14,8 +15,7 @@
 /// @brief  ISM330DHCX FIFO Struct
 typedef struct ism330dhcx_fifo_s
 {
-    /* Specs */
-    /* Control Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__FIFO_CTRL1_t ctrl1;
     _ism330dhcx_rm__FIFO_CTRL2_t ctrl2;
@@ -33,7 +33,6 @@ typedef struct ism330dhcx_fifo_s
     _ism330dhcx_rm__FIFO_DATA_OUT_Y_t   data_out_y;
     _ism330dhcx_rm__FIFO_DATA_OUT_Z_t   data_out_z;
 
-    /* Configuration */
 
 } ism330dhcx_fifo_t;
 
@@ -41,5 +40,6 @@ typedef struct ism330dhcx_fifo_s
 /// @brief  Fetches the default struct configuration for the ism330dhcx FIFO struct
 /// @return default ism330dhcx FIFO struct
 ism330dhcx_fifo_t ism330dhcx_fifo__get_default_s();
+
 
 #endif /* __ISM330DHCX_FIFO_H__ */

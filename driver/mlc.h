@@ -1,4 +1,5 @@
-/// ISM330DHCX MLC Driver
+/// @file  mlc.h
+/// @brief ISM330DHCX MLC Driver
 
 #ifndef __ISM330DHCX_MLC_H__
 #define __ISM330DHCX_MLC_H__
@@ -15,8 +16,7 @@
 /// @brief  ISM330DHCX MLC Struct
 typedef struct ism330dhcx_mlc_s
 {
-    /* Specs */
-    /* Control Registers */
+    /* Device Registers */
 
     _ism330dhcx_rm__MLC_STATUS_MAINPAGE_t status_mainpage;
 
@@ -38,13 +38,12 @@ typedef struct ism330dhcx_mlc_s
 
     _ism330dhcx_rm_eaf1__MLC_MAG_SENSITIVITY_t eaf1__mag_sensitivity;
 
-    /* Configuration */
-
 } ism330dhcx_mlc_t;
 
 
 /// @brief  Fetches the default struct configuration for the ism330dhcx MLC struct
 /// @return default ism330dhcx MLC struct
 ism330dhcx_mlc_t ism330dhcx_mlc__get_default_s();
+
 
 #endif /* __ISM330DHCX_MLC_H__ */
