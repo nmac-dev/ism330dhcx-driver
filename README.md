@@ -2,7 +2,10 @@
 ISM330DHCX Driver
 
 
-## Structure Representation
+## Features
+
+
+### Structure Representation
 
  * Core (main ism330dhcx device)
  * Register Mapping
