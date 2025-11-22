@@ -1,0 +1,3 @@
+[submodule "c-nstd"]
+	path = driver/c-nstd
+	url = git@github.com:nmac-dev/c-nstd.git
