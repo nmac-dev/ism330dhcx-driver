@@ -1,6 +1,8 @@
 echo "-- Test Compile --"
 
-REPO__DIR="$(git rev-parse --show-toplevel)"
+REPO__D="$(git rev-parse --show-toplevel)"
+DRIVER__D="$REPO__D/driver"
+SRC__D="$DRIVER__D/src"
 
 
 ## Libraries
@@ -8,8 +10,10 @@ REPO__DIR="$(git rev-parse --show-toplevel)"
 C_NSTD__LIB="c-nstd"
 ISM330DHCX__LIB="ism330dhcx"
 
-ln -sf "$REPO__DIR/driver/$C_NSTD__LIB" "$C_NSTD__LIB"
-ln -sf "$REPO__DIR/driver"              "$ISM330DHCX__LIB"
+ln -sf "$REPO__D/driver/$C_NSTD__LIB" "$C_NSTD__LIB"
+ln -sf "$REPO__D/driver"              "$ISM330DHCX__LIB"
+
+SRC_C=("$SRC__D/core.c")
 
 
 ## Main
@@ -21,7 +25,8 @@ OUT="test_out"
 
 ## Compile Test
 
-gcc $MAIN_C             \
+gcc $SRC_C              \
+    $MAIN_C             \
     -I $TEST_MAIN__DIR  \
     -o $OUT
 
