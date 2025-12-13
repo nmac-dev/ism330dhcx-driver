@@ -6,6 +6,7 @@
 
 
 #include "c-nstd/types.h"
+#include "ism330dhcx/register_map.h"
 #include "ism330dhcx/internal/rm_eaf0_structs.h"
 
 
