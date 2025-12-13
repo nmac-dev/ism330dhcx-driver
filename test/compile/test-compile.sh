@@ -1,5 +1,8 @@
 echo "-- Test Compile --"
 
+
+## Variables
+
 REPO__D="$(git rev-parse --show-toplevel)"
 DRIVER__D="$REPO__D/driver"
 SRC__D="$DRIVER__D/src"
@@ -13,26 +16,37 @@ ISM330DHCX__LIB="ism330dhcx"
 ln -sf "$REPO__D/driver/$C_NSTD__LIB" "$C_NSTD__LIB"
 ln -sf "$REPO__D/driver"              "$ISM330DHCX__LIB"
 
-SRC_C=("$SRC__D/core.c")
+
+## Sources
+
+# Compile all driver source files so new modules are picked up automatically
+SRC__C=( "$SRC__D"/*.c )
 
 
 ## Main
 
-TEST_MAIN__DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MAIN_C="test_compile.c"
-OUT="test_out"
+TEST_MAIN__D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+MAIN__C="$TEST_MAIN__D/test_compile.c"
+OUT="$TEST_MAIN__D/test_out"
 
 
 ## Compile Test
 
-gcc $SRC_C              \
-    $MAIN_C             \
-    -I $TEST_MAIN__DIR  \
+gcc    "${SRC__C[@]}" \
+    $MAIN__C      \
+    -I $TEST_MAIN__D \
     -o $OUT
+
+
+if [[ $? -ne 0 ]]; then
+    echo "FAILED"
+    exit 1
+fi
+
 
 chmod +x $OUT
 
-RESULT="$(./$OUT)"
+RESULT="$($OUT)"
 
 if [[ $RESULT =~ "Hello, World!\n" ]]; then
     echo "FAILED"
