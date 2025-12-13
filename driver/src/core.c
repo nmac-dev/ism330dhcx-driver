@@ -4,7 +4,7 @@
 #include "ism330dhcx/core.h"
 
 
-ism330dhcx_core_s ism330dhcx__get_default_s()
+ism330dhcx_core_s ism330dhcx_core__get_default_s()
 {
     return (ism330dhcx_core_s){
 
