@@ -4,9 +4,9 @@
 #include "ism330dhcx/gyroscope.h"
 
 
-ism330dhcx_gyr_t ism330dhcx_gyr__get_default_s()
+ism330dhcx_gyr_s ism330dhcx_gyr__get_default_s()
 {
-    return (ism330dhcx_gyr_t){
+    return (ism330dhcx_gyr_s){
 
         /* Device Registers */
 

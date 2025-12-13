@@ -23,19 +23,19 @@ Axis
 **/
 
 
-/// @struct ism330dhcx_acc_s
+/// @struct ism330dhcx_acc
 /// @brief  ISM330DHCX Accelerometer Struct
-typedef struct
+typedef struct ism330dhcx_acc
 {
     /* Device Registers */
 
-    _ism330dhcx_rm__OUTX_A_t outx;
-    _ism330dhcx_rm__OUTY_A_t outy;
-    _ism330dhcx_rm__OUTZ_A_t outz;
+    _ism330dhcx_rm__OUTX_A_s outx;
+    _ism330dhcx_rm__OUTY_A_s outy;
+    _ism330dhcx_rm__OUTZ_A_s outz;
 
-    _ism330dhcx_rm__X_OFS_USR_t x_ofs_usr;
-    _ism330dhcx_rm__Y_OFS_USR_t y_ofs_usr;
-    _ism330dhcx_rm__Z_OFS_USR_t z_ofs_usr;
+    _ism330dhcx_rm__X_OFS_USR_s x_ofs_usr;
+    _ism330dhcx_rm__Y_OFS_USR_s y_ofs_usr;
+    _ism330dhcx_rm__Z_OFS_USR_s z_ofs_usr;
 
 } ism330dhcx_acc_s;
 

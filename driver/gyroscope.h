@@ -23,22 +23,22 @@ Axis
 **/
 
 
-/// @struct ism330dhcx_gyr_s
+/// @struct ism330dhcx_gyr
 /// @brief  ISM330DHCX Gyroscope Struct
-typedef struct ism330dhcx_gyr_s
+typedef struct ism330dhcx_gyr
 {
     /* Device Registers */
 
-    _ism330dhcx_rm__OUTX_G_t outx;
-    _ism330dhcx_rm__OUTY_G_t outy;
-    _ism330dhcx_rm__OUTZ_G_t outz;
+    _ism330dhcx_rm__OUTX_G_s outx;
+    _ism330dhcx_rm__OUTY_G_s outy;
+    _ism330dhcx_rm__OUTZ_G_s outz;
 
-} ism330dhcx_gyr_t;
+} ism330dhcx_gyr_s;
 
 
 /// @brief  Fetches the default struct configuration for the gyroscope
 /// @return default gyroscope struct
-ism330dhcx_gyr_t ism330dhcx_gyr__get_default_s();
+ism330dhcx_gyr_s ism330dhcx_gyr__get_default_s();
 
 
 #endif /* __ISM330DHCX_GYR_H__ */

@@ -11,9 +11,9 @@
 /// NOTE: internal structures are denoted with the prefix "_"
 
 
-/// @struct _ism330dhcx_rm__TEMPLATE_s
+/// @struct _ism330dhcx_rm__TEMPLATE
 /// @brief  ISM330DHCX template [r/w] {0x00}
-typedef struct _ism330dhcx_rm__TEMPLATE_s
+typedef struct _ism330dhcx_rm__TEMPLATE
 {
     adr_u8c_u ADR; // register address
 
@@ -33,15 +33,15 @@ typedef struct _ism330dhcx_rm__TEMPLATE_s
         };
     } bf;
 
-} _ism330dhcx_rm__TEMPLATE_t;
+} _ism330dhcx_rm__TEMPLATE_s;
 
 
 /* Embedded Configuration & Pin Control Registers */
 
 
-/// @struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
+/// @struct _ism330dhcx_rm__FUNC_CFG_ACCESS
 /// @brief  ISM330DHCX embedded functions control register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
+typedef struct _ism330dhcx_rm__FUNC_CFG_ACCESS
 {
     adr_u8c_u ADR; // register address
 
@@ -61,12 +61,12 @@ typedef struct _ism330dhcx_rm__FUNC_CFG_ACCESS_s
         };
     } bf;
 
-} _ism330dhcx_rm__FUNC_CFG_ACCESS_t;
+} _ism330dhcx_rm__FUNC_CFG_ACCESS_s;
 
 
-/// @struct _ism330dhcx_rm__PIN_CTRL_s
+/// @struct _ism330dhcx_rm__PIN_CTRL
 /// @brief  ISM330DHCX pins pull-up enable/disable control register [r/w] {0x3F}
-typedef struct _ism330dhcx_rm__PIN_CTRL_s
+typedef struct _ism330dhcx_rm__PIN_CTRL
 {
     adr_u8c_u ADR; // register address
 
@@ -86,15 +86,15 @@ typedef struct _ism330dhcx_rm__PIN_CTRL_s
         };
     } bf;
 
-} _ism330dhcx_rm__PIN_CTRL_t;
+} _ism330dhcx_rm__PIN_CTRL_s;
 
 
 /* FIFO Registers */
 
 
-/// @struct _ism330dhcx_rm__FIFO_CTRL1_s
+/// @struct _ism330dhcx_rm__FIFO_CTRL1
 /// @brief  ISM330DHCX FIFO control register 1 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__FIFO_CTRL1_s
+typedef struct _ism330dhcx_rm__FIFO_CTRL1
 {
     adr_u8c_u ADR; // register address
 
@@ -114,12 +114,12 @@ typedef struct _ism330dhcx_rm__FIFO_CTRL1_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_CTRL1_t;
+} _ism330dhcx_rm__FIFO_CTRL1_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_CTRL2_s
+/// @struct _ism330dhcx_rm__FIFO_CTRL2
 /// @brief  ISM330DHCX FIFO control register 2 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__FIFO_CTRL2_s
+typedef struct _ism330dhcx_rm__FIFO_CTRL2
 {
     adr_u8c_u ADR; // register address
 
@@ -138,12 +138,12 @@ typedef struct _ism330dhcx_rm__FIFO_CTRL2_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_CTRL2_t;
+} _ism330dhcx_rm__FIFO_CTRL2_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_CTRL3_s
+/// @struct _ism330dhcx_rm__FIFO_CTRL3
 /// @brief  ISM330DHCX FIFO control register 3 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__FIFO_CTRL3_s
+typedef struct _ism330dhcx_rm__FIFO_CTRL3
 {
     adr_u8c_u ADR; // register address
 
@@ -157,12 +157,12 @@ typedef struct _ism330dhcx_rm__FIFO_CTRL3_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_CTRL3_t;
+} _ism330dhcx_rm__FIFO_CTRL3_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_CTRL4_s
+/// @struct _ism330dhcx_rm__FIFO_CTRL4
 /// @brief  ISM330DHCX FIFO control register 4 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__FIFO_CTRL4_s
+typedef struct _ism330dhcx_rm__FIFO_CTRL4
 {
     adr_u8c_u ADR; // register address
 
@@ -178,12 +178,12 @@ typedef struct _ism330dhcx_rm__FIFO_CTRL4_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_CTRL4_t;
+} _ism330dhcx_rm__FIFO_CTRL4_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_CTRL_s
+/// @struct _ism330dhcx_rm__FIFO_CTRL
 /// @brief  ISM330DHCX FIFO control register (1|2|3|4) [r/w] {0x00000000}
-typedef struct _ism330dhcx_rm__FIFO_CTRL_s
+typedef struct _ism330dhcx_rm__FIFO_CTRL
 {
     adr_u32c_u ADR; // register address
 
@@ -212,12 +212,12 @@ typedef struct _ism330dhcx_rm__FIFO_CTRL_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_CTRL_t;
+} _ism330dhcx_rm__FIFO_CTRL_s;
 
 
-/// @struct  _ism330dhcx_rm__COUNTER_BDR_REG1_s
+/// @struct  _ism330dhcx_rm__COUNTER_BDR_REG1
 /// @brief   ISM330DHCX Counter batch data rate register 1 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__COUNTER_BDR_REG1_s
+typedef struct _ism330dhcx_rm__COUNTER_BDR_REG1
 {
     adr_u8c_u ADR; // register address
 
@@ -237,12 +237,12 @@ typedef struct _ism330dhcx_rm__COUNTER_BDR_REG1_s
         };
     } bf;
 
-} _ism330dhcx_rm__COUNTER_BDR_REG1_t;
+} _ism330dhcx_rm__COUNTER_BDR_REG1_s;
 
 
-/// @struct  _ism330dhcx_rm__COUNTER_BDR_REG2_s
+/// @struct  _ism330dhcx_rm__COUNTER_BDR_REG2
 /// @brief   ISM330DHCX Counter batch data rate register 2 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__COUNTER_BDR_REG2_s
+typedef struct _ism330dhcx_rm__COUNTER_BDR_REG2
 {
     adr_u8c_u ADR; // register address
 
@@ -262,13 +262,13 @@ typedef struct _ism330dhcx_rm__COUNTER_BDR_REG2_s
         };
     } bf;
 
-} _ism330dhcx_rm__COUNTER_BDR_REG2_t;
+} _ism330dhcx_rm__COUNTER_BDR_REG2_s;
 
 
-/// @struct  _ism330dhcx_rm__COUNTER_BDR_REG_s
+/// @struct  _ism330dhcx_rm__COUNTER_BDR_REG
 /// @brief   ISM330DHCX Counter batch data rate register (2|1) [r/w] {0x0000}
 /// @warning COUNTER_BDR_REG 1 & 2 have an unconventional bit order and must be send in reverse order (COUNTER_BDR_REG2|COUNTER_BDR_REG1)
-typedef struct _ism330dhcx_rm__COUNTER_BDR_REG_s
+typedef struct _ism330dhcx_rm__COUNTER_BDR_REG
 {
     adr_u16c_u ADR; // register address
 
@@ -289,12 +289,12 @@ typedef struct _ism330dhcx_rm__COUNTER_BDR_REG_s
         };
     } bf;
 
-} _ism330dhcx_rm__COUNTER_BDR_REG_t;
+} _ism330dhcx_rm__COUNTER_BDR_REG_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_STATUS1_s
+/// @struct _ism330dhcx_rm__FIFO_STATUS1
 /// @brief  ISM330DHCX FIFO status register 1 [r] {output}
-typedef struct _ism330dhcx_rm__FIFO_STATUS1_s
+typedef struct _ism330dhcx_rm__FIFO_STATUS1
 {
     adr_u8c_u ADR; // register address
 
@@ -314,12 +314,12 @@ typedef struct _ism330dhcx_rm__FIFO_STATUS1_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_STATUS1_t;
+} _ism330dhcx_rm__FIFO_STATUS1_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_STATUS2_s
+/// @struct _ism330dhcx_rm__FIFO_STATUS2
 /// @brief  ISM330DHCX FIFO status register 2 [r] {output}
-typedef struct _ism330dhcx_rm__FIFO_STATUS2_s
+typedef struct _ism330dhcx_rm__FIFO_STATUS2
 {
     adr_u8c_u ADR; // register address
 
@@ -339,12 +339,12 @@ typedef struct _ism330dhcx_rm__FIFO_STATUS2_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_STATUS2_t;
+} _ism330dhcx_rm__FIFO_STATUS2_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_STATUS_s
+/// @struct _ism330dhcx_rm__FIFO_STATUS
 /// @brief  ISM330DHCX FIFO status register (1|2) [r] {output}
-typedef struct _ism330dhcx_rm__FIFO_STATUS_s
+typedef struct _ism330dhcx_rm__FIFO_STATUS
 {
     adr_u16c_u ADR; // register address
 
@@ -365,12 +365,12 @@ typedef struct _ism330dhcx_rm__FIFO_STATUS_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_STATUS_t;
+} _ism330dhcx_rm__FIFO_STATUS_s;
 
 
-/// @struct _ism330dhcx_rm__FIFO_DATA_OUT_TAG_s
+/// @struct _ism330dhcx_rm__FIFO_DATA_OUT_TAG
 /// @brief  ISM330DHCX FIFO tag register [r] {output}
-typedef struct _ism330dhcx_rm__FIFO_DATA_OUT_TAG_s
+typedef struct _ism330dhcx_rm__FIFO_DATA_OUT_TAG
 {
     adr_u8c_u ADR; // register address
 
@@ -385,30 +385,30 @@ typedef struct _ism330dhcx_rm__FIFO_DATA_OUT_TAG_s
         };
     } bf;
 
-} _ism330dhcx_rm__FIFO_DATA_OUT_TAG_t;
+} _ism330dhcx_rm__FIFO_DATA_OUT_TAG_s;
 
 
-/// @typedef _ism330dhcx_rm__FIFO_DATA_OUT_X_t
+/// @typedef _ism330dhcx_rm__FIFO_DATA_OUT_X
 /// @brief  ISM330DHCX FIFO data output X [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__FIFO_DATA_OUT_X_t;
+typedef reg_u16_s _ism330dhcx_rm__FIFO_DATA_OUT_X_s;
 
 
-/// @typedef _ism330dhcx_rm__FIFO_DATA_OUT_Y_t
+/// @typedef _ism330dhcx_rm__FIFO_DATA_OUT_Y
 /// @brief  ISM330DHCX FIFO data output Y [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__FIFO_DATA_OUT_Y_t;
+typedef reg_u16_s _ism330dhcx_rm__FIFO_DATA_OUT_Y_s;
 
 
-/// @typedef _ism330dhcx_rm__FIFO_DATA_OUT_Z_t
+/// @typedef _ism330dhcx_rm__FIFO_DATA_OUT_Z
 /// @brief  ISM330DHCX FIFO data output Z [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__FIFO_DATA_OUT_Z_t;
+typedef reg_u16_s _ism330dhcx_rm__FIFO_DATA_OUT_Z_s;
 
 
 /* Interrupt Registers */
 
 
-/// @struct _ism330dhcx_rm__INT1_CTRL_s
+/// @struct _ism330dhcx_rm__INT1_CTRL
 /// @brief  ISM330DHCX INT1 pin control register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__INT1_CTRL_s
+typedef struct _ism330dhcx_rm__INT1_CTRL
 {
     adr_u8c_u ADR; // register address
 
@@ -428,12 +428,12 @@ typedef struct _ism330dhcx_rm__INT1_CTRL_s
         };
     } bf;
 
-} _ism330dhcx_rm__INT1_CTRL_t;
+} _ism330dhcx_rm__INT1_CTRL_s;
 
 
-/// @struct _ism330dhcx_rm__INT2_CTRL_s
+/// @struct _ism330dhcx_rm__INT2_CTRL
 /// @brief  ISM330DHCX INT2 pin control register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__INT2_CTRL_s
+typedef struct _ism330dhcx_rm__INT2_CTRL
 {
     adr_u8c_u ADR; // register address
 
@@ -453,12 +453,12 @@ typedef struct _ism330dhcx_rm__INT2_CTRL_s
         };
     } bf;
 
-} _ism330dhcx_rm__INT2_CTRL_t;
+} _ism330dhcx_rm__INT2_CTRL_s;
 
 
-/// @struct _ism330dhcx_rm__INT_CTRL_s
+/// @struct _ism330dhcx_rm__INT_CTRL
 /// @brief  ISM330DHCX INT pin control register (1|2) [r/w] {0x0000}
-typedef struct _ism330dhcx_rm__INT_CTRL_s
+typedef struct _ism330dhcx_rm__INT_CTRL
 {
     adr_u16c_u ADR; // register address
 
@@ -488,12 +488,12 @@ typedef struct _ism330dhcx_rm__INT_CTRL_s
         };
     } bf;
 
-} _ism330dhcx_rm__INT_CTRL_t;
+} _ism330dhcx_rm__INT_CTRL_s;
 
 
-/// @struct _ism330dhcx_rm__ALL_INT_SRC_s
+/// @struct _ism330dhcx_rm__ALL_INT_SRC
 /// @brief  ISM330DHCX Source register for all interrupts [r] {output}
-typedef struct _ism330dhcx_rm__ALL_INT_SRC_s
+typedef struct _ism330dhcx_rm__ALL_INT_SRC
 {
     adr_u8c_u ADR; // register address
 
@@ -513,12 +513,12 @@ typedef struct _ism330dhcx_rm__ALL_INT_SRC_s
         };
     } bf;
 
-} _ism330dhcx_rm__ALL_INT_SRC_t;
+} _ism330dhcx_rm__ALL_INT_SRC_s;
 
 
-/// @struct _ism330dhcx_rm__WAKE_UP_SRC_s
+/// @struct _ism330dhcx_rm__WAKE_UP_SRC
 /// @brief  ISM330DHCX Wake-up interrupt source register [r] {output}
-typedef struct _ism330dhcx_rm__WAKE_UP_SRC_s
+typedef struct _ism330dhcx_rm__WAKE_UP_SRC
 {
     adr_u8c_u ADR; // register address
 
@@ -538,12 +538,12 @@ typedef struct _ism330dhcx_rm__WAKE_UP_SRC_s
         };
     } bf;
 
-} _ism330dhcx_rm__WAKE_UP_SRC_t;
+} _ism330dhcx_rm__WAKE_UP_SRC_s;
 
 
-/// @struct _ism330dhcx_rm__TAP_SRC_s
+/// @struct _ism330dhcx_rm__TAP_SRC
 /// @brief  ISM330DHCX Tap source register [r] {output}
-typedef struct _ism330dhcx_rm__TAP_SRC_s
+typedef struct _ism330dhcx_rm__TAP_SRC
 {
     adr_u8c_u ADR; // register address
 
@@ -563,12 +563,12 @@ typedef struct _ism330dhcx_rm__TAP_SRC_s
         };
     } bf;
 
-} _ism330dhcx_rm__TAP_SRC_t;
+} _ism330dhcx_rm__TAP_SRC_s;
 
 
-/// @struct _ism330dhcx_rm__D6D_SRC_s
+/// @struct _ism330dhcx_rm__D6D_SRC
 /// @brief  ISM330DHCX 6-D detection register [r] {output}
-typedef struct _ism330dhcx_rm__D6D_SRC_s
+typedef struct _ism330dhcx_rm__D6D_SRC
 {
     adr_u8c_u ADR; // register address
 
@@ -588,12 +588,12 @@ typedef struct _ism330dhcx_rm__D6D_SRC_s
         };
     } bf;
 
-} _ism330dhcx_rm__D6D_SRC_t;
+} _ism330dhcx_rm__D6D_SRC_s;
 
 
-/// @struct _ism330dhcx_rm__STATUS_REG_s
+/// @struct _ism330dhcx_rm__STATUS_REG
 /// @brief  ISM330DHCX STATUS_REG register (read by the primary interface I²C/SPI) [r] {output}
-typedef struct _ism330dhcx_rm__STATUS_REG_s
+typedef struct _ism330dhcx_rm__STATUS_REG
 {
     adr_u8c_u ADR; // register address
 
@@ -613,12 +613,12 @@ typedef struct _ism330dhcx_rm__STATUS_REG_s
         };
     } bf;
 
-} _ism330dhcx_rm__STATUS_REG_t;
+} _ism330dhcx_rm__STATUS_REG_s;
 
 
-/// @struct _ism330dhcx_rm__STATUS_SPIAux_s
+/// @struct _ism330dhcx_rm__STATUS_SPIAux
 /// @brief  ISM330DHCX STATUS_SPIAux register (read by the auxiliary SPI) [r] {output}
-typedef struct _ism330dhcx_rm__STATUS_SPIAux_s
+typedef struct _ism330dhcx_rm__STATUS_SPIAux
 {
     adr_u8c_u ADR; // register address
 
@@ -638,15 +638,15 @@ typedef struct _ism330dhcx_rm__STATUS_SPIAux_s
         };
     } bf;
 
-} _ism330dhcx_rm__STATUS_SPIAux_t;
+} _ism330dhcx_rm__STATUS_SPIAux_s;
 
 
 /* Control Registers */
 
 
-/// @struct _ism330dhcx_rm__CTRL1_XL_s
+/// @struct _ism330dhcx_rm__CTRL1_XL
 /// @brief  ISM330DHCX control register 1 (accelerometer) [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL1_XL_s
+typedef struct _ism330dhcx_rm__CTRL1_XL
 {
     adr_u8c_u ADR; // register address
 
@@ -662,12 +662,12 @@ typedef struct _ism330dhcx_rm__CTRL1_XL_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL1_XL_t;
+} _ism330dhcx_rm__CTRL1_XL_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL2_G_s
+/// @struct _ism330dhcx_rm__CTRL2_G
 /// @brief  ISM330DHCX control register 2 (gyroscope) [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL2_G_s
+typedef struct _ism330dhcx_rm__CTRL2_G
 {
     adr_u8c_u ADR; // register address
 
@@ -683,12 +683,12 @@ typedef struct _ism330dhcx_rm__CTRL2_G_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL2_G_t;
+} _ism330dhcx_rm__CTRL2_G_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL3_C_s
+/// @struct _ism330dhcx_rm__CTRL3_C
 /// @brief  ISM330DHCX control register 3 [r/w] {0x04}
-typedef struct _ism330dhcx_rm__CTRL3_C_s
+typedef struct _ism330dhcx_rm__CTRL3_C
 {
     adr_u8c_u ADR; // register address
 
@@ -708,12 +708,12 @@ typedef struct _ism330dhcx_rm__CTRL3_C_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL3_C_t;
+} _ism330dhcx_rm__CTRL3_C_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL4_C_s
+/// @struct _ism330dhcx_rm__CTRL4_C
 /// @brief  ISM330DHCX control register 4 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL4_C_s
+typedef struct _ism330dhcx_rm__CTRL4_C
 {
     adr_u8c_u ADR; // register address
 
@@ -733,12 +733,12 @@ typedef struct _ism330dhcx_rm__CTRL4_C_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL4_C_t;
+} _ism330dhcx_rm__CTRL4_C_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL5_C_s
+/// @struct _ism330dhcx_rm__CTRL5_C
 /// @brief  ISM330DHCX control register 5 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL5_C_s
+typedef struct _ism330dhcx_rm__CTRL5_C
 {
     adr_u8c_u ADR; // register address
 
@@ -755,12 +755,12 @@ typedef struct _ism330dhcx_rm__CTRL5_C_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL5_C_t;
+} _ism330dhcx_rm__CTRL5_C_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL6_C_s
+/// @struct _ism330dhcx_rm__CTRL6_C
 /// @brief  ISM330DHCX control register 6 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL6_C_s
+typedef struct _ism330dhcx_rm__CTRL6_C
 {
     adr_u8c_u ADR; // register address
 
@@ -778,12 +778,12 @@ typedef struct _ism330dhcx_rm__CTRL6_C_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL6_C_t;
+} _ism330dhcx_rm__CTRL6_C_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL7_G_s
+/// @struct _ism330dhcx_rm__CTRL7_G
 /// @brief  ISM330DHCX control register 7 (gyroscope) [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL7_G_s
+typedef struct _ism330dhcx_rm__CTRL7_G
 {
     adr_u8c_u ADR; // register address
 
@@ -802,12 +802,12 @@ typedef struct _ism330dhcx_rm__CTRL7_G_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL7_G_t;
+} _ism330dhcx_rm__CTRL7_G_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL8_XL_s
+/// @struct _ism330dhcx_rm__CTRL8_XL
 /// @brief  ISM330DHCX control register 8 (accelerometer) [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL8_XL_s
+typedef struct _ism330dhcx_rm__CTRL8_XL
 {
     adr_u8c_u ADR; // register address
 
@@ -825,12 +825,12 @@ typedef struct _ism330dhcx_rm__CTRL8_XL_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL8_XL_t;
+} _ism330dhcx_rm__CTRL8_XL_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL9_XL_s
+/// @struct _ism330dhcx_rm__CTRL9_XL
 /// @brief  ISM330DHCX control register 9 (accelerometer) [r/w] {0xE0}
-typedef struct _ism330dhcx_rm__CTRL9_XL_s
+typedef struct _ism330dhcx_rm__CTRL9_XL
 {
     adr_u8c_u ADR; // register address
 
@@ -850,12 +850,12 @@ typedef struct _ism330dhcx_rm__CTRL9_XL_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL9_XL_t;
+} _ism330dhcx_rm__CTRL9_XL_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL10_C_s
+/// @struct _ism330dhcx_rm__CTRL10_C
 /// @brief  ISM330DHCX control register 10 [r/w] {0x00}
-typedef struct _ism330dhcx_rm__CTRL10_C_s
+typedef struct _ism330dhcx_rm__CTRL10_C
 {
     adr_u8c_u ADR; // register address
 
@@ -875,53 +875,53 @@ typedef struct _ism330dhcx_rm__CTRL10_C_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL10_C_t;
+} _ism330dhcx_rm__CTRL10_C_s;
 
 
 /* Output Registers */
 
 
-/// @typedef _ism330dhcx_rm__OUT_TEMP_t
+/// @typedef _ism330dhcx_rm__OUT_TEMP
 /// @brief  ISM330DHCX Temperature data output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__OUT_TEMP_t;
+typedef reg_u16_s _ism330dhcx_rm__OUT_TEMP_s;
 
 
-/// @typedef _ism330dhcx_rm__OUTX_G_t
+/// @typedef _ism330dhcx_rm__OUTX_G
 /// @brief  ISM330DHCX Angular rate sensor pitch axis (X) angular rate output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__OUTX_G_t;
+typedef reg_u16_s _ism330dhcx_rm__OUTX_G_s;
 
 
-/// @typedef _ism330dhcx_rm__OUTY_G_t
+/// @typedef _ism330dhcx_rm__OUTY_G
 /// @brief  ISM330DHCX Angular rate sensor roll axis (Y) angular rate output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__OUTY_G_t;
+typedef reg_u16_s _ism330dhcx_rm__OUTY_G_s;
 
 
-/// @typedef _ism330dhcx_rm__OUTZ_G_t
+/// @typedef _ism330dhcx_rm__OUTZ_G
 /// @brief  ISM330DHCX Angular rate sensor yaw axis (Z) angular rate output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__OUTZ_G_t;
+typedef reg_u16_s _ism330dhcx_rm__OUTZ_G_s;
 
 
-/// @typedef _ism330dhcx_rm__OUTX_A_t
+/// @typedef _ism330dhcx_rm__OUTX_A
 /// @brief  ISM330DHCX Linear acceleration sensor X-axis output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__OUTX_A_t;
+typedef reg_u16_s _ism330dhcx_rm__OUTX_A_s;
 
 
-/// @typedef _ism330dhcx_rm__OUTY_A_t
+/// @typedef _ism330dhcx_rm__OUTY_A
 /// @brief  ISM330DHCX Linear acceleration sensor Y-axis output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__OUTY_A_t;
+typedef reg_u16_s _ism330dhcx_rm__OUTY_A_s;
 
 
-/// @typedef _ism330dhcx_rm__OUTZ_A_t
+/// @typedef _ism330dhcx_rm__OUTZ_A
 /// @brief  ISM330DHCX Linear acceleration sensor Z-axis output register [r] {output}
-typedef reg_u16_s _ism330dhcx_rm__OUTZ_A_t;
+typedef reg_u16_s _ism330dhcx_rm__OUTZ_A_s;
 
 
 /* Motion Registers */
 
 
-/// @struct _ism330dhcx_rm__TAP_CFG0_s
+/// @struct _ism330dhcx_rm__TAP_CFG0
 /// @brief  ISM330DHCX Tap configuration register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__TAP_CFG0_s
+typedef struct _ism330dhcx_rm__TAP_CFG0
 {
     adr_u8c_u ADR; // register address
 
@@ -941,12 +941,12 @@ typedef struct _ism330dhcx_rm__TAP_CFG0_s
         };
     } bf;
 
-} _ism330dhcx_rm__TAP_CFG0_t;
+} _ism330dhcx_rm__TAP_CFG0_s;
 
 
-/// @struct _ism330dhcx_rm__TAP_CFG1_s
+/// @struct _ism330dhcx_rm__TAP_CFG1
 /// @brief  ISM330DHCX Tap configuration register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__TAP_CFG1_s
+typedef struct _ism330dhcx_rm__TAP_CFG1
 {
     adr_u8c_u ADR; // register address
 
@@ -960,12 +960,12 @@ typedef struct _ism330dhcx_rm__TAP_CFG1_s
         };
     } bf;
 
-} _ism330dhcx_rm__TAP_CFG1_t;
+} _ism330dhcx_rm__TAP_CFG1_s;
 
 
-/// @struct _ism330dhcx_rm__TAP_CFG2_s
+/// @struct _ism330dhcx_rm__TAP_CFG2
 /// @brief  ISM330DHCX Tap configuration register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__TAP_CFG2_s
+typedef struct _ism330dhcx_rm__TAP_CFG2
 {
     adr_u8c_u ADR; // register address
 
@@ -980,12 +980,12 @@ typedef struct _ism330dhcx_rm__TAP_CFG2_s
         };
     } bf;
 
-} _ism330dhcx_rm__TAP_CFG2_t;
+} _ism330dhcx_rm__TAP_CFG2_s;
 
 
-/// @struct _ism330dhcx_rm__TAP_THS_6D_s
+/// @struct _ism330dhcx_rm__TAP_THS_6D
 /// @brief  ISM330DHCX Portrait/landscape position and tap function threshold register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__TAP_THS_6D_s
+typedef struct _ism330dhcx_rm__TAP_THS_6D
 {
     adr_u8c_u ADR; // register address
 
@@ -1000,12 +1000,12 @@ typedef struct _ism330dhcx_rm__TAP_THS_6D_s
         };
     } bf;
 
-} _ism330dhcx_rm__TAP_THS_6D_t;
+} _ism330dhcx_rm__TAP_THS_6D_s;
 
 
-/// @struct _ism330dhcx_rm__INT_DUR2_s
+/// @struct _ism330dhcx_rm__INT_DUR2
 /// @brief  ISM330DHCX Tap recognition function setting register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__INT_DUR2_s
+typedef struct _ism330dhcx_rm__INT_DUR2
 {
     adr_u8c_u ADR; // register address
 
@@ -1020,12 +1020,12 @@ typedef struct _ism330dhcx_rm__INT_DUR2_s
         };
     } bf;
 
-} _ism330dhcx_rm__INT_DUR2_t;
+} _ism330dhcx_rm__INT_DUR2_s;
 
 
-/// @struct _ism330dhcx_rm__WAKE_UP_THS_s
+/// @struct _ism330dhcx_rm__WAKE_UP_THS
 /// @brief  ISM330DHCX Single/double-tap selection and wake-up configuration [r/w] {0x00}
-typedef struct _ism330dhcx_rm__WAKE_UP_THS_s
+typedef struct _ism330dhcx_rm__WAKE_UP_THS
 {
     adr_u8c_u ADR; // register address
 
@@ -1040,12 +1040,12 @@ typedef struct _ism330dhcx_rm__WAKE_UP_THS_s
         };
     } bf;
 
-} _ism330dhcx_rm__WAKE_UP_THS_t;
+} _ism330dhcx_rm__WAKE_UP_THS_s;
 
 
-/// @struct _ism330dhcx_rm__WAKE_UP_DUR_s
+/// @struct _ism330dhcx_rm__WAKE_UP_DUR
 /// @brief  ISM330DHCX Free-fall, wakeup and sleep mode functions duration setting register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__WAKE_UP_DUR_s
+typedef struct _ism330dhcx_rm__WAKE_UP_DUR
 {
     adr_u8c_u ADR; // register address
 
@@ -1061,12 +1061,12 @@ typedef struct _ism330dhcx_rm__WAKE_UP_DUR_s
         };
     } bf;
 
-} _ism330dhcx_rm__WAKE_UP_DUR_t;
+} _ism330dhcx_rm__WAKE_UP_DUR_s;
 
 
-/// @struct _ism330dhcx_rm__FREE_FALL_s
+/// @struct _ism330dhcx_rm__FREE_FALL
 /// @brief  ISM330DHCX Free-fall function duration setting register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__FREE_FALL_s
+typedef struct _ism330dhcx_rm__FREE_FALL
 {
     adr_u8c_u ADR; // register address
 
@@ -1080,12 +1080,12 @@ typedef struct _ism330dhcx_rm__FREE_FALL_s
         };
     } bf;
 
-} _ism330dhcx_rm__FREE_FALL_t;
+} _ism330dhcx_rm__FREE_FALL_s;
 
 
-/// @struct _ism330dhcx_rm__MD1_CFG_s
+/// @struct _ism330dhcx_rm__MD1_CFG
 /// @brief  ISM330DHCX Functions routing on INT1 register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__MD1_CFG_s
+typedef struct _ism330dhcx_rm__MD1_CFG
 {
     adr_u8c_u ADR; // register address
 
@@ -1105,12 +1105,12 @@ typedef struct _ism330dhcx_rm__MD1_CFG_s
         };
     } bf;
 
-} _ism330dhcx_rm__MD1_CFG_t;
+} _ism330dhcx_rm__MD1_CFG_s;
 
 
-/// @struct _ism330dhcx_rm__MD2_CFG_s
+/// @struct _ism330dhcx_rm__MD2_CFG
 /// @brief  ISM330DHCX Functions routing on INT2 register [r/w] {0x00}
-typedef struct _ism330dhcx_rm__MD2_CFG_s
+typedef struct _ism330dhcx_rm__MD2_CFG
 {
     adr_u8c_u ADR; // register address
 
@@ -1130,15 +1130,15 @@ typedef struct _ism330dhcx_rm__MD2_CFG_s
         };
     } bf;
 
-} _ism330dhcx_rm__MD2_CFG_t;
+} _ism330dhcx_rm__MD2_CFG_s;
 
 
 /* Embedded and Machine Learning Status Registers */
 
 
-/// @struct _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE_s
+/// @struct _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE
 /// @brief  ISM330DHCX Embedded function status register [r] {0x00}
-typedef struct _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE_s
+typedef struct _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE
 {
     adr_u8c_u ADR; // register address
 
@@ -1158,12 +1158,12 @@ typedef struct _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE_s
         };
     } bf;
 
-} _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE_t;
+} _ism330dhcx_rm__EMB_FUNC_STATUS_MAINPAGE_s;
 
 
-/// @struct _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE_s
+/// @struct _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE
 /// @brief  ISM330DHCX Finite State Machine status register (A) [r] {output}
-typedef struct _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE_s
+typedef struct _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE
 {
     adr_u8c_u ADR; // register address
 
@@ -1183,12 +1183,12 @@ typedef struct _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE_s
         };
     } bf;
 
-} _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE_t;
+} _ism330dhcx_rm__FSM_STATUS_A_MAINPAGE_s;
 
 
-/// @struct _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE_s
+/// @struct _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE
 /// @brief  ISM330DHCX Finite State Machine status register (B) [r] {output}
-typedef struct _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE_s
+typedef struct _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE
 {
     adr_u8c_u ADR; // register address
 
@@ -1208,12 +1208,12 @@ typedef struct _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE_s
         };
     } bf;
 
-} _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE_t;
+} _ism330dhcx_rm__FSM_STATUS_B_MAINPAGE_s;
 
 
-/// @struct _ism330dhcx_rm__FSM_STATUS_MAINPAGE_s
+/// @struct _ism330dhcx_rm__FSM_STATUS_MAINPAGE
 /// @brief  ISM330DHCX Finite State Machine status register (A|B) [r] {output}
-typedef struct _ism330dhcx_rm__FSM_STATUS_MAINPAGE_s
+typedef struct _ism330dhcx_rm__FSM_STATUS_MAINPAGE
 {
     adr_u16c_u ADR; // register address
 
@@ -1241,12 +1241,12 @@ typedef struct _ism330dhcx_rm__FSM_STATUS_MAINPAGE_s
         };
     } bf;
 
-} _ism330dhcx_rm__FSM_STATUS_MAINPAGE_t;
+} _ism330dhcx_rm__FSM_STATUS_MAINPAGE_s;
 
 
-/// @struct _ism330dhcx_rm__MLC_STATUS_MAINPAGE_s
+/// @struct _ism330dhcx_rm__MLC_STATUS_MAINPAGE
 /// @brief  ISM330DHCX Machine Learning Core status register [r] {output}
-typedef struct _ism330dhcx_rm__MLC_STATUS_MAINPAGE_s
+typedef struct _ism330dhcx_rm__MLC_STATUS_MAINPAGE
 {
     adr_u8c_u ADR; // register address
 
@@ -1266,12 +1266,12 @@ typedef struct _ism330dhcx_rm__MLC_STATUS_MAINPAGE_s
         };
     } bf;
 
-} _ism330dhcx_rm__MLC_STATUS_MAINPAGE_t;
+} _ism330dhcx_rm__MLC_STATUS_MAINPAGE_s;
 
 
-/// @struct _ism330dhcx_rm__STATUS_MASTER_MAINPAGE_s
+/// @struct _ism330dhcx_rm__STATUS_MASTER_MAINPAGE
 /// @brief  ISM330DHCX Sensor hub source register [r] {output}
-typedef struct _ism330dhcx_rm__STATUS_MASTER_MAINPAGE_s
+typedef struct _ism330dhcx_rm__STATUS_MASTER_MAINPAGE
 {
     adr_u8c_u ADR; // register address
 
@@ -1291,16 +1291,16 @@ typedef struct _ism330dhcx_rm__STATUS_MASTER_MAINPAGE_s
         };
     } bf;
 
-} _ism330dhcx_rm__STATUS_MASTER_MAINPAGE_t;
+} _ism330dhcx_rm__STATUS_MASTER_MAINPAGE_s;
 
 
 /* Optical Image Stabilisation (OIS) and Sensor Offset Registers */
 
 
-/// @struct _ism330dhcx_rm__INT_OIS_s
+/// @struct _ism330dhcx_rm__INT_OIS
 /// @brief  ISM330DHCX OIS interrupt configuration register and accelerometer self-test enable setting [r:r/w] {0x00}
 /// @note   Primary interface for read-only [r]; only Aux SPI can write to this register [r/w]
-typedef struct _ism330dhcx_rm__INT_OIS_s
+typedef struct _ism330dhcx_rm__INT_OIS
 {
     adr_u8c_u ADR; // register address
 
@@ -1319,13 +1319,13 @@ typedef struct _ism330dhcx_rm__INT_OIS_s
         };
     } bf;
 
-} _ism330dhcx_rm__INT_OIS_t;
+} _ism330dhcx_rm__INT_OIS_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL1_OIS_s
+/// @struct _ism330dhcx_rm__CTRL1_OIS
 /// @brief  ISM330DHCX OIS configuration register [r:r/w] {0x00}
 /// @note   Primary interface for read-only [r]; only Aux SPI can write to this register [r/w]
-typedef struct _ism330dhcx_rm__CTRL1_OIS_s
+typedef struct _ism330dhcx_rm__CTRL1_OIS
 {
     adr_u8c_u ADR; // register address
 
@@ -1344,13 +1344,13 @@ typedef struct _ism330dhcx_rm__CTRL1_OIS_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL1_OIS_t;
+} _ism330dhcx_rm__CTRL1_OIS_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL2_OIS_s
+/// @struct _ism330dhcx_rm__CTRL2_OIS
 /// @brief  ISM330DHCX OIS configuration register [r:r/w] {0x00}
 /// @note   Primary interface for read-only [r]; only Aux SPI can write to this register [r/w]
-typedef struct _ism330dhcx_rm__CTRL2_OIS_s
+typedef struct _ism330dhcx_rm__CTRL2_OIS
 {
     adr_u8c_u ADR; // register address
 
@@ -1368,13 +1368,13 @@ typedef struct _ism330dhcx_rm__CTRL2_OIS_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL2_OIS_t;
+} _ism330dhcx_rm__CTRL2_OIS_s;
 
 
-/// @struct _ism330dhcx_rm__CTRL3_OIS_s
+/// @struct _ism330dhcx_rm__CTRL3_OIS
 /// @brief  ISM330DHCX OIS configuration register [r:r/w] {0x00}
 /// @note   Primary interface for read-only [r]; only Aux SPI can write to this register [r/w]
-typedef struct _ism330dhcx_rm__CTRL3_OIS_s
+typedef struct _ism330dhcx_rm__CTRL3_OIS
 {
     adr_u8c_u ADR; // register address
 
@@ -1390,55 +1390,55 @@ typedef struct _ism330dhcx_rm__CTRL3_OIS_s
         };
     } bf;
 
-} _ism330dhcx_rm__CTRL3_OIS_t;
+} _ism330dhcx_rm__CTRL3_OIS_s;
 
 
-/// @typedef _ism330dhcx_rm__X_OFS_USR_t
+/// @typedef _ism330dhcx_rm__X_OFS_USR
 /// @brief  ISM330DHCX Accelerometer X-axis user offset correction [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm__X_OFS_USR_t;
+typedef reg_u8_s _ism330dhcx_rm__X_OFS_USR_s;
 
 
-/// @typedef _ism330dhcx_rm__Y_OFS_USR_t
+/// @typedef _ism330dhcx_rm__Y_OFS_USR
 /// @brief  ISM330DHCX Accelerometer Y-axis user offset correction [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm__Y_OFS_USR_t;
+typedef reg_u8_s _ism330dhcx_rm__Y_OFS_USR_s;
 
 
-/// @typedef _ism330dhcx_rm__Z_OFS_USR_t
+/// @typedef _ism330dhcx_rm__Z_OFS_USR
 /// @brief  ISM330DHCX Accelerometer Z-axis user offset correction [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm__Z_OFS_USR_t;
+typedef reg_u8_s _ism330dhcx_rm__Z_OFS_USR_s;
 
 
 /* Timestamp Registers */
 
 
-/// @typedef _ism330dhcx_rm__TIMESTAMP0_t
+/// @typedef _ism330dhcx_rm__TIMESTAMP0
 /// @brief  ISM330DHCX Timestamp data output register (LSB) [r] {output}
 /// @note   value is expressed as a 32-bit word and the bit resolution is 25 μs
-typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP0_t;
+typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP0_s;
 
 
-/// @typedef _ism330dhcx_rm__TIMESTAMP1_t
+/// @typedef _ism330dhcx_rm__TIMESTAMP1
 /// @brief  ISM330DHCX Timestamp data output register [r] {output}
 /// @note   value is expressed as a 32-bit word and the bit resolution is 25 μs
-typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP1_t;
+typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP1_s;
 
 
-/// @typedef _ism330dhcx_rm__TIMESTAMP2_t
+/// @typedef _ism330dhcx_rm__TIMESTAMP2
 /// @brief  ISM330DHCX Timestamp data output register [r] {output}
 /// @note   value is expressed as a 32-bit word and the bit resolution is 25 μs
-typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP2_t;
+typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP2_s;
 
 
-/// @typedef _ism330dhcx_rm__TIMESTAMP3_t
+/// @typedef _ism330dhcx_rm__TIMESTAMP3
 /// @brief  ISM330DHCX Timestamp data output register (MSB) [r] {output}
 /// @note   value is expressed as a 32-bit word and the bit resolution is 25 μs
-typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP3_t;
+typedef reg_u8_s _ism330dhcx_rm__TIMESTAMP3_s;
 
 
-/// @struct _ism330dhcx_rm__TIMESTAMP_s
+/// @struct _ism330dhcx_rm__TIMESTAMP
 /// @brief  ISM330DHCX Timestamp data output register (1|2|3|4) [r] {output}
 /// @note   value is expressed as a 32-bit word and the bit resolution is 25 μs
-typedef struct _ism330dhcx_rm__TIMESTAMP_s
+typedef struct _ism330dhcx_rm__TIMESTAMP
 {
     adr_u32c_u ADR; // register address
 
@@ -1454,12 +1454,12 @@ typedef struct _ism330dhcx_rm__TIMESTAMP_s
         };
     } bf;
 
-} _ism330dhcx_rm__TIMESTAMP_t;
+} _ism330dhcx_rm__TIMESTAMP_s;
 
 
-/// @typedef _ism330dhcx_rm__INTERNAL_FREQ_FINE_t
+/// @typedef _ism330dhcx_rm__INTERNAL_FREQ_FINE
 /// @brief  ISM330DHCX Internal frequency register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm__INTERNAL_FREQ_FINE_t;
+typedef reg_u8_s _ism330dhcx_rm__INTERNAL_FREQ_FINE_s;
 
 
 #endif /* __ISM330DHCX_INTERNAL__RM_STRUCTS_H__ */
