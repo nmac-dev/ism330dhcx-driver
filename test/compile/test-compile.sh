@@ -32,8 +32,8 @@ OUT="$TEST_MAIN__D/test_out"
 
 ## Compile Test
 
-gcc    "${SRC__C[@]}" \
-    $MAIN__C      \
+gcc "${SRC__C[@]}"   \
+    $MAIN__C         \
     -I $TEST_MAIN__D \
     -o $OUT
 
