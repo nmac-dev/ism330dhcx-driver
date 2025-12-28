@@ -14,102 +14,102 @@
 /* Sensor Hub Output Registers */
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_1_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_1
 /// @brief  ISM330DHCX Sensor hub output 1 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_1_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_1_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_2_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_2
 /// @brief  ISM330DHCX Sensor hub output 2 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_2_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_2_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_3_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_3
 /// @brief  ISM330DHCX Sensor hub output 3 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_3_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_3_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_4_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_4
 /// @brief  ISM330DHCX Sensor hub output 4 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_4_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_4_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_5_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_5
 /// @brief  ISM330DHCX Sensor hub output 5 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_5_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_5_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_6_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_6
 /// @brief  ISM330DHCX Sensor hub output 6 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_6_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_6_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_7_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_7
 /// @brief  ISM330DHCX Sensor hub output 7 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_7_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_7_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_8_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_8
 /// @brief  ISM330DHCX Sensor hub output 8 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_8_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_8_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_9_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_9
 /// @brief  ISM330DHCX Sensor hub output 9 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_9_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_9_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_10_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_10
 /// @brief  ISM330DHCX Sensor hub output 10 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_10_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_10_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_11_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_11
 /// @brief  ISM330DHCX Sensor hub output 11 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_11_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_11_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_12_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_12
 /// @brief  ISM330DHCX Sensor hub output 12 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_12_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_12_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_13_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_13
 /// @brief  ISM330DHCX Sensor hub output 13 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_13_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_13_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_14_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_14
 /// @brief  ISM330DHCX Sensor hub output 14 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_14_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_14_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_15_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_15
 /// @brief  ISM330DHCX Sensor hub output 15 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_15_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_15_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_16_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_16
 /// @brief  ISM330DHCX Sensor hub output 16 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_16_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_16_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_17_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_17
 /// @brief  ISM330DHCX Sensor hub output 17 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_17_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_17_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_18_t
+/// @typedef _ism330dhcx_rm_sh__SENSOR_HUB_18
 /// @brief  ISM330DHCX Sensor hub output 18 register [r] {output}
-typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_18_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SENSOR_HUB_18_s;
 
 
 /* Master & Slave Configuration Registers */
 
 
-/// @struct _ism330dhcx_rm_sh__MASTER_CONFIG_s
+/// @struct _ism330dhcx_rm_sh__MASTER_CONFIG
 /// @brief  ISM330DHCX Master configuration register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__MASTER_CONFIG_s
+typedef struct _ism330dhcx_rm_sh__MASTER_CONFIG
 {
     adr_u8c_u ADR; // register address
 
@@ -128,12 +128,12 @@ typedef struct _ism330dhcx_rm_sh__MASTER_CONFIG_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__MASTER_CONFIG_t;
+} _ism330dhcx_rm_sh__MASTER_CONFIG_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLV0_ADD_s
+/// @struct _ism330dhcx_rm_sh__SLV0_ADD
 /// @brief  ISM330DHCX I²C slave address of the first external sensor (Sensor 1) register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLV0_ADD_s
+typedef struct _ism330dhcx_rm_sh__SLV0_ADD
 {
     adr_u8c_u ADR; // register address
 
@@ -147,17 +147,17 @@ typedef struct _ism330dhcx_rm_sh__SLV0_ADD_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLV0_ADD_t;
+} _ism330dhcx_rm_sh__SLV0_ADD_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SLV0_SUBADD_t
+/// @typedef _ism330dhcx_rm_sh__SLV0_SUBADD
 /// @brief  ISM330DHCX Address of register on the first external sensor (Sensor 1) register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_sh__SLV0_SUBADD_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SLV0_SUBADD_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLAVE0_CONFIG_s
+/// @struct _ism330dhcx_rm_sh__SLAVE0_CONFIG
 /// @brief  ISM330DHCX First external sensor (Sensor1) configuration and sensor hub settings register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLAVE0_CONFIG_s
+typedef struct _ism330dhcx_rm_sh__SLAVE0_CONFIG
 {
     adr_u8c_u ADR; // register address
 
@@ -174,12 +174,12 @@ typedef struct _ism330dhcx_rm_sh__SLAVE0_CONFIG_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLAVE0_CONFIG_t;
+} _ism330dhcx_rm_sh__SLAVE0_CONFIG_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLV1_ADD_s
+/// @struct _ism330dhcx_rm_sh__SLV1_ADD
 /// @brief  ISM330DHCX I²C slave address of the second external sensor (Sensor 2) register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLV1_ADD_s
+typedef struct _ism330dhcx_rm_sh__SLV1_ADD
 {
     adr_u8c_u ADR; // register address
 
@@ -193,17 +193,17 @@ typedef struct _ism330dhcx_rm_sh__SLV1_ADD_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLV1_ADD_t;
+} _ism330dhcx_rm_sh__SLV1_ADD_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SLV1_SUBADD_t
+/// @typedef _ism330dhcx_rm_sh__SLV1_SUBADD
 /// @brief  ISM330DHCX Address of register on the second external sensor (Sensor 2) register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_sh__SLV1_SUBADD_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SLV1_SUBADD_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLAVE1_CONFIG_s
+/// @struct _ism330dhcx_rm_sh__SLAVE1_CONFIG
 /// @brief  ISM330DHCX second external sensor (Sensor 2) configuration and sensor hub settings register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLAVE1_CONFIG_s
+typedef struct _ism330dhcx_rm_sh__SLAVE1_CONFIG
 {
     adr_u8c_u ADR; // register address
 
@@ -221,12 +221,12 @@ typedef struct _ism330dhcx_rm_sh__SLAVE1_CONFIG_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLAVE1_CONFIG_t;
+} _ism330dhcx_rm_sh__SLAVE1_CONFIG_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLV2_ADD_s
+/// @struct _ism330dhcx_rm_sh__SLV2_ADD
 /// @brief  ISM330DHCX I²C slave address of the third external sensor (Sensor 3) register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLV2_ADD_s
+typedef struct _ism330dhcx_rm_sh__SLV2_ADD
 {
     adr_u8c_u ADR; // register address
 
@@ -240,17 +240,17 @@ typedef struct _ism330dhcx_rm_sh__SLV2_ADD_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLV2_ADD_t;
+} _ism330dhcx_rm_sh__SLV2_ADD_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SLV2_SUBADD_t
+/// @typedef _ism330dhcx_rm_sh__SLV2_SUBADD
 /// @brief  ISM330DHCX Address of register on the third external sensor (Sensor 3) register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_sh__SLV2_SUBADD_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SLV2_SUBADD_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLAVE2_CONFIG_s
+/// @struct _ism330dhcx_rm_sh__SLAVE2_CONFIG
 /// @brief  ISM330DHCX third external sensor (Sensor 3) configuration and sensor hub settings register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLAVE2_CONFIG_s
+typedef struct _ism330dhcx_rm_sh__SLAVE2_CONFIG
 {
     adr_u8c_u ADR; // register address
 
@@ -268,12 +268,12 @@ typedef struct _ism330dhcx_rm_sh__SLAVE2_CONFIG_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLAVE2_CONFIG_t;
+} _ism330dhcx_rm_sh__SLAVE2_CONFIG_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLV3_ADD_s
+/// @struct _ism330dhcx_rm_sh__SLV3_ADD
 /// @brief  ISM330DHCX I²C slave address of the fourth external sensor (Sensor 4) register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLV3_ADD_s
+typedef struct _ism330dhcx_rm_sh__SLV3_ADD
 {
     adr_u8c_u ADR; // register address
 
@@ -287,17 +287,17 @@ typedef struct _ism330dhcx_rm_sh__SLV3_ADD_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLV3_ADD_t;
+} _ism330dhcx_rm_sh__SLV3_ADD_s;
 
 
-/// @typedef _ism330dhcx_rm_sh__SLV3_SUBADD_t
+/// @typedef _ism330dhcx_rm_sh__SLV3_SUBADD
 /// @brief  ISM330DHCX Address of register on the fourth external sensor (Sensor 4) register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_sh__SLV3_SUBADD_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__SLV3_SUBADD_s;
 
 
-/// @struct _ism330dhcx_rm_sh__SLAVE3_CONFIG_s
+/// @struct _ism330dhcx_rm_sh__SLAVE3_CONFIG
 /// @brief  ISM330DHCX fourth external sensor (Sensor 4) configuration and sensor hub settings register [r/w] {0x00}
-typedef struct _ism330dhcx_rm_sh__SLAVE3_CONFIG_s
+typedef struct _ism330dhcx_rm_sh__SLAVE3_CONFIG
 {
     adr_u8c_u ADR; // register address
 
@@ -315,23 +315,23 @@ typedef struct _ism330dhcx_rm_sh__SLAVE3_CONFIG_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__SLAVE3_CONFIG_t;
+} _ism330dhcx_rm_sh__SLAVE3_CONFIG_s;
 
 
 /* Slave Data Write */
 
 
-/// @typedef _ism330dhcx_rm_sh__DATAWRITE_SLV0_t
+/// @typedef _ism330dhcx_rm_sh__DATAWRITE_SLV0
 /// @brief  ISM330DHCX Data to be written into the slave 0 device register [r/w] {0x00}
-typedef reg_u8_s _ism330dhcx_rm_sh__DATAWRITE_SLV0_t;
+typedef reg_u8_s _ism330dhcx_rm_sh__DATAWRITE_SLV0_s;
 
 
 /* Master Status */
 
 
-/// @struct _ism330dhcx_rm_sh__STATUS_MASTER_s
+/// @struct _ism330dhcx_rm_sh__STATUS_MASTER
 /// @brief  ISM330DHCX Sensor hub source register [r] {0x00}
-typedef struct _ism330dhcx_rm_sh__STATUS_MASTER_s
+typedef struct _ism330dhcx_rm_sh__STATUS_MASTER
 {
     adr_u8c_u ADR; // register address
 
@@ -351,7 +351,7 @@ typedef struct _ism330dhcx_rm_sh__STATUS_MASTER_s
         };
     } bf;
 
-} _ism330dhcx_rm_sh__STATUS_MASTER_t;
+} _ism330dhcx_rm_sh__STATUS_MASTER_s;
 
 
 #endif /* __ISM330DHCX_INTERNAL__RM_SH_STRUCTS_H__ */

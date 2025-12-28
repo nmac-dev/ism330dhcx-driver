@@ -23,15 +23,15 @@ Axis
 **/
 
 
-/// @struct ism330dhcx_gyr_s
+/// @struct ism330dhcx_gyr
 /// @brief  ISM330DHCX Gyroscope Struct
-typedef struct
+typedef struct ism330dhcx_gyr
 {
     /* Device Registers */
 
-    _ism330dhcx_rm__OUTX_G_t outx;
-    _ism330dhcx_rm__OUTY_G_t outy;
-    _ism330dhcx_rm__OUTZ_G_t outz;
+    _ism330dhcx_rm__OUTX_G_s outx;
+    _ism330dhcx_rm__OUTY_G_s outy;
+    _ism330dhcx_rm__OUTZ_G_s outz;
 
 } ism330dhcx_gyr_s;
 
