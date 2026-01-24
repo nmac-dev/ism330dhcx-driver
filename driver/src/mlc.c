@@ -1,7 +1,7 @@
 /// @file  mlc.c
 /// @brief ISM330DHCX MLC Driver
 
-#include "ism330dhcx/mlc.h"
+#include "mlc.h"
 
 
 ism330dhcx_mlc_s ism330dhcx_mlc__get_default_s()

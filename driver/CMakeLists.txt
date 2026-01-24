@@ -1,19 +1,33 @@
-## Build ism330dhcx static library
+### ISM330DHCX Driver static library
 
-file(GLOB ISM330DHCX_SRC
-  "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c"
+add_library(ism330dhcx STATIC)
+
+target_sources(ism330dhcx
+    PRIVATE
+        src/accelerometer.c
+        src/core.c
+        src/emag.c
+        src/fifo.c
+        src/fsm.c
+        src/gyroscope.c
+        src/mlc.c
+        src/motion.c
+        src/ois.c
+        src/sensor_hub.c
 )
 
-
-## Expose headers as <ism330dhcx/<header>.h>
-
-add_library(ism330dhcx STATIC ${ISM330DHCX_SRC})
-
-target_include_directories(ism330dhcx PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ism330dhcx>
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/internal>
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/c-nstd>
+target_include_directories(ism330dhcx
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/c-nstd
+        ${CMAKE_CURRENT_SOURCE_DIR}/internal
 )
 
-target_compile_features(ism330dhcx PUBLIC c_std_99)
+target_compile_features(ism330dhcx
+    PUBLIC
+        c_std_99
+)
+
+set_target_properties(ism330dhcx PROPERTIES
+    OUTPUT_NAME ism330dhcx
+)

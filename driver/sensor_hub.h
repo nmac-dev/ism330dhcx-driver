@@ -6,9 +6,9 @@
 
 
 #include "c-nstd/types.h"
-#include "ism330dhcx/register_map.h"
-#include "ism330dhcx/internal/rm_structs.h"
-#include "ism330dhcx/internal/rm_sh_structs.h"
+#include "register_map.h"
+#include "internal/rm_structs.h"
+#include "internal/rm_sh_structs.h"
 
 
 /// @struct ism330dhcx_sh
