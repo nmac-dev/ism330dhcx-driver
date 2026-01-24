@@ -4,7 +4,7 @@ echo "-- Test Compile --"
 ## Variables
 
 REPO__D="$(git rev-parse --show-toplevel)"
-DRIVER__D="$REPO__D/driver"
+DRIVER__D="$REPO__D/ism330dhcx"
 SRC__D="$DRIVER__D/src"
 
 
@@ -13,8 +13,8 @@ SRC__D="$DRIVER__D/src"
 C_NSTD__LIB="c-nstd"
 ISM330DHCX__LIB="ism330dhcx"
 
-ln -sf "$REPO__D/driver/$C_NSTD__LIB" "$C_NSTD__LIB"
-ln -sf "$REPO__D/driver"              "$ISM330DHCX__LIB"
+ln -sf "$DRIVER__D/$C_NSTD__LIB" "$C_NSTD__LIB"
+ln -sf "$DRIVER__D"              "$ISM330DHCX__LIB"
 
 
 ## Sources
@@ -40,7 +40,7 @@ cmake --build build -j
 cd build
 make
 
-cp driver/libism330dhcx.a $TEST_MAIN__D/ism330dhcx.a
+cp $ISM330DHCX__LIB/libism330dhcx.a $TEST_MAIN__D/ism330dhcx.a
 cd $TEST_MAIN__D
 rm -rf build
 

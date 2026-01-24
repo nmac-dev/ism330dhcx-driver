@@ -6,4 +6,4 @@ project(ism330dhcx C)
 
 ## SOURCES
 
-add_subdirectory(driver)
+add_subdirectory(ism330dhcx)
