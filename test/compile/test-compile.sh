@@ -30,11 +30,28 @@ MAIN__C="$TEST_MAIN__D/test_compile.c"
 OUT="$TEST_MAIN__D/test_out"
 
 
+## CMake Build
+
+mkdir -p build
+cmake -S $REPO__D -B build
+cmake --build build -j
+
+
+cd build
+make
+
+cp driver/libism330dhcx.a $TEST_MAIN__D/ism330dhcx.a
+cd $TEST_MAIN__D
+rm -rf build
+
+
 ## Compile Test
 
-gcc "${SRC__C[@]}"   \
-    $MAIN__C         \
-    -I $TEST_MAIN__D \
+ls $ISM330DHCX__LIB
+
+gcc    $MAIN__C            \
+    -I $ISM330DHCX__LIB    \
+       $ISM330DHCX__LIB.a  \
     -o $OUT
 
 
@@ -42,7 +59,6 @@ if [[ $? -ne 0 ]]; then
     echo "FAILED"
     exit 1
 fi
-
 
 chmod +x $OUT
 
@@ -60,3 +76,4 @@ fi
 rm     $OUT
 unlink $C_NSTD__LIB
 unlink $ISM330DHCX__LIB
+rm     $ISM330DHCX__LIB.a
