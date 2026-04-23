@@ -20,7 +20,6 @@ target_include_directories(ism330dhcx
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
     PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/c-nstd
         ${CMAKE_CURRENT_SOURCE_DIR}/internal
 )
 
@@ -49,7 +48,6 @@ set(ISM330DHCX_PUBLIC_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/register_map.h
     ${CMAKE_CURRENT_SOURCE_DIR}/sensor_hub.h
     ${CMAKE_CURRENT_SOURCE_DIR}/types.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/ism330dhcx
 )
 
 install(TARGETS ism330dhcx
@@ -62,5 +60,5 @@ install(TARGETS ism330dhcx
 # Install public headers into include/ism330dhcx
 install(FILES ${ISM330DHCX_PUBLIC_HEADERS} DESTINATION include/ism330dhcx)
 
-# Install c-nstd helper
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/c-nstd DESTINATION include/ism330dhcx)
+# Install internal headers
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/internal DESTINATION include/ism330dhcx)

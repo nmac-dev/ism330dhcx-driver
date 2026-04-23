@@ -10,11 +10,9 @@ SRC__D="$DRIVER__D/src"
 
 ## Libraries
 
-C_NSTD__LIB="c-nstd"
 ISM330DHCX__LIB="ism330dhcx"
 
-ln -sf "$DRIVER__D/$C_NSTD__LIB" "$C_NSTD__LIB"
-ln -sf "$DRIVER__D"              "$ISM330DHCX__LIB"
+ln -sf "$DRIVER__D" "$ISM330DHCX__LIB"
 
 
 ## Sources
@@ -74,6 +72,5 @@ fi
 ## Clean-up
 
 rm     $OUT
-unlink $C_NSTD__LIB
 unlink $ISM330DHCX__LIB
 rm     $ISM330DHCX__LIB.a
