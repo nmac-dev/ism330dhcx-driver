@@ -5,7 +5,7 @@
 #define __ISM330DHCX_INTERNAL__RM_EF_STRUCTS_H__
 
 
-#include "c-nstd/types.h"
+#include "ism330dhcx/types.h"
 
 
 /// NOTE:  Embedded functions registers are accessible when FUNC_CFG_EN is set to '1' in FUNC_CFG_ACCESS

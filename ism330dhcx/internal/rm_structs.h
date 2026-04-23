@@ -5,7 +5,7 @@
 #define __ISM330DHCX_INTERNAL__RM_STRUCTS_H__
 
 
-#include "c-nstd/types.h"
+#include "ism330dhcx/types.h"
 
 
 /// NOTE: internal structures are denoted with the prefix "_"

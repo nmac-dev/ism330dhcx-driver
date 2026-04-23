@@ -5,7 +5,7 @@
 #define __ISM330DHCX_INTERNAL__RM_EAF1_STRUCTS_H__
 
 
-#include "c-nstd/types.h"
+#include "ism330dhcx/types.h"
 
 
 /// NOTE: Embedded advanced features page 1 registers are accessible when PAGE_SEL[3:0] are set to 0001 in PAGE_SEL

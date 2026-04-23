@@ -5,7 +5,7 @@
 #define __ISM330DHCX_SENSOR_HUB_H__
 
 
-#include "c-nstd/types.h"
+#include "ism330dhcx/types.h"
 #include "register_map.h"
 #include "internal/rm_structs.h"
 #include "internal/rm_sh_structs.h"
