@@ -33,7 +33,7 @@ set_target_properties(ism330dhcx PROPERTIES
 )
 
 
-# Install
+## Install
 
 set(ISM330DHCX_PUBLIC_HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/accelerometer.h
@@ -57,8 +57,5 @@ install(TARGETS ism330dhcx
     INCLUDES DESTINATION include/ism330dhcx
 )
 
-# Install public headers into include/ism330dhcx
-install(FILES ${ISM330DHCX_PUBLIC_HEADERS} DESTINATION include/ism330dhcx)
-
-# Install internal headers
+install(FILES ${ISM330DHCX_PUBLIC_HEADERS}             DESTINATION include/ism330dhcx)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/internal DESTINATION include/ism330dhcx)

@@ -17,7 +17,6 @@ ln -sf "$DRIVER__D" "$ISM330DHCX__LIB"
 
 ## Sources
 
-# Compile all driver source files so new modules are picked up automatically
 SRC__C=( "$SRC__D"/*.c )
 
 
