@@ -1,7 +1,7 @@
 /// @file  fsm.c
 /// @brief ISM330DHCX FSM Driver
 
-#include "ism330dhcx/fsm.h"
+#include "fsm.h"
 
 
 ism330dhcx_fsm_s ism330dhcx_fsm__get_default_s()

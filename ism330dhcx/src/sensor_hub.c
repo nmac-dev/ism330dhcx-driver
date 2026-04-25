@@ -1,7 +1,7 @@
 /// @file  sensor_hub.c
 /// @brief ISM330DHCX Sensor Hub Driver
 
-#include "ism330dhcx/sensor_hub.h"
+#include "sensor_hub.h"
 
 
 ism330dhcx_sh_s ism330dhcx_sh__get_default_s()

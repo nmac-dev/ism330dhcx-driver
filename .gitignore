@@ -1,4 +1,23 @@
 
+# Common build directories
+/build/
+/build-*/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+cmake_uninstall.cmake
+CTestTestfile.cmake
+CTestTestfile.cmake.user
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CPack*.cmake
+install_manifest.txt
+Makefile
+compile_commands.json
+
+
 # VSCode
 .vscode
 

@@ -5,7 +5,7 @@
 #define __ISM330DHCX_INTERNAL__RM_SH_STRUCTS_H__
 
 
-#include "c-nstd/types.h"
+#include "ism330dhcx/types.h"
 
 
 /// NOTE: Sensor Hub registers are accessible when bit SHUB_REG_ACCESS is set to '1' in FUNC_CFG_ACCESS

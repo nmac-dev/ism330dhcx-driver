@@ -5,9 +5,9 @@
 #define __ISM330DHCX_EMAG_H__
 
 
-#include "c-nstd/types.h"
-#include "ism330dhcx/register_map.h"
-#include "ism330dhcx/internal/rm_eaf0_structs.h"
+#include "ism330dhcx/types.h"
+#include "register_map.h"
+#include "internal/rm_eaf0_structs.h"
 
 
 /// @struct ism330dhcx_emag

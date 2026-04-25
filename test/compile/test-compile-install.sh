@@ -4,22 +4,19 @@ echo "-- Test Compile --"
 ## Variables
 
 REPO__D="$(git rev-parse --show-toplevel)"
-DRIVER__D="$REPO__D/driver"
+DRIVER__D="$REPO__D/ism330dhcx"
 SRC__D="$DRIVER__D/src"
 
 
 ## Libraries
 
-C_NSTD__LIB="c-nstd"
 ISM330DHCX__LIB="ism330dhcx"
 
-ln -sf "$REPO__D/driver/$C_NSTD__LIB" "$C_NSTD__LIB"
-ln -sf "$REPO__D/driver"              "$ISM330DHCX__LIB"
+ln -sf "$DRIVER__D" "$ISM330DHCX__LIB"
 
 
 ## Sources
 
-# Compile all driver source files so new modules are picked up automatically
 SRC__C=( "$SRC__D"/*.c )
 
 
@@ -30,11 +27,25 @@ MAIN__C="$TEST_MAIN__D/test_compile.c"
 OUT="$TEST_MAIN__D/test_out"
 
 
+## CMake Build
+
+mkdir -p build
+cmake -S $REPO__D -B build
+cmake --build build -j
+
+sudo cmake --install build --prefix /usr/local
+rm -rf build
+
+
 ## Compile Test
 
-gcc "${SRC__C[@]}"   \
-    $MAIN__C         \
-    -I $TEST_MAIN__D \
+rm -f $ISM330DHCX__LIB
+
+gcc $MAIN__C                         \
+    -DISM330DHCX_USE_SYSTEM_INCLUDES \
+    -I /usr/local/include            \
+    -L /usr/local/lib                \
+    -lism330dhcx                     \
     -o $OUT
 
 
@@ -42,7 +53,6 @@ if [[ $? -ne 0 ]]; then
     echo "FAILED"
     exit 1
 fi
-
 
 chmod +x $OUT
 
@@ -57,6 +67,4 @@ fi
 
 ## Clean-up
 
-rm     $OUT
-unlink $C_NSTD__LIB
-unlink $ISM330DHCX__LIB
+rm $OUT

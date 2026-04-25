@@ -1,7 +1,7 @@
 /// @file  emag.c
 /// @brief ISM330DHCX External Magnetometer Driver
 
-#include "ism330dhcx/emag.h"
+#include "emag.h"
 
 
 ism330dhcx_emag_s ism330dhcx_emag__get_default_s()

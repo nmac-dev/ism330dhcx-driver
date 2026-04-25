@@ -1,7 +1,7 @@
 /// @file  ois.c
 /// @brief ISM330DHCX Optical Image Stabilisation Driver
 
-#include "ism330dhcx/ois.h"
+#include "ois.h"
 
 
 ism330dhcx_ois_s ism330dhcx_ois__get_default_s()

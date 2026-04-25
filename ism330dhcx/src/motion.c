@@ -1,7 +1,7 @@
 /// @file  motion.c
 /// @brief ISM330DHCX Motion Driver
 
-#include "ism330dhcx/motion.h"
+#include "motion.h"
 
 
 ism330dhcx_motion_s ism330dhcx_motion__get_default_s()

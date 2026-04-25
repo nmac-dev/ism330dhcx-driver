@@ -1,7 +1,7 @@
 /// @file  gyroscope.c
 /// @brief ISM330DHCX Gyroscope Driver
 
-#include "ism330dhcx/gyroscope.h"
+#include "gyroscope.h"
 
 
 ism330dhcx_gyr_s ism330dhcx_gyr__get_default_s()

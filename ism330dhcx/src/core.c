@@ -1,7 +1,7 @@
 /// @file  core.c
 /// @brief ISM330DHCX Core Driver
 
-#include "ism330dhcx/core.h"
+#include "core.h"
 
 
 ism330dhcx_core_s ism330dhcx_core__get_default_s()

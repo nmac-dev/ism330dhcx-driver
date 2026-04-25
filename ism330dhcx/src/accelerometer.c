@@ -1,7 +1,7 @@
 /// @file  accelerometer.c
 /// @brief ISM330DHCX Accelerometer Driver
 
-#include "ism330dhcx/accelerometer.h"
+#include "accelerometer.h"
 
 
 ism330dhcx_acc_s ism330dhcx_acc__get_default_s()

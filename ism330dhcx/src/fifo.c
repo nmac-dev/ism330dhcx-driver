@@ -1,7 +1,7 @@
 /// @file  fifo.c
 /// @brief ISM330DHCX FIFO Driver
 
-#include "ism330dhcx/fifo.h"
+#include "fifo.h"
 
 
 ism330dhcx_fifo_s ism330dhcx_fifo__get_default_s()
