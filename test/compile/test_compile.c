@@ -1,8 +1,26 @@
-/// @file  test_compile.c
-/// @brief test if the driver code compiles
+/// @file  test_compile_static.c
+/// @brief Verifies compilation and function of the static or system ISM330DHCX driver
 
 
 #include <stdio.h>
+
+
+#ifdef ISM330DHCX_USE_SYSTEM_INCLUDES
+
+#include <ism330dhcx/register_map.h>
+
+#include <ism330dhcx/accelerometer.h>
+#include <ism330dhcx/core.h>
+#include <ism330dhcx/emag.h>
+#include <ism330dhcx/fifo.h>
+#include <ism330dhcx/fsm.h>
+#include <ism330dhcx/gyroscope.h>
+#include <ism330dhcx/mlc.h>
+#include <ism330dhcx/motion.h>
+#include <ism330dhcx/ois.h>
+#include <ism330dhcx/sensor_hub.h>
+
+#else
 
 #include "ism330dhcx/register_map.h"
 
@@ -16,6 +34,8 @@
 #include "ism330dhcx/motion.h"
 #include "ism330dhcx/ois.h"
 #include "ism330dhcx/sensor_hub.h"
+
+#endif /* ISM330DHCX_USE_SYSTEM_INCLUDES */
 
 
 /// @brief main

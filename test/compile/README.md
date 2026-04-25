@@ -7,11 +7,11 @@ Run test:
  * `./<test-name>.sh`
 
 
-**test-compile-static.sh**
+### test-compile-static.sh
 
-Test a static compile of the driver
+Test a static (local) `""` compilation
 
 
-**test-compile-static.sh**
+### test-compile-install.sh
 
-Test a compile of the driver after install
+Test compilation using the driver as a system library `<>` (after `cmake` install)

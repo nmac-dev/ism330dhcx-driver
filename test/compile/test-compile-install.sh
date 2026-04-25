@@ -24,7 +24,7 @@ SRC__C=( "$SRC__D"/*.c )
 ## Main
 
 TEST_MAIN__D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MAIN__C="$TEST_MAIN__D/test_compile_static.c"
+MAIN__C="$TEST_MAIN__D/test_compile.c"
 OUT="$TEST_MAIN__D/test_out"
 
 
@@ -42,10 +42,11 @@ rm -rf build
 
 rm -f $ISM330DHCX__LIB
 
-gcc    $MAIN__C                  \
-    -I /usr/local/include        \
-    -L /usr/local/lib            \
-    -lism330dhcx                 \
+gcc $MAIN__C                         \
+    -DISM330DHCX_USE_SYSTEM_INCLUDES \
+    -I /usr/local/include            \
+    -L /usr/local/lib                \
+    -lism330dhcx                     \
     -o $OUT
 
 

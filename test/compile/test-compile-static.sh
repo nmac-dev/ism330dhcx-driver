@@ -24,7 +24,7 @@ SRC__C=( "$SRC__D"/*.c )
 ## Main
 
 TEST_MAIN__D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MAIN__C="$TEST_MAIN__D/test_compile_static.c"
+MAIN__C="$TEST_MAIN__D/test_compile.c"
 OUT="$TEST_MAIN__D/test_out"
 
 
