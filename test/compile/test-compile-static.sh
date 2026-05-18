@@ -7,6 +7,24 @@ REPO__D="$(git rev-parse --show-toplevel)"
 DRIVER__D="$REPO__D/ism330dhcx"
 SRC__D="$DRIVER__D/src"
 
+## Functions
+
+exit_script() {
+
+    if [[ -f $OUT ]]; then
+        rm $OUT
+    fi
+
+    if [[ -f $ISM330DHCX__LIB.a ]]; then
+        rm $ISM330DHCX__LIB.a
+    fi
+
+    if [[ -L $ISM330DHCX__LIB ]]; then
+        unlink $ISM330DHCX__LIB
+    fi
+
+    exit 1
+}
 
 ## Libraries
 
@@ -54,6 +72,7 @@ gcc    $MAIN__C            \
 
 if [[ $? -ne 0 ]]; then
     echo "FAILED"
+    exit_script
     exit 1
 fi
 
@@ -70,6 +89,4 @@ fi
 
 ## Clean-up
 
-rm     $OUT
-unlink $ISM330DHCX__LIB
-rm     $ISM330DHCX__LIB.a
+exit_script
