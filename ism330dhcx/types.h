@@ -1,8 +1,8 @@
 /// @file  types.h
 /// @brief Defines type definitions [primitives, structures, unions, enums, pointers]
 
-#ifndef __C_NSTD__TYPES_H__
-#define __C_NSTD__TYPES_H__
+#ifndef __ISM330DHCX_TYPES_H__
+#define __ISM330DHCX_TYPES_H__
 
 
 #define VALIDATE_TYPE(sizeof_type, exp_size) sizeof_type == exp_size
@@ -268,4 +268,4 @@ typedef struct
 
 typedef void * v0_p;
 
-#endif /* __C_NSTD__TYPES_H__ */
+#endif /* __ISM330DHCX_TYPES_H__ */
