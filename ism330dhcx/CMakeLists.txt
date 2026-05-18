@@ -23,6 +23,14 @@ target_include_directories(ism330dhcx
         ${CMAKE_CURRENT_SOURCE_DIR}/internal
 )
 
+
+## Add mini-modules
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/comm)
+
+
+## Options
+
 target_compile_features(ism330dhcx
     PUBLIC
         c_std_99
@@ -57,5 +65,5 @@ install(TARGETS ism330dhcx
     INCLUDES DESTINATION include/ism330dhcx
 )
 
-install(FILES ${ISM330DHCX_PUBLIC_HEADERS}             DESTINATION include/ism330dhcx)
+install(FILES     ${ISM330DHCX_PUBLIC_HEADERS}         DESTINATION include/ism330dhcx)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/internal DESTINATION include/ism330dhcx)
