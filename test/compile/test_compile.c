@@ -20,6 +20,8 @@
 #include <ism330dhcx/ois.h>
 #include <ism330dhcx/sensor_hub.h>
 
+#include <ism330dhcx/comm/error.h>
+
 #else
 
 #include "ism330dhcx/register_map.h"
@@ -34,6 +36,8 @@
 #include "ism330dhcx/motion.h"
 #include "ism330dhcx/ois.h"
 #include "ism330dhcx/sensor_hub.h"
+
+#include "ism330dhcx/comm/error.h"
 
 #endif /* ISM330DHCX_USE_SYSTEM_INCLUDES */
 
@@ -54,6 +58,9 @@ int main(int argc, char const *argv[])
     ism330dhcx_motion_s motion = ism330dhcx_motion__get_default_s();
     ism330dhcx_ois_s    ois    = ism330dhcx_ois__get_default_s();
     ism330dhcx_sh_s     sh     = ism330dhcx_sh__get_default_s();
+
+    ism330dhcx_err_e err_code = ISM330DHCX_ERR__OK;
+    const char      *err_str  = ism330dhcx_err__to_str(err_code);
 
     printf("Hello, World!" "\n");
     return 0;
