@@ -132,7 +132,7 @@ Phase 1: Struct Representation (✅ COMPLETED)
 
 ### 4.1 Error Handling & Validation
 
-- [ ] Define error codes/return types (e.g., `typedef enum { ISM330_OK, ISM330_COMMS_ERROR, ... }`)
+- [x] Define error codes/return types (e.g., `typedef enum { ISM330_OK, ISM330_COMMS_ERROR, ... }`)
 - [ ] Add validation functions for register bounds and value ranges
 - [ ] Create macros for error checking and logging
 - [x] Document ISM330DHCX_RM_EF__FSM_INT2_A datasheet conflict (!FIX-REQUIRED flag)
