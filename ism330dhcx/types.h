@@ -266,6 +266,8 @@ typedef struct
 /* (void) */
 
 
-typedef void * v0_p;
+typedef void       v0_t;
+typedef void const v0c_t;
+
 
 #endif /* __ISM330DHCX_TYPES_H__ */

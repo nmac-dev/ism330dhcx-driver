@@ -36,10 +36,10 @@ i.e. `u32c_t` would be `unsigned int const` with the `_t` denoting the entity is
 `<base>`        | base (core) data type       | `u` unsigned, `s` signed, `f` float
 `<size>`        | size of the type in bits    | `8` bits, `16` bits, `32` bits, `64`bits
 `[<qualifier>]` | optional variable qualifier | `c` const, `v` volatile
-`_<construct>`  | programming construct       | `_t` primitive type, `_s` struct, `_u` union, `_e` enum, `_p` pointer
+`_<construct>`  | programming construct       | `_t` primitive type, `_s` struct, `_u` union, `_e` enum
 
 **Exceptions**:
- - `void *` is denoted as `v0_p`, since the size cannot be defined until compilation
+ - `void *` is denoted as `v0_t`, since the size cannot be defined until compilation
 
 
 <details>
@@ -53,39 +53,40 @@ The following types are defined in `ism330dhcx/types.h`.
 | Type     | Description
 | :------- | :-------
 | `u8_t`   | unsigned 8-bit integer
-| `u8c_t`  | `const` unsigned 8-bit integer
+| `u8c_t`  | `u8_t const`
 | `s8_t`   | signed 8-bit integer
-| `s8c_t`  | `const` signed 8-bit integer
+| `s8c_t`  | `s8_t const`
 | `u16_t`  | unsigned 16-bit integer
-| `u16c_t` | `const` unsigned 16-bit integer
+| `u16c_t` | `u16_t const`
 | `s16_t`  | signed 16-bit integer
-| `s16c_t` | `const` signed 16-bit integer
+| `s16c_t` | `s16_t const`
 | `u32_t`  | unsigned 32-bit integer
-| `u32c_t` | `const` unsigned 32-bit integer
+| `u32c_t` | `u32_t const`
 | `s32_t`  | signed 32-bit integer
-| `s32c_t` | `const` signed 32-bit integer
+| `s32c_t` | `s32_t const`
 | `u64_t`  | unsigned 64-bit integer
-| `u64c_t` | `const` unsigned 64-bit integer
+| `u64c_t` | `u64_t const`
 | `s64_t`  | signed 64-bit integer
-| `s64c_t` | `const` signed 64-bit integer
+| `s64c_t` | `s64_t const`
 | `f32_t`  | 32-bit floating point
-| `f32c_t` | `const` 32-bit floating point
+| `f32c_t` | `f32_t const`
 | `f64_t`  | 64-bit floating point
-| `f64c_t` | `const` 64-bit floating point
-| `v0_p`   | pointer to `void`
+| `f64c_t` | `f64_t const`
+| `v0_t`   | `void` absence of value
+| `v0c_t`  | `v0_t` `const`
 
 **Address unions**
 
 | Type         | Description
 | :----------- | :-----------
 | `adr_u8_u`   | 8-bit address union with `byte_0`
-| `adr_u8c_u`  | `const` 8-bit address union
+| `adr_u8c_u`  | `adr_u8_u const`
 | `adr_u16_u`  | 16-bit address union with `byte_0` and `byte_1`
-| `adr_u16c_u` | `const` 16-bit address union
+| `adr_u16c_u` | `adr_u16_u const`
 | `adr_u32_u`  | 32-bit address union with `byte_0`..`byte_3`
-| `adr_u32c_u` | `const` 32-bit address union
+| `adr_u32c_u` | `adr_u32_u const`
 | `adr_u64_u`  | 64-bit address union with `byte_0`..`byte_7`
-| `adr_u64c_u` | `const` 64-bit address union
+| `adr_u64c_u` | `adr_u64_u const`
 
 **Register structs**
 
@@ -143,5 +144,5 @@ cmake --install build --prefix ~/local
 ```
 Then, when compiling your application, use:
 ```bash
-gcc your_program.c -I ~/local/include -L ~/local/lib -lism330dhcx -o your_program
+gcc <program_name>.c -I ~/local/include -L ~/local/lib -lism330dhcx -o <program_name>
 ```
