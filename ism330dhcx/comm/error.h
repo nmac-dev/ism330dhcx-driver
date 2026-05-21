@@ -6,6 +6,11 @@
 
 
 #include "ism330dhcx/types.h"
+#include "internal/rm_structs.h"
+
+
+/* Error Codes */
+
 
 /// @brief ISM330DHCX error types
 typedef enum
@@ -17,6 +22,7 @@ typedef enum
     ISM330DHCX_ERR__INVALID_ARG       = 0x03,   // invalid argument (e.g. enum value not recognized)
     ISM330DHCX_ERR__NOT_SUPPORTED     = 0x04,   // operation is not supported
     ISM330DHCX_ERR__NOT_INITIALISED   = 0x05,   // driver has not been initialised before use
+    ISM330DHCX_ERR__FEATURE_DISABLED  = 0x06,   // driver feature has not been enabled before use
     /*  Communication Errors (0x10 – 0x1F)      */
     ISM330DHCX_ERR__COMMS             = 0x10,   // generic communication failure (I2C/SPI)
     ISM330DHCX_ERR__COMMS_TIMEOUT     = 0x11,   // communication timed out waiting for a response
@@ -46,8 +52,61 @@ typedef enum
 
 
 /// @brief Converts the given error code to a human-readable string literal
-/// @param err
+/// @param err error code to convert
 /// @return string literal describing the error code
 char const *ism330dhcx_err__to_str(ism330dhcx_err_e err);
+
+
+/* Validation Functions */
+
+
+/// @brief Validate that a pointer is not NULL
+/// @param ptr pointer to validate
+/// @return ISM330DHCX_ERR__OK if ptr is non-NULL; ISM330DHCX_ERR__NULL_PTR otherwise
+static inline ism330dhcx_err_e ism330dhcx_err__vald_ptr(v0c_t *ptr)
+{
+    return (!ptr) ? ISM330DHCX_ERR__NULL_PTR : ISM330DHCX_ERR__OK;
+}
+
+
+/// @brief Validate (8-bit) value falls within the inclusive range [min, max]
+/// @param val value to validate
+/// @param min lower bound of the valid range
+/// @param max upper bound of the valid range
+/// @return ISM330DHCX_ERR__OK if value is in range; ISM330DHCX_ERR__OUT_OF_RANGE otherwise
+static inline ism330dhcx_err_e ism330dhcx_err__vald_range_u8(u8_t value, u8_t min, u8_t max)
+{
+    return (value < min || value > max) ? ISM330DHCX_ERR__OUT_OF_RANGE : ISM330DHCX_ERR__OK;
+}
+
+
+/// @brief Validate (16-bit) value falls within the inclusive range [min, max]
+/// @param val value to validate
+/// @param min lower bound of the valid range
+/// @param max upper bound of the valid range
+/// @return ISM330DHCX_ERR__OK if value is in range; ISM330DHCX_ERR__OUT_OF_RANGE otherwise
+static inline ism330dhcx_err_e ism330dhcx_err__vald_range_u16(u16_t value, u16_t min, u16_t max)
+{
+    return (value < min || value > max) ? ISM330DHCX_ERR__OUT_OF_RANGE : ISM330DHCX_ERR__OK;
+}
+
+
+/// @brief Validate embedded functions configuration registers are enabled
+/// @param func_cfg_access value of the FUNC_CFG_ACCESS register to validate
+/// @return ISM330DHCX_ERR__OK if embedded functions are enabled; ISM330DHCX_ERR__FEATURE_DISABLED otherwise
+static inline ism330dhcx_err_e ism330dhcx_err__vald_emb_func_enabled (_ism330dhcx_rm__FUNC_CFG_ACCESS_s func_cfg_access)
+{
+    return (func_cfg_access.bf.FUNC_CFG_ACCESS) ? ISM330DHCX_ERR__OK : ISM330DHCX_ERR__FEATURE_DISABLED;
+}
+
+
+/// @brief Validate sensor hub (I²C master) registers are enabled
+/// @param func_cfg_access value of the FUNC_CFG_ACCESS register to validate
+/// @return ISM330DHCX_ERR__OK if sensor hub is enabled; ISM330DHCX_ERR__FEATURE_DISABLED otherwise
+static inline ism330dhcx_err_e ism330dhcx_err__vald_shub_enabled (_ism330dhcx_rm__FUNC_CFG_ACCESS_s func_cfg_access)
+{
+    return (func_cfg_access.bf.SHUB_REG_ACCESS) ? ISM330DHCX_ERR__OK : ISM330DHCX_ERR__FEATURE_DISABLED;
+}
+
 
 #endif /* __ISM330DHCX_ERR_H__ */
