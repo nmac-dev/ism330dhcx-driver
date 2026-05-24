@@ -6,7 +6,12 @@
 
 
 #include "ism330dhcx/types.h"
+#include "ism330dhcx/comm/error.h"
 
+
+#ifdef ISM330DHCX_LOG__ENABLE
+    #define ISM330DHCX_LOG__CTX_LOG_H 0x01 // log context code for log messages originating from this file
+#endif /* ISM330DHCX_LOG__ENABLE */
 
 /* Log Levels */
 
@@ -26,6 +31,21 @@ typedef enum
     ISM330DHCX_LOG__FATAL = 50, // fatal error log  (error causing a system crash or requiring a system restart)
 
 } ism330dhcx_log_e;
+
+
+/// @brief Internal logging function used by the driver to output log messages
+/// @param lvl log level of the message (e.g. INFO, WARN, ERR)
+/// @param ctx log context (e.g. subroutine or feature code)
+/// @param format printf-style format string for the log message
+/// @param ... variable arguments for the format string
+void _ism330dhcx_log(ism330dhcx_log_e lvl, s8_t ctx, const char *format, ...);
+
+
+#ifdef ISM330DHCX_LOG__ENABLE
+    #define ISM330DHCX_LOG(_ctx, _format, ...) _ism330dhcx_log(ISM330DHCX_LOG__ERR, ctx, format, ##__VA_ARGS__)
+#else
+    #define ISM330DHCX_LOG__ERR(...) ((void)0)
+#endif /* ISM330DHCX_LOG__ENABLE */
 
 
 #endif /* __ISM330DHCX_LOG_H__ */
