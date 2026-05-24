@@ -13,6 +13,7 @@
     #define ISM330DHCX_LOG__CTX_LOG_H 0x01 // log context code for log messages originating from this file
 #endif /* ISM330DHCX_LOG__ENABLE */
 
+
 /* Log Levels */
 
 
@@ -33,12 +34,22 @@ typedef enum
 } ism330dhcx_log_e;
 
 
+/* Functions */
+
+
 /// @brief Internal logging function used by the driver to output log messages
 /// @param lvl log level of the message (e.g. INFO, WARN, ERR)
 /// @param ctx log context (e.g. subroutine or feature code)
 /// @param format printf-style format string for the log message
 /// @param ... variable arguments for the format string
 void _ism330dhcx_log(ism330dhcx_log_e lvl, s8_t ctx, const char *format, ...);
+
+
+/// @brief Converts the given log level to a human-readable string literal
+/// @param lvl log level to convert
+/// @return string literal describing the log level
+char const *ism330dhcx_log__lvl_to_str(ism330dhcx_log_e lvl);
+
 
 
 #ifdef ISM330DHCX_LOG__ENABLE
