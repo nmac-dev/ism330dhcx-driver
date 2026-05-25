@@ -1,5 +1,6 @@
 /// @file  types.h
 /// @brief Defines type definitions [primitives, structures, unions, enums, pointers]
+/// @note  These types follow the convention: `[<prefix>_]<base><size>[<qualifier>]_<construct>`
 
 #ifndef __ISM330DHCX_TYPES_H__
 #define __ISM330DHCX_TYPES_H__
@@ -21,6 +22,10 @@ typedef signed char s8_t;
 typedef s8_t  const s8c_t;
 #define S8_T__MAX ((s8_t)0x7F)              //  127
 #define S8_T__MIN ((s8_t)(-S8_T__MAX - 1))  // -128
+
+typedef char         str8_t;
+typedef str8_t const str8c_t;
+typedef str8c_t    * str8l_t;
 
 /// @union adr_u8_u
 /// @brief Address 8-bit ( byte_0 )
@@ -67,6 +72,10 @@ typedef struct
     typedef s16_t  const s16c_t;
     #define S16_T__MAX ((s16_t)0x7FFF)              //  32767
     #define S16_T__MIN ((s16_t)(-S16_T__MAX - 1))   // -32768
+
+    typedef u16_t         str16_t;
+    typedef str16_t const str16c_t;
+    typedef str16c_t    * str16l_t;
 
     /// @union adr_u16_u
     /// @brief Address 16-bit ( byte_0 | byte_1 )
@@ -118,6 +127,10 @@ typedef struct
     typedef s32_t const s32c_t;
     #define S32_T__MAX ((s32_t)0x7FFFFFFF)          //  2147483647
     #define S32_T__MIN ((s32_t)(-S32_T__MAX - 1))   // -2147483648
+
+    typedef u32_t         str32_t;
+    typedef str32_t const str32c_t;
+    typedef str32c_t    * str32l_t;
 
     /// @union adr_u32_u
     /// @brief Address 32-bit ( byte_0 | byte_1 | byte_2 | byte_3 )
