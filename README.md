@@ -52,7 +52,7 @@ The following types are defined in `ism330dhcx/types.h`.
 | Type        | Description
 | :---------- | :-----------------------------
 | `bool8_t`   | 8-bit boolean (storage)
-| `bool_t`    | native boolean (logic, usually int)
+| `bool_t`    | native boolean (logic)
 | `i8_t`      | signed 8-bit integer
 | `i8c_t`     | `i8_t const`
 | `u8_t`      | unsigned 8-bit integer
