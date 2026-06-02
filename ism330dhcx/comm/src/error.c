@@ -1,10 +1,10 @@
 /// @file  error.c
 /// @brief ISM330DHCX Error Codes
 
-#include "comm/error.h"
+#include "ism330dhcx/comm/error.h"
 
 
-const char *ism330dhcx_err__to_str(ism330dhcx_err_e err)
+str8r_t ism330dhcx_err__to_str(ism330dhcx_err_e err)
 {
     switch (err)
     {

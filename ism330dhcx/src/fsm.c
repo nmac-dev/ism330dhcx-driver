@@ -1,7 +1,7 @@
 /// @file  fsm.c
 /// @brief ISM330DHCX FSM Driver
 
-#include "fsm.h"
+#include "ism330dhcx/fsm.h"
 
 
 ism330dhcx_fsm_s ism330dhcx_fsm__get_default_s()
@@ -152,8 +152,8 @@ ism330dhcx_fsm_s ism330dhcx_fsm__get_default_s()
 
         .eaf1__start_add = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM_EAF1__FSM_START_ADD_L,
-                .byte_1 = ISM330DHCX_RM_EAF1__FSM_START_ADD_H,
+                .byte._0 = ISM330DHCX_RM_EAF1__FSM_START_ADD_L,
+                .byte._1 = ISM330DHCX_RM_EAF1__FSM_START_ADD_H,
             },
             .val = 0x0000u,
         },

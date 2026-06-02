@@ -1,7 +1,7 @@
 /// @file  motion.c
 /// @brief ISM330DHCX Motion Driver
 
-#include "motion.h"
+#include "ism330dhcx/motion.h"
 
 
 ism330dhcx_motion_s ism330dhcx_motion__get_default_s()
@@ -112,8 +112,8 @@ ism330dhcx_motion_s ism330dhcx_motion__get_default_s()
 
         .ef__long_counter = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM_EF__FSM_LONG_COUNTER_L,
-                .byte_1 = ISM330DHCX_RM_EF__FSM_LONG_COUNTER_H,
+                .byte._0 = ISM330DHCX_RM_EF__FSM_LONG_COUNTER_L,
+                .byte._1 = ISM330DHCX_RM_EF__FSM_LONG_COUNTER_H,
             },
             .val = 0x0000u,
         },
@@ -125,8 +125,8 @@ ism330dhcx_motion_s ism330dhcx_motion__get_default_s()
 
         .ef__step_counter = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM_EF__STEP_COUNTER_L,
-                .byte_1 = ISM330DHCX_RM_EF__STEP_COUNTER_H,
+                .byte._0 = ISM330DHCX_RM_EF__STEP_COUNTER_L,
+                .byte._1 = ISM330DHCX_RM_EF__STEP_COUNTER_H,
             },
             .val = 0x0000u,
         },
@@ -143,8 +143,8 @@ ism330dhcx_motion_s ism330dhcx_motion__get_default_s()
 
         .eaf1__fsm_lc_timeout = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM_EAF1__FSM_LC_TIMEOUT_L,
-                .byte_1 = ISM330DHCX_RM_EAF1__FSM_LC_TIMEOUT_H,
+                .byte._0 = ISM330DHCX_RM_EAF1__FSM_LC_TIMEOUT_L,
+                .byte._1 = ISM330DHCX_RM_EAF1__FSM_LC_TIMEOUT_H,
             },
             .val = 0x0000u,
         },
@@ -161,8 +161,8 @@ ism330dhcx_motion_s ism330dhcx_motion__get_default_s()
 
         .eaf1__pedo_sc_deltat = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM_EAF1__PEDO_SC_DELTAT_L,
-                .byte_1 = ISM330DHCX_RM_EAF1__PEDO_SC_DELTAT_H,
+                .byte._0 = ISM330DHCX_RM_EAF1__PEDO_SC_DELTAT_L,
+                .byte._1 = ISM330DHCX_RM_EAF1__PEDO_SC_DELTAT_H,
             },
             .val = 0x0000u,
         },

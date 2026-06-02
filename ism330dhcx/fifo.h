@@ -6,9 +6,9 @@
 
 
 #include "ism330dhcx/types.h"
-#include "register_map.h"
-#include "internal/rm_structs.h"
-#include "internal/rm_ef_structs.h"
+#include "ism330dhcx/register_map.h"
+#include "ism330dhcx/internal/rm_structs.h"
+#include "ism330dhcx/internal/rm_ef_structs.h"
 
 
 /// @struct ism330dhcx_fifo

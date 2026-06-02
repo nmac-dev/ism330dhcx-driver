@@ -1,7 +1,7 @@
 /// @file  mlc.c
 /// @brief ISM330DHCX MLC Driver
 
-#include "mlc.h"
+#include "ism330dhcx/mlc.h"
 
 
 ism330dhcx_mlc_s ism330dhcx_mlc__get_default_s()
@@ -77,8 +77,8 @@ ism330dhcx_mlc_s ism330dhcx_mlc__get_default_s()
 
         .eaf1__mag_sensitivity = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM_EAF1__MLC_MAG_SENSITIVITY_L,
-                .byte_1 = ISM330DHCX_RM_EAF1__MLC_MAG_SENSITIVITY_H,
+                .byte._0 = ISM330DHCX_RM_EAF1__MLC_MAG_SENSITIVITY_L,
+                .byte._1 = ISM330DHCX_RM_EAF1__MLC_MAG_SENSITIVITY_H,
             },
             .val = 0x3C00u,
         },

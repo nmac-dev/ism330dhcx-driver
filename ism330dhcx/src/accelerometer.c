@@ -1,7 +1,7 @@
 /// @file  accelerometer.c
 /// @brief ISM330DHCX Accelerometer Driver
 
-#include "accelerometer.h"
+#include "ism330dhcx/accelerometer.h"
 
 
 ism330dhcx_acc_s ism330dhcx_acc__get_default_s()
@@ -12,24 +12,24 @@ ism330dhcx_acc_s ism330dhcx_acc__get_default_s()
 
         .outx = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM__OUTX_L_A,
-                .byte_1 = ISM330DHCX_RM__OUTX_H_A,
+                .byte._0 = ISM330DHCX_RM__OUTX_L_A,
+                .byte._1 = ISM330DHCX_RM__OUTX_H_A,
             },
             .val = 0x0000u,
         },
 
         .outy = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM__OUTY_L_A,
-                .byte_1 = ISM330DHCX_RM__OUTY_H_A,
+                .byte._0 = ISM330DHCX_RM__OUTY_L_A,
+                .byte._1 = ISM330DHCX_RM__OUTY_H_A,
             },
             .val = 0x0000u,
         },
 
         .outz = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM__OUTZ_L_A,
-                .byte_1 = ISM330DHCX_RM__OUTZ_H_A,
+                .byte._0 = ISM330DHCX_RM__OUTZ_L_A,
+                .byte._1 = ISM330DHCX_RM__OUTZ_H_A,
             },
             .val = 0x0000u,
         },

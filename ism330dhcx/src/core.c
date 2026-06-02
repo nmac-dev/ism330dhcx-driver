@@ -1,7 +1,7 @@
 /// @file  core.c
 /// @brief ISM330DHCX Core Driver
 
-#include "core.h"
+#include "ism330dhcx/core.h"
 
 
 ism330dhcx_core_s ism330dhcx_core__get_default_s()
@@ -96,8 +96,8 @@ ism330dhcx_core_s ism330dhcx_core__get_default_s()
 
         .out_temp = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM__OUT_TEMP_L,
-                .byte_1 = ISM330DHCX_RM__OUT_TEMP_H
+                .byte._0 = ISM330DHCX_RM__OUT_TEMP_L,
+                .byte._1 = ISM330DHCX_RM__OUT_TEMP_H
             },
             .val = 0x00u,
         },
@@ -105,10 +105,10 @@ ism330dhcx_core_s ism330dhcx_core__get_default_s()
 
         .timestamp = {
             .ADR = {
-                .byte_0 = ISM330DHCX_RM__TIMESTAMP0,
-                .byte_1 = ISM330DHCX_RM__TIMESTAMP1,
-                .byte_2 = ISM330DHCX_RM__TIMESTAMP2,
-                .byte_3 = ISM330DHCX_RM__TIMESTAMP3,
+                .byte._0 = ISM330DHCX_RM__TIMESTAMP0,
+                .byte._1 = ISM330DHCX_RM__TIMESTAMP1,
+                .byte._2 = ISM330DHCX_RM__TIMESTAMP2,
+                .byte._3 = ISM330DHCX_RM__TIMESTAMP3,
             },
             .bf = 0x00u,
         },

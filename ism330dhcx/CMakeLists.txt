@@ -18,9 +18,11 @@ target_sources(ism330dhcx
 
 target_include_directories(ism330dhcx
     PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
+        $<INSTALL_INTERFACE:include>
     PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/internal
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/internal>
+        $<INSTALL_INTERFACE:include/ism330dhcx/internal>
 )
 
 

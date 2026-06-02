@@ -7,7 +7,9 @@
 
 #ifdef ISM330DHCX_USE_SYSTEM_INCLUDES
 
+#include <ism330dhcx/types.h>
 #include <ism330dhcx/register_map.h>
+#include <ism330dhcx/internal/rm_structs.h>
 
 #include <ism330dhcx/accelerometer.h>
 #include <ism330dhcx/core.h>
@@ -21,10 +23,13 @@
 #include <ism330dhcx/sensor_hub.h>
 
 #include <ism330dhcx/comm/error.h>
+#include <ism330dhcx/comm/log.h>
 
 #else
 
+#include "ism330dhcx/types.h"
 #include "ism330dhcx/register_map.h"
+#include "ism330dhcx/internal/rm_structs.h"
 
 #include "ism330dhcx/accelerometer.h"
 #include "ism330dhcx/core.h"
@@ -38,6 +43,7 @@
 #include "ism330dhcx/sensor_hub.h"
 
 #include "ism330dhcx/comm/error.h"
+#include "ism330dhcx/comm/log.h"
 
 #endif /* ISM330DHCX_USE_SYSTEM_INCLUDES */
 
@@ -60,7 +66,10 @@ int main(int argc, char const *argv[])
     ism330dhcx_sh_s     sh     = ism330dhcx_sh__get_default_s();
 
     ism330dhcx_err_e err_code = ISM330DHCX_ERR__OK;
-    const char      *err_str  = ism330dhcx_err__to_str(err_code);
+    str8r_t          err_str  = ism330dhcx_err__to_str(err_code);
+
+    ism330dhcx_log_e log_code = ISM330DHCX_LOG__INFO;
+    str8r_t          log_str  = ism330dhcx_log__lvl_to_str(log_code);
 
     printf("Hello, World!" "\n");
     return 0;

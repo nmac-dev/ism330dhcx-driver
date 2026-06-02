@@ -42,20 +42,20 @@ typedef enum
 /// @param ctx log context (e.g. subroutine or feature code)
 /// @param format printf-style format string for the log message
 /// @param ... variable arguments for the format string
-void _ism330dhcx_log(ism330dhcx_log_e lvl, s8_t ctx, const char *format, ...);
+v0_t _ism330dhcx_log(ism330dhcx_log_e lvl, i8_t ctx, const char *format, ...);
 
 
 /// @brief Converts the given log level to a human-readable string literal
 /// @param lvl log level to convert
 /// @return string literal describing the log level
-char const *ism330dhcx_log__lvl_to_str(ism330dhcx_log_e lvl);
+str8r_t ism330dhcx_log__lvl_to_str(ism330dhcx_log_e lvl);
 
 
 
 #ifdef ISM330DHCX_LOG__ENABLE
     #define ISM330DHCX_LOG(_ctx, _format, ...) _ism330dhcx_log(ISM330DHCX_LOG__ERR, ctx, format, ##__VA_ARGS__)
 #else
-    #define ISM330DHCX_LOG__ERR(...) ((void)0)
+    #define ISM330DHCX_LOG__ERR(...) ((v0_t)0)
 #endif /* ISM330DHCX_LOG__ENABLE */
 
 

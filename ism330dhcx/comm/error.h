@@ -6,7 +6,7 @@
 
 
 #include "ism330dhcx/types.h"
-#include "internal/rm_structs.h"
+#include "ism330dhcx/internal/rm_structs.h"
 
 
 /* Error Codes */
@@ -63,7 +63,7 @@ char const *ism330dhcx_err__to_str(ism330dhcx_err_e err);
 /// @brief Validate that a pointer is not NULL
 /// @param ptr pointer to validate
 /// @return ISM330DHCX_ERR__OK if ptr is non-NULL; ISM330DHCX_ERR__NULL_PTR otherwise
-static inline ism330dhcx_err_e ism330dhcx_err__vald_ptr(v0c_t *ptr)
+static inline ism330dhcx_err_e ism330dhcx_err__vald_ptr(v0r_t ptr)
 {
     return (!ptr) ? ISM330DHCX_ERR__NULL_PTR : ISM330DHCX_ERR__OK;
 }
